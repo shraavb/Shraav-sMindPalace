@@ -8,7 +8,7 @@
       <Portfolio id="portfolio" :nightMode="nightMode" />
       <Recommendation :nightMode="nightMode" />
       <Contact id="contact" :nightMode="nightMode" />
-      <Footer :nightMode="nightMode" />
+      <Footer :nightMode="nightMode" @showResume="showResumeModal" />
     </div>
     <Resume :show="showResume" :nightMode="nightMode" @close="closeResumeModal" />
   </div>
