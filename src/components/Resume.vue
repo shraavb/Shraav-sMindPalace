@@ -11,7 +11,16 @@
           height="600px"
           frameborder="0"
           class="resume-iframe"
+          @load="onIframeLoad"
+          @error="onIframeError"
         ></iframe>
+        <div v-if="loading" class="loading-message">
+          Loading resume...
+        </div>
+        <div v-if="error" class="error-message">
+          <p>Unable to load resume. Please try again or download directly.</p>
+          <a :href="resumeUrl" target="_blank" class="download-link">Download Resume</a>
+        </div>
       </div>
     </div>
   </div>
@@ -32,12 +41,22 @@ export default {
   },
   data() {
     return {
-      resumeUrl: "/resume.pdf"
+      resumeUrl: "/resume.pdf",
+      loading: true,
+      error: false
     };
   },
   methods: {
     closeModal() {
       this.$emit('close');
+    },
+    onIframeLoad() {
+      this.loading = false;
+      this.error = false;
+    },
+    onIframeError() {
+      this.loading = false;
+      this.error = true;
     }
   }
 };
@@ -95,6 +114,47 @@ export default {
   height: 100%;
 }
 
+.loading-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #666;
+  font-size: 16px;
+  text-align: center;
+}
+
+.error-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #e74c3c;
+}
+
+.error-message p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.download-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #669db3ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.download-link:hover {
+  background-color: #5a8ba3;
+  color: white;
+  text-decoration: none;
+}
+
 /* Dark mode styles */
 .resume-modal.dark-mode {
   background: #2c3e50;
@@ -107,6 +167,14 @@ export default {
 
 .resume-modal.dark-mode .resume-title {
   color: #ecf0f1;
+}
+
+.resume-modal.dark-mode .loading-message {
+  color: #bdc3c7;
+}
+
+.resume-modal.dark-mode .error-message {
+  color: #e74c3c;
 }
 
 
