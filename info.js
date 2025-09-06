@@ -15,7 +15,7 @@ let info = {
     github: "https://github.com/shraavb",
     angellist: "https://angel.co/u/hrishikesh-paul",
     resume:
-      "https://github.com/shraavb/portfolio-template/blob/master/src/assets/portfolio/Shraavasti%2C%20Bhat_CV.pdf"
+      "https://github.com/shraavb/Shraav-sMindPalace/blob/master/src/assets/portfolio/Shraavasti%2C%20Bhat_CV.pdf"
   },
   education: [
     {
