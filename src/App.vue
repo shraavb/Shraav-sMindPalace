@@ -2,7 +2,7 @@
   <div id="app" :class="{ 'text-dark': !nightMode, 'text-light': nightMode }">
     <Navbar @scroll="scrollTo" @nightMode="switchMode" :nightMode="nightMode" />
     <div class="parent">
-      <Home :nightMode="nightMode" />
+      <Home :nightMode="nightMode" @showResume="showResumeModal" />
       <About id="about" :nightMode="nightMode" />
       <Skills id="skills" :nightMode="nightMode" />
       <Portfolio id="portfolio" :nightMode="nightMode" />
@@ -10,6 +10,7 @@
       <Contact id="contact" :nightMode="nightMode" />
       <Footer :nightMode="nightMode" />
     </div>
+    <Resume :show="showResume" :nightMode="nightMode" @close="closeResumeModal" />
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import Portfolio from "./components/Portfolio";
 import Recommendation from "./components/Recommendation";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Resume from "./components/Resume";
 
 import info from "../info";
 
@@ -36,11 +38,13 @@ export default {
     Recommendation,
     Contact,
     Footer,
+    Resume,
   },
   data() {
     return {
       nightMode: false,
       config: info.config,
+      showResume: false,
     };
   },
   created() {
@@ -73,6 +77,12 @@ export default {
         if (this.$router.history.current.path !== `/${ele}`)
           this.$router.push(`/${ele}`);
       }
+    },
+    showResumeModal() {
+      this.showResume = true;
+    },
+    closeResumeModal() {
+      this.showResume = false;
     },
   },
 };

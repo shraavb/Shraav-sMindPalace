@@ -39,7 +39,7 @@
             </button>
             <button
               class="btn btn-outline-secondary mx-2"
-              @click="open('resume')"
+              @click="openResume"
               v-tooltip.bottom="'Resume'"
             >
               <i class="fa fa-file"></i>
@@ -72,8 +72,7 @@ export default {
       description: info.description,
       name: info.name,
       linkedin: info.links.linkedin,
-      github: info.links.github,
-      resume: info.links.resume
+      github: info.links.github
     };
   },
   methods: {
@@ -85,10 +84,10 @@ export default {
         case "github":
           window.open(this.github, "_blank");
           break;
-        case "resume":
-          window.open(this.resume, "_blank");
-          break;
       }
+    },
+    openResume() {
+      this.$emit('showResume');
     },
   },
 };
