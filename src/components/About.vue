@@ -51,14 +51,16 @@ export default {
     },
   },
   data() {
+    console.log('About component - info.education:', info.education);
+    console.log('About component - info.experience:', info.experience);
     return {
       education: {
         title: "education",
-        data: info.education,
+        data: info.education || [],
       },
       experience: {
         title: "experiences",
-        data: info.experience,
+        data: info.experience || [],
       },
     };
   },

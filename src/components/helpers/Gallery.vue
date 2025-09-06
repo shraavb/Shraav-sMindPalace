@@ -15,7 +15,7 @@
           :src="i.img"
           style="width:100%"
           :id="`gi${idx}`"
-          @click="showImg(idx)"
+          @click="i.link ? openLink(i.link) : showImg(idx)"
           class="g-img"
         />
         <div class="mt-1">
@@ -66,6 +66,9 @@ export default {
           modal.classList.remove("modalClose");
         }, 200);
       };
+    },
+    openLink(url) {
+      window.open(url, "_blank");
     },
   },
 };

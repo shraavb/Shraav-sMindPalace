@@ -13,6 +13,8 @@
           class="card-img-top"
           :src="portfolio.pictures[0].img"
           alt="Card image cap"
+          @click="openPdf"
+          style="cursor: pointer;"
         />
       </div>
       <div class="card-body pborder-top">
@@ -74,6 +76,11 @@ export default {
     open(url) {
       window.open(url, "_blank");
     },
+    openPdf() {
+      if (this.portfolio.pictures[0].pdf) {
+        window.open(this.portfolio.pictures[0].pdf, "_blank");
+      }
+    },
     showModal() {
       this.$emit("show", this.portfolio);
     },
@@ -127,7 +134,7 @@ div.img-div {
   border: none;
   box-shadow: 1px 1px 12px rgb(233, 233, 233);
   transition: all 0.5s;
-  height: 460px;
+  height: 483px;
 }
 
 .pcard:hover {
@@ -142,7 +149,7 @@ div.img-div {
   background-color: #30363a !important;
   /* box-shadow: 1px 1px 12px rgb(53, 53, 53); */
   transition: all 0.5s;
-  height: 460px;
+  height: 483px;
 }
 
 .pcard-dark:hover {
@@ -167,7 +174,7 @@ div.img-div {
 }
 
 .title2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
 }
 

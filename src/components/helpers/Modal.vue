@@ -61,10 +61,20 @@
               class="mt-1 mb-3"
               :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
             />
-            <button class="btn w-25 mr-3" @click="open(portfolio.github)">
-              github
+            <button 
+              v-if="portfolio.github && portfolio.github.trim() !== ''" 
+              class="btn w-25 mr-3" 
+              @click="open(portfolio.github)"
+            >
+              Project
             </button>
-            <button class="btn w-25" @click="$emit('close')">close</button>
+            <button 
+              v-if="portfolio.pictures && portfolio.pictures[0] && portfolio.pictures[0].pdf" 
+              class="btn w-25 mr-3" 
+              @click="open(portfolio.pictures[0].pdf)"
+            >
+              Link to Paper
+            </button>
           </div>
         </div>
       </div>

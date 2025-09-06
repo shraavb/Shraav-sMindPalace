@@ -3,7 +3,6 @@
     <div class="resume-modal" :class="{ 'dark-mode': nightMode }" @click.stop>
       <div class="resume-header">
         <h3 class="resume-title">Resume</h3>
-        <button class="close-btn" @click="closeModal">&times;</button>
       </div>
       <div class="resume-content">
         <iframe 
@@ -84,25 +83,6 @@ export default {
   font-weight: 600;
 }
 
-.close-btn {
-  background: none;
-  border: none;
-  font-size: 30px;
-  color: #666;
-  cursor: pointer;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: background-color 0.2s;
-}
-
-.close-btn:hover {
-  background-color: #e9ecef;
-}
 
 .resume-content {
   padding: 0;
@@ -129,13 +109,6 @@ export default {
   color: #ecf0f1;
 }
 
-.resume-modal.dark-mode .close-btn {
-  color: #bdc3c7;
-}
-
-.resume-modal.dark-mode .close-btn:hover {
-  background-color: #4a5f7a;
-}
 
 @media (max-width: 768px) {
   .resume-modal {

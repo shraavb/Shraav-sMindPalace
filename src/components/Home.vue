@@ -21,6 +21,9 @@
           >
           <div>
             <p v-html="description"></p>
+            <p class="contact-info" :class="{ pgray: !nightMode, 'text-light': nightMode }">
+              get in touch at <a href="mailto:shraavasti.b@gmail.com" :class="{ pgray: !nightMode, 'text-light': nightMode }">shraavasti.b@gmail.com</a>
+            </p>
           </div>
           <div class="text-center pb-4">
             <button
@@ -145,6 +148,21 @@ img {
 p {
   text-align: justify;
   font-weight: 400;
+}
+
+.contact-info {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact-info a {
+  color: #669db3ff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
 }
 
 /* LEAVES */

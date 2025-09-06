@@ -160,9 +160,10 @@ export default {
     },
   },
   data() {
+    console.log('Portfolio component - info.portfolio:', info.portfolio);
     return {
-      all_info: info.portfolio,
-      desgin_info: info.portfolio_design,
+      all_info: info.portfolio || [],
+      desgin_info: info.portfolio_design || [],
       portfolio_info: [],
       showModal: false,
       showDesignModal: false,
@@ -179,15 +180,19 @@ export default {
     };
   },
   created() {
-    for (var i = 0; i < this.number; i++) {
-      this.portfolio_info.push(this.all_info[i]);
+    if (this.all_info && this.all_info.length > 0) {
+      for (var i = 0; i < Math.min(this.number, this.all_info.length); i++) {
+        this.portfolio_info.push(this.all_info[i]);
+      }
     }
   },
   watch: {
     number() {
       this.portfolio_info = [];
-      for (var i = 0; i < this.number; i++) {
-        this.portfolio_info.push(this.all_info[i]);
+      if (this.all_info && this.all_info.length > 0) {
+        for (var i = 0; i < Math.min(this.number, this.all_info.length); i++) {
+          this.portfolio_info.push(this.all_info[i]);
+        }
       }
     },
   },

@@ -1,6 +1,6 @@
 <template>
   <div :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }" class="p-st">
-    <div class="container py-4">
+    <div class="container">
       <div
         class="text-center"
         data-aos="fade"
