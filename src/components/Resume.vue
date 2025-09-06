@@ -33,7 +33,7 @@ export default {
   },
   data() {
     return {
-      resumeUrl: require("../assets/portfolio/Shraavasti, Bhat_CV.pdf")
+      resumeUrl: "/resume.pdf"
     };
   },
   methods: {
