@@ -1,7 +1,7 @@
 let info = {
   name: "Hrishikesh Paul",
-  logo_name: "paul",
-  flat_picture: require("./src/assets/potrait.jpg"),
+  logo_name: "shraav",
+  flat_picture: require("./src/assets/headshot.png"),
   config: {
     use_cookies: true,
     navbar: {
@@ -9,13 +9,13 @@ let info = {
     }
   },
   description:
-    "A second year Computer Science graduate student at Indiana University Bloomington with an interest in Software Development, UX Design and Artificial Intelligence - and seeking exciting opportunities related to the same.<br><br>I am a detail oriented person and I keep my goals and tasks organized to maintain productivity. I would bring to table a wide range of software skills, ranging from design and development to writing scripts for intelligent agents. I believe that the skills that I have attained from the dynamic environment and competitive university life define me, and I am looking forward to implementing and polishing them in any opportunity that I receive. ",
+    "Hey there, I'm Shraav, a dual-degree student studying Computer Science and Management at the University of Pennsylvania. I have worked as a product manager at organizations like TE Connectivity, Manatal and Develop for Good, where I have led cross-functional teams across Design, Marketing, Engineering and Sales. Plus, I have dived into exciting projects spanning Human-Computer Interaction, Product Design, and beyond. Please take a scroll to check out the projects I have been part of!",
   links: {
-    linkedin: "https://www.linkedin.com/in/hrishikeshpaul/",
-    github: "https://github.com/hrishikeshpaul",
+    linkedin: "https://www.linkedin.com/in/shraavasti-bhat/",
+    github: "https://github.com/shraavb",
     angellist: "https://angel.co/u/hrishikesh-paul",
     resume:
-      "https://github.com/hrishikeshpaul/portfolio-template/blob/master/src/assets/pdfs/Resume.pdf"
+      "https://github.com/shraavb/portfolio-template/blob/master/src/assets/portfolio/Shraavasti%2C%20Bhat_CV.pdf"
   },
   education: [
     {
