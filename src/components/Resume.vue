@@ -41,7 +41,7 @@ export default {
   },
   data() {
     return {
-      resumeUrl: process.env.NODE_ENV === 'production' ? './resume.pdf' : '/resume.pdf',
+      resumeUrl: process.env.NODE_ENV === 'production' ? '/Shraav-sMindPalace/resume.pdf' : '/resume.pdf',
       loading: true,
       error: false
     };
