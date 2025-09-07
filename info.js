@@ -156,19 +156,19 @@ let info = {
         "Developed an ML model to predict upsets in tennis matches based on player statistics and tournament details."
     },
     {
-      name: "Bridge Analysis Project",
+      name: "Bridge: Multi-Modal Language Learning Tool",
       pictures: [
         {
           img: require("./assets/Dev_Proj3_Bridge.png")
         }
       ],
-      technologies: ["Python", "Data Analysis", "Engineering"],
-      category: "Data Analysis",
+      technologies: ["Grok API", "OpenAI API", "HTML", "CSS", "JavaScript"],
+      category: "Web Application",
       date: "2024 - 2025",
-      github: "",
+      github: "https://github.com/shraavb/multimodallanguagelearning",
       visit: "",
       description:
-        "Comprehensive analysis of bridge structures and infrastructure data to identify patterns and potential improvements in structural engineering and maintenance planning."
+        "Developed a tool for language learning using multimodal information. The tool adapts to different scenarios, including business, casual conversation with friends, and dating contexts. Leveraged prompting techniques to optimize the use of LLMs."
     }
   ],
   portfolio_design: [
