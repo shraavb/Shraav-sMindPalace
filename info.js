@@ -154,6 +154,21 @@ let info = {
       visit: "",
       description:
         "Developed an ML model to predict upsets in tennis matches based on player statistics and tournament details."
+    },
+    {
+      name: "Bridge Analysis Project",
+      pictures: [
+        {
+          img: require("./assets/Dev_Proj3_Bridge.png")
+        }
+      ],
+      technologies: ["Python", "Data Analysis", "Engineering"],
+      category: "Data Analysis",
+      date: "2024 - 2025",
+      github: "",
+      visit: "",
+      description:
+        "Comprehensive analysis of bridge structures and infrastructure data to identify patterns and potential improvements in structural engineering and maintenance planning."
     }
   ],
   portfolio_design: [
