@@ -162,7 +162,7 @@ let info = {
           img: require("./assets/Dev_Proj3_Bridge.png")
         }
       ],
-      technologies: ["Grok API", "OpenAI API", "HTML", "CSS", "JavaScript"],
+      technologies: ["Grok API", "OpenAI API", "HTML", "CSS", "JavaScript", "Cursor"],
       category: "Web Application",
       date: "2024 - 2025",
       github: "https://github.com/shraavb/multimodallanguagelearning",
