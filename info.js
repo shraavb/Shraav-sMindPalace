@@ -177,7 +177,7 @@ let info = {
       title: "RenewConnect - Mockup Design",
       pictures: [
         {
-          img: "./assets/Design1_RenewConnect.png",
+          img: require("./assets/Design1_RenewConnect.png"),
           title: "RenewConnect Design",
           link: "https://www.figma.com/design/irN4xAPXArsqolPwFo6y2j/Web101---Codepath?m=auto&t=elNEpxF1W2FfXAul-1"
         }
@@ -195,7 +195,7 @@ let info = {
       title: "Product Design & 3D Printing",
       pictures: [
         {
-          img: "./assets/Design2_DuoFlask.jpeg",
+          img: require("./assets/Design2_DuoFlask.jpeg"),
           title: "DuoFlask Design"
         }
       ],
@@ -212,7 +212,7 @@ let info = {
           title: "Media & Operations @ Penn Electric Racing",
       pictures: [
         {
-          img: "./assets/Design3_PER.png",
+          img: require("./assets/Design3_PER.png"),
           title: "PER Design"
         }
       ],
