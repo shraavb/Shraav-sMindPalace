@@ -131,6 +131,9 @@
               />
             </div>
           </div>
+          <div class="text-center py-3" v-if="venture_showBtn !== 'show less'">
+            <button class="btn" @click.prevent="showMoreVenture">{{ venture_showBtn }}</button>
+          </div>
         </v-tab>
       </vue-tabs>
     </div>
@@ -189,14 +192,17 @@ export default {
     return {
       all_info: info.portfolio || [],
       desgin_info: info.portfolio_design || [],
-      venture_info: info.portfolio_venture || [],
+      all_venture_info: info.portfolio_venture || [],
+      venture_info: [],
       portfolio_info: [],
       showModal: false,
       showDesignModal: false,
       modal_info: {},
       design_modal_info: {},
       number: 3,
+      venture_number: 3,
       showBtn: "show more",
+      venture_showBtn: "show more",
       shower: 0,
       data: [
         '<div class="example-slide">Slide 1</div>',
@@ -211,6 +217,11 @@ export default {
         this.portfolio_info.push(this.all_info[i]);
       }
     }
+    if (this.all_venture_info && this.all_venture_info.length > 0) {
+      for (var i = 0; i < Math.min(this.venture_number, this.all_venture_info.length); i++) {
+        this.venture_info.push(this.all_venture_info[i]);
+      }
+    }
   },
   watch: {
     number() {
@@ -218,6 +229,14 @@ export default {
       if (this.all_info && this.all_info.length > 0) {
         for (var i = 0; i < Math.min(this.number, this.all_info.length); i++) {
           this.portfolio_info.push(this.all_info[i]);
+        }
+      }
+    },
+    venture_number() {
+      this.venture_info = [];
+      if (this.all_venture_info && this.all_venture_info.length > 0) {
+        for (var i = 0; i < Math.min(this.venture_number, this.all_venture_info.length); i++) {
+          this.venture_info.push(this.all_venture_info[i]);
         }
       }
     },
@@ -265,6 +284,30 @@ export default {
         this.shower = 0;
         this.number = 3;
         this.showBtn = "show more";
+      }
+    },
+    showMoreVenture() {
+      if (this.venture_number != this.all_venture_info.length) {
+        this.venture_number += 3;
+
+        window.scrollBy({
+          top: document.getElementsByClassName("smcard")[0].clientHeight,
+          behavior: "smooth",
+        });
+
+        if (this.venture_number > this.all_venture_info.length)
+          this.venture_number = this.all_venture_info.length;
+      }
+
+      if (this.venture_number == this.all_venture_info.length && this.shower == 0) {
+        this.shower = 1;
+        this.venture_showBtn = "show less";
+      } else if (this.venture_number == this.all_venture_info.length && this.shower == 1) {
+        var elementPosition = document.getElementById("portfolio").offsetTop;
+        window.scrollTo({ top: elementPosition + 5, behavior: "smooth" });
+        this.shower = 0;
+        this.venture_number = 3;
+        this.venture_showBtn = "show more";
       }
     },
   },
