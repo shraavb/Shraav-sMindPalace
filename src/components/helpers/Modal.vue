@@ -87,7 +87,21 @@
               class="btn w-25 mr-3" 
               @click="openPdf(portfolio.presentation)"
             >
-              Link to Presentation
+              {{ portfolio.category === 'Pitch Competition' ? 'Link to Pitch' : 'Link to Presentation' }}
+            </button>
+            <button 
+              v-if="portfolio.video && portfolio.video.trim() !== ''" 
+              class="btn w-25 mr-3" 
+              @click="openVideo(portfolio.video)"
+            >
+              Pitch Video
+            </button>
+            <button 
+              v-if="portfolio.figma && portfolio.figma.trim() !== ''" 
+              class="btn w-25 mr-3" 
+              @click="open(portfolio.figma)"
+            >
+              Figma
             </button>
           </div>
         </div>
@@ -129,6 +143,12 @@ export default {
         ? `/Shraav-sMindPalace/${pdfPath}` 
         : `/${pdfPath}`;
       window.open(pdfUrl, "_blank");
+    },
+    openVideo(videoPath) {
+      const videoUrl = process.env.NODE_ENV === 'production' 
+        ? `/Shraav-sMindPalace/${videoPath}` 
+        : `/${videoPath}`;
+      window.open(videoUrl, "_blank");
     },
   },
 };

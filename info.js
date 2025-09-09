@@ -223,59 +223,79 @@ let info = {
       visit: "",
       description:
         "Supported design, sponsorship outreach and relations, developed sponsor packages, and managed the website. Made weekly part purchases based on the needs of the Mechanical and Electrical Teams. Below is a Mock Board Meeting Presentation we developed for the Business aspect of the FSAE Competition. We were awarded 3rd place overall at the Formula SAE Lincoln event in 2022."
+    },
+    {
+      name: "Proposal to the City of Philadelphia",
+      title: "Carbon Offset Platform Design",
+      pictures: [
+        {
+          img: require("./assets/Venture3_Proposal to COP.png"),
+          title: "Philadelphia Carbon Offset Platform"
+        }
+      ],
+      technologies: ["Client Communication", "Design", "Prototyping"],
+      category: "Consulting Proposal",
+      github: "",
+      date: "Sep 2022",
+      visit: "",
+      presentation: "Venture3_Proposal to COP_Presentation.pdf",
+      figma: "https://www.figma.com/design/UoJA67LhKlwBUO75MAtJ1N/PCV--Project-for-City-of-Philadelphia---Local-Carbon-Offset-Platform?node-id=101-2&t=Gw9V976dL0JRTQ4G-1",
+      description:
+        "As Consultant and Project Lead at PCV, I led a team of 4+ students on two projects: developing a strategy to boost student subscriptions to a circular economy membership, and creating a carbon offset platform for Philadelphia-based corporations, including four local offset projects to reduce reliance on foreign offsets."
     }
   ],
   portfolio_venture: [
     {
-      name: "EcoTrack",
-      title: "EcoTrack - Carbon Footprint Tracker",
+      name: "Y-Prize Finalist - Accuspark",
       pictures: [
         {
-          img: require("./assets/Design1_RenewConnect.png"),
-          title: "EcoTrack App Design"
+          img: require("./assets/Venture1_Accuspark.png"),
+          title: "Accuspark Y-Prize Proposal"
         }
       ],
-      technologies: ["React Native", "Node.js", "MongoDB", "AI/ML"],
-      category: "Sustainability Tech",
+      presentation: "Venture1_Accuspark_Presentation.pdf",
+      technologies: ["Video Editing", "Medical Research", "Competitive Analysis", "Pitching"],
+      category: "Pitch Competition",
       github: "",
-      date: "2024",
+      date: "Jan 2022",
       visit: "",
       description:
-        "A mobile application that helps individuals and businesses track their carbon footprint in real-time. Features include smart recommendations for reducing emissions, gamification elements, and social sharing capabilities. The app uses AI to analyze spending patterns and suggest eco-friendly alternatives."
+        "With three teammates, I developed a commercialization proposal for Penn GRASP Lab's Steerable Needle, focusing on Neuroblastoma surgery. Over 5–6 months, we consulted neurosurgeons, medical device companies, and researchers to identify procedural challenges. Our proposal was selected as a Y-Prize finalist, earning mentorship to refine our idea."
     },
     {
-      name: "HealthConnect",
-      title: "HealthConnect - Telemedicine Platform",
+      name: "A Proposal to GE",
       pictures: [
         {
-          img: require("./assets/Design2_DuoFlask.jpeg"),
-          title: "HealthConnect Platform"
+          img: require("./assets/Venture2_Proposal to GE.png"),
+          title: "GE Flow Battery Proposal"
         }
       ],
-      technologies: ["Vue.js", "Python", "PostgreSQL", "WebRTC"],
-      category: "Healthcare Tech",
+      presentation: "Venture2_Proposal to GE Presentation.pdf",
+      technologies: ["Research"],
+      category: "Business Proposal",
       github: "",
-      date: "2024",
+      date: "Spring 2023",
       visit: "",
       description:
-        "A comprehensive telemedicine platform connecting patients with healthcare providers through secure video consultations. Features include appointment scheduling, prescription management, health record storage, and AI-powered symptom analysis. Designed to improve healthcare accessibility in rural and underserved areas."
+        "During Spring 2023's M&T Sophomore Immersive Week, my team explored Flow Battery technology and applied business concepts to develop a strategy. We proposed a Joint Venture between General Electric and ESS Inc., a leader in Flow Battery innovation, to enhance renewable energy accessibility."
     },
     {
-      name: "EduFlow",
-      title: "EduFlow - Adaptive Learning Platform",
+      name: "Proposal to the City of Philadelphia",
       pictures: [
         {
-          img: require("./assets/Design3_PER.png"),
-          title: "EduFlow Learning Interface"
+          img: require("./assets/Venture3_Proposal to COP.png"),
+          title: "Philadelphia Carbon Offset Platform Proposal"
         }
       ],
-      technologies: ["React", "Python", "TensorFlow", "Docker"],
-      category: "EdTech",
+      presentation: "Venture3_Proposal to COP_Presentation.pdf",
+      figma: "https://www.figma.com/design/UoJA67LhKlwBUO75MAtJ1N/PCV--Project-for-City-of-Philadelphia---Local-Carbon-Offset-Platform?node-id=101-2&t=Gw9V976dL0JRTQ4G-1",
+      technologies: ["Client Communication", "Design", "Prototyping"],
+      category: "Consulting Proposal",
       github: "",
-      date: "2024",
+      date: "Sep 2022",
       visit: "",
       description:
-        "An AI-powered adaptive learning platform that personalizes educational content based on individual learning styles and progress. Features include interactive lessons, progress tracking, peer collaboration tools, and automated assessment generation. Designed to make education more engaging and effective for students of all ages."
+        "As Consultant and Project Lead at PCV, I led a team of 4+ students on two projects: developing a strategy to boost student subscriptions to a circular economy membership, and creating a carbon offset platform for Philadelphia-based corporations, including four local offset projects to reduce reliance on foreign offsets."
     }
   ],
   recommendations: [
