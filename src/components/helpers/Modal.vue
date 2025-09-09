@@ -78,7 +78,7 @@
             <button 
               v-if="portfolio.pictures && portfolio.pictures[0] && portfolio.pictures[0].pdf" 
               class="btn w-25 mr-3" 
-              @click="open(portfolio.pictures[0].pdf)"
+              @click="openPdf(portfolio.pictures[0].pdf)"
             >
               Link to Paper
             </button>
@@ -116,6 +116,12 @@ export default {
   methods: {
     open(url) {
       window.open(url, "_blank");
+    },
+    openPdf(pdfPath) {
+      const pdfUrl = process.env.NODE_ENV === 'production' 
+        ? `/Shraav-sMindPalace/${pdfPath}` 
+        : `/${pdfPath}`;
+      window.open(pdfUrl, "_blank");
     },
   },
 };

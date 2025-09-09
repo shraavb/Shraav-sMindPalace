@@ -128,7 +128,7 @@ let info = {
       pictures: [
         {
           img: require("./assets/proj1_anonymity_research.png"),
-          pdf: "/Unmasking_Social_Media_Accountability___Short_Paper.pdf"
+          pdf: "Unmasking_Social_Media_Accountability___Short_Paper.pdf"
         }
       ],
       technologies: ["X API", "Python", "Vader", "Sentiment Analysis"],
