@@ -1,5 +1,5 @@
 {
-  "name": "hrpaul",
+  "name": "shraavs-mind-palace",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -37,5 +37,5 @@
     "vue-template-compiler": "^2.6.11"
   },
   "keywords": [],
-  "description": ""
+  "description": "Shraav's Mind Palace - A personal portfolio website showcasing projects, skills, and experience"
 }

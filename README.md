@@ -1,6 +1,6 @@
-# Portfolio Website
+# Shraav's Mind Palace
 
-A Vue.js portfolio website showcasing projects, skills, and experience.
+A Vue.js portfolio website showcasing projects, skills, and experience - Shraav's digital mind palace.
 
 ## Development
 

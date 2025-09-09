@@ -1,5 +1,4 @@
 let info = {
-  name: "Hrishikesh Paul",
   logo_name: "shraav",
   flat_picture: require("./src/assets/headshot.png"),
   config: {
@@ -9,7 +8,7 @@ let info = {
     }
   },
   description:
-    "Hey there, I'm Shraav, a dual-degree student studying Computer Science and Management at the University of Pennsylvania. I have worked as a product manager at organizations like TE Connectivity, Manatal and Develop for Good, where I have led cross-functional teams across Design, Marketing, Engineering and Sales. Plus, I have dived into exciting projects spanning Human-Computer Interaction, Product Design, and beyond. Please take a scroll to check out the projects I have been part of!",
+    "I'm Shraav, a dual-degree student studying Computer Science and Management at the University of Pennsylvania. I have worked as a product manager at organizations like TE Connectivity, Manatal and Develop for Good, where I have led cross-functional teams across Design, Marketing, Engineering and Sales. Plus, I have dived into exciting projects spanning Human-Computer Interaction, Product Design, and beyond. Please take a scroll to check out the projects I have been part of!",
   links: {
     linkedin: "https://www.linkedin.com/in/shraavasti-bhat/",
     github: "https://github.com/shraavb"
