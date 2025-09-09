@@ -5,39 +5,22 @@
         <h3 class="resume-title">Resume</h3>
       </div>
       <div class="resume-content">
-        <div class="resume-iframe-container">
-          <iframe 
-            :src="resumeUrl" 
-            width="100%" 
-            height="600px"
-            frameborder="0"
-            class="resume-iframe"
-            @load="onIframeLoad"
-            @error="onIframeError"
-            @click="handleIframeClick"
-          ></iframe>
-          <div class="iframe-overlay" @click="showPortfolioMessage = true">
-            <div class="overlay-message" v-if="showPortfolioMessage">
-              <p>To view the portfolio, please use the button below or right-click the link in the resume and select "Open in new tab".</p>
-              <button @click="openPortfolioInNewTab" class="portfolio-button">Open Portfolio</button>
-              <button @click="showPortfolioMessage = false" class="close-message-button">Close</button>
-            </div>
-          </div>
-        </div>
+        <iframe 
+          :src="resumeUrl" 
+          width="100%" 
+          height="600px"
+          frameborder="0"
+          class="resume-iframe"
+          @load="onIframeLoad"
+          @error="onIframeError"
+          ref="resumeIframe"
+        ></iframe>
         <div v-if="loading" class="loading-message">
           Loading resume...
         </div>
         <div v-if="error" class="error-message">
           <p>Unable to load resume. Please try again or download directly.</p>
           <a :href="resumeUrl" target="_blank" class="download-link">Download Resume</a>
-        </div>
-        <div class="resume-actions">
-          <button @click="openPortfolioInNewTab" class="action-button portfolio-action">
-            Open Portfolio in New Tab
-          </button>
-          <a :href="resumeUrl" target="_blank" class="action-button download-action">
-            Download Resume
-          </a>
         </div>
       </div>
     </div>
@@ -61,8 +44,7 @@ export default {
     return {
       resumeUrl: process.env.NODE_ENV === 'production' ? '/Shraav-sMindPalace/resume.pdf' : '/resume.pdf',
       loading: true,
-      error: false,
-      showPortfolioMessage: false
+      error: false
     };
   },
   methods: {
@@ -72,27 +54,70 @@ export default {
     onIframeLoad() {
       this.loading = false;
       this.error = false;
+      // Add event listener to detect navigation within iframe
+      this.setupIframeNavigation();
     },
     onIframeError() {
       this.loading = false;
       this.error = true;
     },
-    handleIframeClick(event) {
-      // Due to cross-origin restrictions, we can't access iframe content directly
-      // Instead, we'll show a message to guide users
-      console.log('Iframe clicked - this is expected due to cross-origin restrictions');
+    setupIframeNavigation() {
+      // Listen for navigation events in the iframe
+      const iframe = this.$refs.resumeIframe;
+      if (iframe) {
+        try {
+          // Try to access iframe content (may fail due to cross-origin)
+          iframe.contentWindow.addEventListener('beforeunload', () => {
+            // If iframe is about to navigate, check if it's to the portfolio
+            const currentUrl = iframe.contentWindow.location.href;
+            if (this.isPortfolioUrl(currentUrl)) {
+              // Redirect to portfolio in main window
+              this.redirectToPortfolio();
+            }
+          });
+        } catch (e) {
+          // Cross-origin restrictions - use alternative approach
+          this.setupCrossOriginDetection();
+        }
+      }
     },
-    handleIframeNavigation() {
-      // This will be called when the iframe tries to navigate
-      // We'll prevent the navigation and show a message
-      console.log('Iframe navigation detected');
+    setupCrossOriginDetection() {
+      // Alternative approach for cross-origin iframes
+      const iframe = this.$refs.resumeIframe;
+      if (iframe) {
+        // Check periodically if iframe has navigated to portfolio
+        const checkInterval = setInterval(() => {
+          try {
+            const iframeUrl = iframe.contentWindow.location.href;
+            if (this.isPortfolioUrl(iframeUrl)) {
+              clearInterval(checkInterval);
+              this.redirectToPortfolio();
+            }
+          } catch (e) {
+            // Cross-origin access denied - this is expected
+          }
+        }, 1000);
+        
+        // Clear interval after 30 seconds to avoid memory leaks
+        setTimeout(() => clearInterval(checkInterval), 30000);
+      }
     },
-    openPortfolioInNewTab() {
-      // Method to open portfolio in new tab
+    isPortfolioUrl(url) {
+      const portfolioUrls = [
+        'https://shraavb.github.io/Shraav-sMindPalace/',
+        'http://localhost:8080/',
+        'http://10.180.102.51:8080/'
+      ];
+      return portfolioUrls.some(portfolioUrl => url.includes(portfolioUrl));
+    },
+    redirectToPortfolio() {
       const portfolioUrl = process.env.NODE_ENV === 'production' 
         ? 'https://shraavb.github.io/Shraav-sMindPalace/'
         : 'http://localhost:8080/';
-      window.open(portfolioUrl, '_blank');
+      
+      // Close the modal and redirect to portfolio
+      this.closeModal();
+      window.location.href = portfolioUrl;
     }
   }
 };
@@ -142,122 +167,12 @@ export default {
 .resume-content {
   padding: 0;
   height: 600px;
-  position: relative;
-}
-
-.resume-iframe-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
 }
 
 .resume-iframe {
   border: none;
   width: 100%;
   height: 100%;
-}
-
-.iframe-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.overlay-message {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.9);
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  max-width: 300px;
-  z-index: 2;
-  pointer-events: all;
-}
-
-.overlay-message p {
-  margin-bottom: 15px;
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-.portfolio-button, .close-message-button {
-  padding: 8px 16px;
-  margin: 5px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.portfolio-button {
-  background-color: #669db3ff;
-  color: white;
-}
-
-.portfolio-button:hover {
-  background-color: #5a8ba3;
-}
-
-.close-message-button {
-  background-color: #6c757d;
-  color: white;
-}
-
-.close-message-button:hover {
-  background-color: #5a6268;
-}
-
-.resume-actions {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  display: flex;
-  gap: 10px;
-  z-index: 3;
-}
-
-.action-button {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 12px;
-  font-weight: 500;
-  text-decoration: none;
-  display: inline-block;
-  transition: background-color 0.3s;
-}
-
-.portfolio-action {
-  background-color: #669db3ff;
-  color: white;
-}
-
-.portfolio-action:hover {
-  background-color: #5a8ba3;
-  color: white;
-  text-decoration: none;
-}
-
-.download-action {
-  background-color: #28a745;
-  color: white;
-}
-
-.download-action:hover {
-  background-color: #218838;
-  color: white;
-  text-decoration: none;
 }
 
 .loading-message {
@@ -323,21 +238,6 @@ export default {
   color: #e74c3c;
 }
 
-.resume-modal.dark-mode .overlay-message {
-  background: rgba(44, 62, 80, 0.95);
-  color: #ecf0f1;
-}
-
-.resume-modal.dark-mode .portfolio-button {
-  background-color: #669db3ff;
-  color: white;
-}
-
-.resume-modal.dark-mode .close-message-button {
-  background-color: #6c757d;
-  color: white;
-}
-
 
 @media (max-width: 768px) {
   .resume-modal {
@@ -351,29 +251,6 @@ export default {
   
   .resume-iframe {
     height: 500px;
-  }
-  
-  .resume-actions {
-    position: relative;
-    bottom: auto;
-    right: auto;
-    justify-content: center;
-    padding: 10px;
-    background: rgba(248, 249, 250, 0.9);
-  }
-  
-  .action-button {
-    font-size: 11px;
-    padding: 6px 12px;
-  }
-  
-  .overlay-message {
-    max-width: 250px;
-    padding: 15px;
-  }
-  
-  .overlay-message p {
-    font-size: 12px;
   }
 }
 </style>
