@@ -13,6 +13,7 @@
           class="resume-iframe"
           @load="onIframeLoad"
           @error="onIframeError"
+          @click="handleIframeClick"
         ></iframe>
         <div v-if="loading" class="loading-message">
           Loading resume...
@@ -57,6 +58,18 @@ export default {
     onIframeError() {
       this.loading = false;
       this.error = true;
+    },
+    handleIframeClick(event) {
+      // Check if the click is on the specific portfolio link
+      const target = event.target;
+      if (target.tagName === 'A' && target.href && 
+          (target.href.includes('https://shraavb.github.io/Shraav-sMindPalace/') ||
+           target.href.includes('http://localhost:8080/') ||
+           target.href.includes('http://10.180.102.51:8080/'))) {
+        event.preventDefault();
+        // Simply reload the page to close modal and go to portfolio
+        window.location.reload();
+      }
     }
   }
 };

@@ -141,16 +141,16 @@ let info = {
         "Explored how user anonymity influences tweet sentiment and polarization during the COVID-19 pandemic. Following nine months of refinement, we engaged with HCI academics and submitted our findings to journals for publication."
     },
     {
-      name: "Predicting Underdog wins",
+      name: "Predicting Underdog Wins",
       pictures: [
         {
           img: require("./assets/dev_project2_tennisupset.jpg")
         }
       ],
       technologies: ["Pandas", "PandaSQL", "Polar", "DuckDB"],
-      category: "Website",
+      category: "ML Project",
       date: "March 2025 - Apr 2025",
-      github: "https://colab.research.google.com/drive/1BVAKnKNLSnmmzVlouYll7nL6TKVed96H",
+      github: "https://github.com/shraavb/Predicting-Tennis-Upsets-with-Machine-Learning",
       visit: "",
       description:
         "Developed an ML model to predict upsets in tennis matches based on player statistics and tournament details."
@@ -185,8 +185,9 @@ let info = {
       technologies: ["Figma", "Illustrator"],
       category: "Product Design & 3D Printing",
       github: "",
-      date: "",
+      date: null,
       visit: "",
+      figma: "https://www.figma.com/design/irN4xAPXArsqolPwFo6y2j/RenewConnect?node-id=48-7&t=7zY9vpRk9XVm1Q1C-1",
       description:
         "As part of a 1 hour web design challenge, I designed addresses the challenge of transitioning low and middle-income rural populations in nations like Africa and India to renewable energy sources. By promoting self-sufficiency through Solar Home Systems, the website aims to empower households in accessing reliable and eco-friendly power, while providing testimonials and guidance. It focuses on African regions where Solar Home Systems have gained some adoption, serving as a valuable resource for low-middle income households seeking to be more self-sufficient, digitized, and environmentally friendly, particularly those affected by utility bill hikes resulting from oil price fluctuations and supply limitations."
     },
@@ -254,6 +255,7 @@ let info = {
         }
       ],
       presentation: "Venture1_Accuspark_Presentation.pdf",
+      video: "https://drive.google.com/file/d/1_z-LBbqGh7fqb76_pNw-O14ScBkS15HI/view?usp=sharing",
       technologies: ["Video Editing", "Medical Research", "Competitive Analysis", "Pitching"],
       category: "Pitch Competition",
       github: "",

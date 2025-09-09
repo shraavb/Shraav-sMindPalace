@@ -56,7 +56,16 @@
               class="mt-1 mb-3"
               :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
             />
-            <button class="btn w-25" @click="$emit('close')">close</button>
+            <div class="d-flex justify-content-center">
+              <button 
+                v-if="portfolio.figma && portfolio.figma.trim() !== ''" 
+                class="btn w-25 mr-3" 
+                @click="open(portfolio.figma)"
+              >
+                Figma
+              </button>
+              <button class="btn w-25" @click="$emit('close')">close</button>
+            </div>
           </div>
         </div>
       </div>

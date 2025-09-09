@@ -35,7 +35,8 @@
               class="mb-2 date"
               :class="{ 'text-light': nightMode, pbgray: nightMode }"
             >
-              <span>{{ portfolio.date }} • {{ portfolio.category }}</span>
+              <span v-if="portfolio.date && portfolio.date.trim() !== ''">{{ portfolio.date }} • {{ portfolio.category }}</span>
+              <span v-else>{{ portfolio.category }}</span>
             </div>
             <div class="pb-1 bheight">
               <span

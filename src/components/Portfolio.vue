@@ -91,8 +91,8 @@
                     :class="{ 'bg-dark4': nightMode }"
                     >{{ tech }}</span
                   >
-                  •
-                  <span class="date ml-1">{{design.date}}</span>
+                  <span v-if="design.date && design.date.trim() !== ''" class="date ml-1">• {{design.date}}</span>
+                  <span v-else class="date ml-1">{{design.date}}</span>
                 </div>
 
                 <button
