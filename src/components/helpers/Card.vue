@@ -53,7 +53,7 @@
             v-if="portfolio.visit"
             @click.prevent="open(portfolio.visit)"
           >
-            Visit Project
+            visit project
           </button>
           <button
             href="#"

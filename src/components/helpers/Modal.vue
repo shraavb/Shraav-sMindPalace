@@ -62,11 +62,18 @@
               :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
             />
             <button 
+              v-if="portfolio.visit && portfolio.visit.trim() !== ''" 
+              class="btn w-25 mr-3" 
+              @click="open(portfolio.visit)"
+            >
+              visit project
+            </button>
+            <button 
               v-if="portfolio.github && portfolio.github.trim() !== ''" 
               class="btn w-25 mr-3" 
               @click="open(portfolio.github)"
             >
-              Project
+              repo
             </button>
             <button 
               v-if="portfolio.pictures && portfolio.pictures[0] && portfolio.pictures[0].pdf" 
