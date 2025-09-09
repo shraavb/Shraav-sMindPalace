@@ -2,6 +2,8 @@
 
 A Vue.js portfolio website showcasing projects, skills, and experience - Shraav's digital mind palace.
 
+🌐 **Live Website**: [https://shraavb.github.io/Shraav-sMindPalace/](https://shraavb.github.io/Shraav-sMindPalace/)
+
 ## Development
 
 ### Prerequisites
