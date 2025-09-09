@@ -131,6 +131,7 @@ let info = {
           pdf: "Unmasking_Social_Media_Accountability___Short_Paper.pdf"
         }
       ],
+      presentation: "IFoRE_Twitter.pdf",
       technologies: ["X API", "Python", "Vader", "Sentiment Analysis"],
       category: "",
       date: "Sep 2022 – Jun 2024 • Academic Research",

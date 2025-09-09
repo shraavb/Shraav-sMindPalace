@@ -82,6 +82,13 @@
             >
               Link to Paper
             </button>
+            <button 
+              v-if="portfolio.presentation && portfolio.presentation.trim() !== ''" 
+              class="btn w-25 mr-3" 
+              @click="openPdf(portfolio.presentation)"
+            >
+              Link to Presentation
+            </button>
           </div>
         </div>
       </div>
