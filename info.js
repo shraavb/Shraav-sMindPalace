@@ -164,8 +164,8 @@ let info = {
       technologies: ["Grok API", "OpenAI API", "HTML", "CSS", "JavaScript", "Cursor"],
       category: "Web Application",
       date: "2024 - 2025",
-      github: "https://github.com/shraavb/multimodallanguagelearning",
-      visit: "",
+      github: "https://github.com/shraavb/Bridge",
+      visit: "https://bridge-production-8580.up.railway.app",
       description:
         "Developed a tool for language learning using multimodal information. The tool adapts to different scenarios, including business, casual conversation with friends, and dating contexts. Leveraged prompting techniques to optimize the use of LLMs."
     }

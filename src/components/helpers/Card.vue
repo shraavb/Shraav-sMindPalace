@@ -49,11 +49,19 @@
           </button>
           <button
             href="#"
-            class="btn-sm btn btn-outline-secondary no-outline ml-4"
+            class="btn-sm btn btn-outline-secondary no-outline ml-2"
             v-if="portfolio.visit"
             @click.prevent="open(portfolio.visit)"
           >
-            visit website
+            Visit Project
+          </button>
+          <button
+            href="#"
+            class="btn-sm btn btn-outline-secondary no-outline ml-2"
+            v-if="portfolio.github"
+            @click.prevent="open(portfolio.github)"
+          >
+            repo
           </button>
         </div>
       </div>
