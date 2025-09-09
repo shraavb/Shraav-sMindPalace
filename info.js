@@ -225,6 +225,59 @@ let info = {
         "Supported design, sponsorship outreach and relations, developed sponsor packages, and managed the website. Made weekly part purchases based on the needs of the Mechanical and Electrical Teams. Below is a Mock Board Meeting Presentation we developed for the Business aspect of the FSAE Competition. We were awarded 3rd place overall at the Formula SAE Lincoln event in 2022."
     }
   ],
+  portfolio_venture: [
+    {
+      name: "EcoTrack",
+      title: "EcoTrack - Carbon Footprint Tracker",
+      pictures: [
+        {
+          img: require("./assets/Design1_RenewConnect.png"),
+          title: "EcoTrack App Design"
+        }
+      ],
+      technologies: ["React Native", "Node.js", "MongoDB", "AI/ML"],
+      category: "Sustainability Tech",
+      github: "",
+      date: "2024",
+      visit: "",
+      description:
+        "A mobile application that helps individuals and businesses track their carbon footprint in real-time. Features include smart recommendations for reducing emissions, gamification elements, and social sharing capabilities. The app uses AI to analyze spending patterns and suggest eco-friendly alternatives."
+    },
+    {
+      name: "HealthConnect",
+      title: "HealthConnect - Telemedicine Platform",
+      pictures: [
+        {
+          img: require("./assets/Design2_DuoFlask.jpeg"),
+          title: "HealthConnect Platform"
+        }
+      ],
+      technologies: ["Vue.js", "Python", "PostgreSQL", "WebRTC"],
+      category: "Healthcare Tech",
+      github: "",
+      date: "2024",
+      visit: "",
+      description:
+        "A comprehensive telemedicine platform connecting patients with healthcare providers through secure video consultations. Features include appointment scheduling, prescription management, health record storage, and AI-powered symptom analysis. Designed to improve healthcare accessibility in rural and underserved areas."
+    },
+    {
+      name: "EduFlow",
+      title: "EduFlow - Adaptive Learning Platform",
+      pictures: [
+        {
+          img: require("./assets/Design3_PER.png"),
+          title: "EduFlow Learning Interface"
+        }
+      ],
+      technologies: ["React", "Python", "TensorFlow", "Docker"],
+      category: "EdTech",
+      github: "",
+      date: "2024",
+      visit: "",
+      description:
+        "An AI-powered adaptive learning platform that personalizes educational content based on individual learning styles and progress. Features include interactive lessons, progress tracking, peer collaboration tools, and automated assessment generation. Designed to make education more engaging and effective for students of all ages."
+    }
+  ],
   recommendations: [
     {
       title:

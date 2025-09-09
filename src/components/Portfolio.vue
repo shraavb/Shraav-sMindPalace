@@ -107,6 +107,31 @@
           </div>
           <br />
         </v-tab>
+
+        <v-tab title="venture concepts">
+          <br />
+          <div class="row">
+            <div
+              class="col-xl-4 col-bg-4 col-md-6 col-sm-12"
+              v-for="(venture, idx) in venture_info"
+              :key="venture.name"
+            >
+              <Card
+                :style="{ 'transition-delay': (idx % 3) / 4.2 + 's' }"
+                :portfolio="venture"
+                @show="showModalFn"
+                data-aos="fade-up"
+                :nightMode="nightMode"
+                data-aos-offset="100"
+                data-aos-delay="10"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+              />
+            </div>
+          </div>
+        </v-tab>
       </vue-tabs>
     </div>
     <transition name="modal">
@@ -164,6 +189,7 @@ export default {
     return {
       all_info: info.portfolio || [],
       desgin_info: info.portfolio_design || [],
+      venture_info: info.portfolio_venture || [],
       portfolio_info: [],
       showModal: false,
       showDesignModal: false,
