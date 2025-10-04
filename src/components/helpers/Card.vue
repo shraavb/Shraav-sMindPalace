@@ -18,7 +18,7 @@
         />
       </div>
       <div class="card-body pborder-top">
-        <h5 class="title2">{{ portfolio.name }}</h5>
+        <h5 class="title2" v-html="portfolio.name"></h5>
         <div>
           <div class="pb-1 bheight">
             <span

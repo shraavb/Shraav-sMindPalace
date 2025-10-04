@@ -124,6 +124,21 @@ let info = {
   ],
   portfolio: [
     {
+      name: "JetBot w/ JetsonNano <span class='badge badge-warning ml-2'>in-progress</span>",
+      pictures: [
+        {
+          img: require("./assets/jetbot_jetson_nano.jpg")
+        }
+      ],
+      technologies: ["Python", "ROS", "Computer Vision", "TensorFlow", "NVIDIA Jetson"],
+      category: "AI and IOT",
+      date: "Sep-Oct 2025",
+      github: "",
+      visit: "",
+      description:
+        "Building an autonomous robot using NVIDIA's JetBot platform with Jetson Nano. Implementing computer vision algorithms for object detection and autonomous navigation, exploring the intersection of robotics and artificial intelligence."
+    },
+    {
       name: "Human Computer Interaction Research",
       pictures: [
         {

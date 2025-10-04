@@ -16,7 +16,7 @@
                 href="#"
                 @click.prevent="open(portfolio.visit)"
                 :class="{ 'text-light': nightMode }"
-                >{{ portfolio.name }}</a
+                v-html="portfolio.name"></a
               ></span
             >
             <a
