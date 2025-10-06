@@ -133,7 +133,7 @@ let info = {
       technologies: ["Python", "ROS", "Computer Vision", "TensorFlow", "NVIDIA Jetson"],
       category: "AI and IOT",
       date: "Sep-Oct 2025",
-      github: "",
+      github: "https://github.com/shraavb/jetbot_waveshare",
       visit: "",
       description:
         "Building an autonomous robot using NVIDIA's JetBot platform with Jetson Nano. Implementing computer vision algorithms for object detection and autonomous navigation, exploring the intersection of robotics and artificial intelligence."
