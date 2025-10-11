@@ -8,12 +8,7 @@
     }"
   >
     <div class="container">
-      <div
-        class="text-center"
-        data-aos="fade"
-        data-aos-once="true"
-        data-aos-duration="1000"
-      >
+      <div class="text-center">
         <span
           class="title text-center"
           :class="{ pgray: !nightMode, 'text-light': nightMode }"
@@ -35,17 +30,9 @@
               :key="portfolio.name"
             >
               <Card
-                :style="{ 'transition-delay': (idx % 3) / 4.2 + 's' }"
                 :portfolio="portfolio"
                 @show="showModalFn"
-                data-aos="fade-up"
                 :nightMode="nightMode"
-                data-aos-offset="100"
-                data-aos-delay="10"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="true"
               />
             </div>
           </div>
@@ -117,17 +104,9 @@
               :key="venture.name"
             >
               <Card
-                :style="{ 'transition-delay': (idx % 3) / 4.2 + 's' }"
                 :portfolio="venture"
                 @show="showModalFn"
-                data-aos="fade-up"
                 :nightMode="nightMode"
-                data-aos-offset="100"
-                data-aos-delay="10"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-once="true"
               />
             </div>
           </div>

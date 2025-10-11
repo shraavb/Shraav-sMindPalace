@@ -3,9 +3,9 @@
     <Navbar @scroll="scrollTo" @nightMode="switchMode" :nightMode="nightMode" />
     <div class="parent">
       <Home :nightMode="nightMode" @showResume="showResumeModal" />
+      <Portfolio id="portfolio" :nightMode="nightMode" />
       <About id="about" :nightMode="nightMode" />
       <Skills id="skills" :nightMode="nightMode" />
-      <Portfolio id="portfolio" :nightMode="nightMode" />
       <Footer :nightMode="nightMode" @showResume="showResumeModal" />
     </div>
     <Resume :show="showResume" :nightMode="nightMode" @close="closeResumeModal" />
@@ -47,7 +47,7 @@ export default {
     }
   },
   mounted() {
-    ["about", "skills", "portfolio"].forEach((l) => {
+    ["portfolio", "about", "skills"].forEach((l) => {
       if (window.location.href.includes(l)) {
         var elementPosition = document.getElementById(l).offsetTop;
         window.scrollTo({ top: elementPosition - 35, behavior: "smooth" });
