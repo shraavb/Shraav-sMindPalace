@@ -8,7 +8,7 @@ let info = {
     }
   },
   description:
-    "I'm Shraav, a dual-degree student studying Computer Science and Management at the University of Pennsylvania. I have worked as a product manager at organizations like TE Connectivity, Manatal and Develop for Good, where I have led cross-functional teams across Design, Marketing, Engineering and Sales. Plus, I have dived into exciting projects spanning Human-Computer Interaction, Product Design, and beyond. Please take a scroll to check out the projects I have been part of!",
+    "I'm Shraav! I'm studying Computer Science and Management at the University of Pennsylvania. I have worked as a product manager at TE Connectivity, Manatal, and Develop for Good, working with teams across Design, Engineering, Marketing, and Sales. I have also had the chance to dive into cool projects in areas like Embedded Systems and Computer Vision. Feel free to scroll through and check them out!",
   links: {
     linkedin: "https://www.linkedin.com/in/shraavasti-bhat/",
     github: "https://github.com/shraavb"
