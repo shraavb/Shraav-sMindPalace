@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }" class="p-st">
+  <div :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }" class="p-st" style="padding-bottom: 60px;">
     <div class="container">
       <div class="text-center">
         <span
@@ -59,13 +59,14 @@ export default {
 .skills-list {
   max-width: 800px;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .skill-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #e0e0e0;
   transition: all 0.3s ease;
 }
