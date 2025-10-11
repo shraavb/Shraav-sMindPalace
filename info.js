@@ -127,7 +127,7 @@ let info = {
       name: "OpenAPS - Embedded Systems for Closed-Loop Insulin Control",
       pictures: [
         {
-          img: require("./assets/jetbot_jetson_nano.jpg")
+          img: require("./assets/OpenAPS_project.png")
         }
       ],
       technologies: ["C++", "Arduino", "FreeRTOS", "MQTT", "Embedded Systems"],
