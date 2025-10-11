@@ -2,7 +2,7 @@
   <div
     class="py-4 p-st"
     :class="{
-      'bg-white': !nightMode,
+      'bg-gradient-about': !nightMode,
       'bg-dark2': nightMode,
       'text-light': nightMode,
     }"
@@ -71,5 +71,9 @@ export default {
 .title {
   font-size: 30px;
   font-weight: 500;
+}
+
+.bg-gradient-about {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%);
 }
 </style>

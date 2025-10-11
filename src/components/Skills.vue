@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'bg-light': !nightMode, 'bg-dark': nightMode }" class="py-4 p-st" style="padding-bottom: 60px;">
+  <div :class="{ 'bg-gradient-skills': !nightMode, 'bg-dark': nightMode }" class="py-4 p-st" style="padding-bottom: 60px;">
     <div class="container">
       <div class="text-center">
         <span
@@ -72,10 +72,11 @@ export default {
 }
 
 .skill-item:hover {
-  background-color: rgba(102, 157, 179, 0.05);
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(49, 130, 206, 0.08), rgba(128, 90, 213, 0.05));
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 12px;
+  border-left: 4px solid #3182ce;
 }
 
 .skill-item:last-child {
@@ -107,7 +108,7 @@ export default {
 }
 
 .fa, .fas {
-  color: #669db3ff;
+  color: #3182ce;
   font-size: 24px;
   width: 24px;
   text-align: center;
@@ -116,8 +117,8 @@ export default {
 
 .skill-item:hover .fa,
 .skill-item:hover .fas {
-  transform: scale(1.1);
-  color: #669db3ff;
+  transform: scale(1.2);
+  color: #805ad5;
 }
 
 /* Dark mode styles */
@@ -138,7 +139,11 @@ export default {
 }
 
 .bg-dark .fa, .bg-dark .fas {
-  color: #669db3ff;
+  color: #63b3ed;
+}
+
+.bg-gradient-skills {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 50%, #cbd5e0 100%);
 }
 
 /* Responsive design */

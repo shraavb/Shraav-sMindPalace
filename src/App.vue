@@ -104,11 +104,31 @@ export default {
 }
 
 .pgray {
-  color: #535a5e;
+  color: #4a5568;
 }
 
 .pblue {
-  color: #669db3ff;
+  color: #3182ce;
+}
+
+.pblue-light {
+  color: #63b3ed;
+}
+
+.pblue-dark {
+  color: #2c5282;
+}
+
+.purple {
+  color: #805ad5;
+}
+
+.green {
+  color: #38a169;
+}
+
+.orange {
+  color: #ed8936;
 }
 
 .bg-dark2 {

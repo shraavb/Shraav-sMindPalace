@@ -137,30 +137,32 @@ div.img-div {
 }
 
 .pcard {
-  background-color: rgb(255, 255, 255);
-  border-radius: 7px;
-  border: none;
-  box-shadow: 1px 1px 12px rgb(233, 233, 233);
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  border-radius: 12px;
+  border: 1px solid rgba(49, 130, 206, 0.1);
+  box-shadow: 0 4px 20px rgba(49, 130, 206, 0.08);
   transition: all 0.3s ease;
   height: 483px;
 }
 
 .pcard:hover {
-  transform: translateY(-5px);
-  box-shadow: 1px 1px 15px rgb(216, 216, 216);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(49, 130, 206, 0.15);
+  border-color: rgba(49, 130, 206, 0.2);
 }
 
 .pcard-dark {
-  border-radius: 7px;
-  border: none;
-  background-color: #30363a !important;
+  border-radius: 12px;
+  border: 1px solid rgba(99, 179, 237, 0.2);
+  background: linear-gradient(145deg, #2d3748, #1a202c) !important;
   transition: all 0.3s ease;
   height: 483px;
 }
 
 .pcard-dark:hover {
-  transform: translateY(-5px);
-  box-shadow: 1px 1px 12px rgb(53, 53, 53);
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(99, 179, 237, 0.2);
+  border-color: rgba(99, 179, 237, 0.3);
 }
 
 .pcard-body {
@@ -189,27 +191,37 @@ div.img-div {
 }
 
 .badge {
-  background-color: rgb(211, 227, 233);
-  transition: all 0.5s;
+  background: linear-gradient(135deg, #e6f3ff, #cce7ff);
+  color: #2c5282;
+  border: 1px solid rgba(49, 130, 206, 0.2);
+  transition: all 0.3s ease;
   font-weight: 500;
   font-size: 13px;
 }
 
+.badge:hover {
+  background: linear-gradient(135deg, #cce7ff, #b3d9ff);
+  transform: scale(1.05);
+}
+
 .btn {
-  border-color: #669db3ff;
-  color: #669db3ff;
+  border-color: #3182ce;
+  color: #3182ce;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #669db3ff;
-  border-color: #669db3ff;
+  background-color: #3182ce;
+  border-color: #3182ce;
   color: white;
+  transform: translateY(-1px);
 }
 
 .btn:focus {
-  background-color: #669db3ff;
-  border-color: #669db3ff;
+  background-color: #3182ce;
+  border-color: #3182ce;
   color: white;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
 }
 
 .bg-dark3 {

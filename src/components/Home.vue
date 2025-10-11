@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }"
+    :class="{ 'bg-gradient-light': !nightMode, 'bg-dark': nightMode }"
     class="pt-5 p-st"
   >
     <div class="container">
@@ -126,20 +126,25 @@ img {
 }
 
 .btn {
-  border-color: #669db3ff;
-  color: #669db3ff;
+  border-color: #3182ce;
+  color: #3182ce;
+  background-color: transparent;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #669db3ff;
-  border-color: #669db3ff;
+  background-color: #3182ce;
+  border-color: #3182ce;
   color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
 }
 
 .btn:focus {
-  background-color: #669db3ff;
-  border-color: #669db3ff;
+  background-color: #3182ce;
+  border-color: #3182ce;
   color: white;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
 }
 
 .btn:focus {
@@ -158,12 +163,18 @@ p {
 }
 
 .contact-info a {
-  color: #669db3ff;
+  color: #3182ce;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .contact-info a:hover {
   text-decoration: underline;
+  color: #2c5282;
+}
+
+.bg-gradient-light {
+  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 50%, #e2e8f0 100%);
 }
 
 /* LEAVES */

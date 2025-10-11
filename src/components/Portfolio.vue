@@ -2,7 +2,7 @@
   <div
     class="py-4 p-st"
     :class="{
-      'bg-light': !nightMode,
+      'bg-gradient-portfolio': !nightMode,
       'bg-dark2': nightMode,
       'text-light': nightMode,
     }"
@@ -435,20 +435,24 @@ export default {
 }
 
 .btn {
-  border-color: #669db3ff;
-  color: #669db3ff;
+  border-color: #3182ce;
+  color: #3182ce;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #669db3ff;
-  border-color: #669db3ff;
+  background-color: #3182ce;
+  border-color: #3182ce;
   color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
 }
 
 .btn:focus {
-  background-color: #669db3ff;
-  border-color: #669db3ff;
+  background-color: #3182ce;
+  border-color: #3182ce;
   color: white;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
 }
 /deep/ .vueperslides__arrow {
   outline: none !important;
@@ -457,10 +461,21 @@ export default {
 }
 
 .badge {
-  background-color: rgb(211, 227, 233);
-  transition: all 0.5s;
+  background: linear-gradient(135deg, #e6f3ff, #cce7ff);
+  color: #2c5282;
+  border: 1px solid rgba(49, 130, 206, 0.2);
+  transition: all 0.3s ease;
   font-weight: 500;
   font-size: 13px;
+}
+
+.badge:hover {
+  background: linear-gradient(135deg, #cce7ff, #b3d9ff);
+  transform: scale(1.05);
+}
+
+.bg-gradient-portfolio {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e0 100%);
 }
 
 .bg-dark4 {
