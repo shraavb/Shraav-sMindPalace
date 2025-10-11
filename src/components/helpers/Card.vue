@@ -154,7 +154,7 @@ div.img-div {
 .pcard-dark {
   border-radius: 12px;
   border: 1px solid rgba(196, 181, 253, 0.3);
-  background: linear-gradient(145deg, #1a1a2e, #16213e) !important;
+  background: linear-gradient(145deg, #0f0f23, #0a0a1a) !important;
   transition: all 0.3s ease;
   height: 483px;
 }

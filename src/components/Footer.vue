@@ -97,7 +97,7 @@ span {
 }
 
 .bg-dark .footer-gradient {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f172a 100%);
+  background: linear-gradient(135deg, #0f0f23 0%, #0a0a1a 50%, #050508 100%);
 }
 
 .bg-dark .btn {

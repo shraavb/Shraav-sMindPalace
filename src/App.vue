@@ -132,11 +132,11 @@ export default {
 }
 
 .bg-dark2 {
-  background-color: #1a1a2e !important;
+  background-color: #0f0f23 !important;
 }
 
 .bg-dark-purple {
-  background-color: #16213e !important;
+  background-color: #0a0a1a !important;
 }
 
 .text-purple-light {
