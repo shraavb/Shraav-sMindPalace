@@ -3,7 +3,7 @@
     <nav
       class="navbar navbar-expand-lg navbar-light fixed-top p-st"
       :class="{
-        'bg-light': !nightMode,
+        'navbar-gradient': !nightMode,
         'navbar-blur': navbarConfig.blur,
         'bg-dark2': nightMode,
       }"
@@ -113,6 +113,13 @@ export default {
 <style scoped>
 .nav-link {
   font-weight: 500;
+  color: #4a5568 !important;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #3182ce !important;
+  transform: translateY(-1px);
 }
 
 button {
@@ -126,12 +133,17 @@ button:hover {
 }
 
 nav {
-  border-bottom: 1px solid rgba(160, 159, 159, 0.336);
+  border-bottom: 1px solid rgba(49, 130, 206, 0.2);
   position: fixed !important;
+  box-shadow: 0 2px 10px rgba(49, 130, 206, 0.1);
+}
+
+.navbar-gradient {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%);
 }
 
 .navbar-blur {
-  background-color: #ffffff7e;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 50%, rgba(241, 245, 249, 0.7) 100%);
   backdrop-filter: blur(12px);
 }
 </style>

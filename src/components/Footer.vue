@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-secondary">
+  <div class="footer-gradient">
     <div class="container py-3">
       <div class="row pt-1 align-items-center">
         <div
@@ -71,20 +71,29 @@ span {
 }
 
 .btn {
-  border-color: white;
-  color: white;
+  border-color: #63b3ed;
+  color: #63b3ed;
+  background-color: transparent;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: white;
-  border-color: white;
-  color: gray;
+  background-color: #63b3ed;
+  border-color: #63b3ed;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(99, 179, 237, 0.3);
 }
 
 .btn:focus {
-  background-color: white;
-  border-color: white;
-  color: gray;
+  background-color: #63b3ed;
+  border-color: #63b3ed;
+  color: white;
+  box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.2);
+}
+
+.footer-gradient {
+  background: linear-gradient(135deg, #2c5282 0%, #3182ce 50%, #63b3ed 100%);
 }
 
 @media screen and (max-width: 580px) {
