@@ -479,7 +479,18 @@ export default {
 }
 
 .bg-dark4 {
-  background-color: #494e55 !important;
+  background-color: #1a1a2e !important;
+}
+
+.bg-dark .badge {
+  background: linear-gradient(135deg, rgba(196, 181, 253, 0.2), rgba(124, 58, 237, 0.1));
+  color: #c4b5fd;
+  border: 1px solid rgba(196, 181, 253, 0.3);
+}
+
+.bg-dark .badge:hover {
+  background: linear-gradient(135deg, rgba(196, 181, 253, 0.3), rgba(124, 58, 237, 0.2));
+  transform: scale(1.05);
 }
 
 .date {

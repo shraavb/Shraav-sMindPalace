@@ -96,6 +96,22 @@ span {
   background: linear-gradient(135deg, #553c9a 0%, #805ad5 50%, #b794f6 100%);
 }
 
+.bg-dark .footer-gradient {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f172a 100%);
+}
+
+.bg-dark .btn {
+  border-color: #c4b5fd;
+  color: #c4b5fd;
+}
+
+.bg-dark .btn:hover {
+  background-color: #c4b5fd;
+  border-color: #c4b5fd;
+  color: #1a1a2e;
+  box-shadow: 0 4px 12px rgba(196, 181, 253, 0.3);
+}
+
 @media screen and (max-width: 580px) {
   .pbelow {
     padding-bottom: 20px;

@@ -153,16 +153,16 @@ div.img-div {
 
 .pcard-dark {
   border-radius: 12px;
-  border: 1px solid rgba(183, 148, 246, 0.2);
-  background: linear-gradient(145deg, #2d3748, #1a202c) !important;
+  border: 1px solid rgba(196, 181, 253, 0.3);
+  background: linear-gradient(145deg, #1a1a2e, #16213e) !important;
   transition: all 0.3s ease;
   height: 483px;
 }
 
 .pcard-dark:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 30px rgba(183, 148, 246, 0.2);
-  border-color: rgba(183, 148, 246, 0.3);
+  box-shadow: 0 8px 30px rgba(196, 181, 253, 0.25);
+  border-color: rgba(196, 181, 253, 0.4);
 }
 
 .pcard-body {

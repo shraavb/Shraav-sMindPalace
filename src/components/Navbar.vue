@@ -146,4 +146,18 @@ nav {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 50%, rgba(241, 245, 249, 0.7) 100%);
   backdrop-filter: blur(12px);
 }
+
+.bg-dark2 .nav-link {
+  color: #e2e8f0 !important;
+}
+
+.bg-dark2 .nav-link:hover {
+  color: #c4b5fd !important;
+}
+
+.bg-dark2 {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f172a 100%) !important;
+  border-bottom-color: rgba(196, 181, 253, 0.2) !important;
+  box-shadow: 0 2px 10px rgba(196, 181, 253, 0.1) !important;
+}
 </style>
