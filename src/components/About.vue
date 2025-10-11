@@ -2,7 +2,7 @@
   <div
     class="py-4 p-st"
     :class="{
-      'bg-light': !nightMode,
+      'bg-white': !nightMode,
       'bg-dark2': nightMode,
       'text-light': nightMode,
     }"
