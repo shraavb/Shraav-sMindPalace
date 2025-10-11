@@ -72,11 +72,11 @@ export default {
 }
 
 .skill-item:hover {
-  background: linear-gradient(135deg, rgba(49, 130, 206, 0.08), rgba(128, 90, 213, 0.05));
+  background: linear-gradient(135deg, rgba(128, 90, 213, 0.08), rgba(183, 148, 246, 0.05));
   padding-left: 15px;
   padding-right: 15px;
   border-radius: 12px;
-  border-left: 4px solid #3182ce;
+  border-left: 4px solid #805ad5;
 }
 
 .skill-item:last-child {
@@ -108,7 +108,7 @@ export default {
 }
 
 .fa, .fas {
-  color: #3182ce;
+  color: #805ad5;
   font-size: 24px;
   width: 24px;
   text-align: center;
@@ -118,7 +118,7 @@ export default {
 .skill-item:hover .fa,
 .skill-item:hover .fas {
   transform: scale(1.2);
-  color: #805ad5;
+  color: #b794f6;
 }
 
 /* Dark mode styles */
@@ -139,7 +139,7 @@ export default {
 }
 
 .bg-dark .fa, .bg-dark .fas {
-  color: #63b3ed;
+  color: #b794f6;
 }
 
 .bg-gradient-skills {

@@ -118,7 +118,7 @@ export default {
 }
 
 .nav-link:hover {
-  color: #3182ce !important;
+  color: #805ad5 !important;
   transform: translateY(-1px);
 }
 
@@ -133,9 +133,9 @@ button:hover {
 }
 
 nav {
-  border-bottom: 1px solid rgba(49, 130, 206, 0.2);
+  border-bottom: 1px solid rgba(128, 90, 213, 0.2);
   position: fixed !important;
-  box-shadow: 0 2px 10px rgba(49, 130, 206, 0.1);
+  box-shadow: 0 2px 10px rgba(128, 90, 213, 0.1);
 }
 
 .navbar-gradient {

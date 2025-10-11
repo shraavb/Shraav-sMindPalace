@@ -71,29 +71,29 @@ span {
 }
 
 .btn {
-  border-color: #63b3ed;
-  color: #63b3ed;
+  border-color: #b794f6;
+  color: #b794f6;
   background-color: transparent;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #63b3ed;
-  border-color: #63b3ed;
+  background-color: #b794f6;
+  border-color: #b794f6;
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(99, 179, 237, 0.3);
+  box-shadow: 0 4px 12px rgba(183, 148, 246, 0.3);
 }
 
 .btn:focus {
-  background-color: #63b3ed;
-  border-color: #63b3ed;
+  background-color: #b794f6;
+  border-color: #b794f6;
   color: white;
-  box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.2);
+  box-shadow: 0 0 0 3px rgba(183, 148, 246, 0.2);
 }
 
 .footer-gradient {
-  background: linear-gradient(135deg, #2c5282 0%, #3182ce 50%, #63b3ed 100%);
+  background: linear-gradient(135deg, #553c9a 0%, #805ad5 50%, #b794f6 100%);
 }
 
 @media screen and (max-width: 580px) {

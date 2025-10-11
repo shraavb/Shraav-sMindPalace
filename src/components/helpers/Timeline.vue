@@ -83,15 +83,15 @@ export default {
 }
 
 .badge {
-  background: linear-gradient(135deg, #e6f3ff, #cce7ff);
-  color: #2c5282;
-  border: 1px solid rgba(49, 130, 206, 0.2);
+  background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
+  color: #553c9a;
+  border: 1px solid rgba(128, 90, 213, 0.2);
   transition: all 0.3s ease;
   font-weight: 500;
 }
 
 .badge:hover {
-  background: linear-gradient(135deg, #cce7ff, #b3d9ff);
+  background: linear-gradient(135deg, #e9d5ff, #ddd6fe);
   transform: scale(1.05);
 }
 
@@ -106,7 +106,7 @@ ul.timeline {
 }
 ul.timeline:before {
   content: " ";
-  background: linear-gradient(180deg, #3182ce, #63b3ed);
+  background: linear-gradient(180deg, #805ad5, #b794f6);
   display: inline-block;
   position: absolute;
   left: 29px;
@@ -122,7 +122,7 @@ ul.timeline > li {
 }
 ul.timeline > li:before {
   content: " ";
-  background: linear-gradient(135deg, #3182ce, #63b3ed);
+  background: linear-gradient(135deg, #805ad5, #b794f6);
   display: inline-block;
   position: absolute;
   border-radius: 50%;
@@ -131,7 +131,7 @@ ul.timeline > li:before {
   width: 20px;
   height: 20px;
   z-index: 400;
-  box-shadow: 0 2px 8px rgba(49, 130, 206, 0.3);
+  box-shadow: 0 2px 8px rgba(128, 90, 213, 0.3);
 }
 
 .bg-dark2 {

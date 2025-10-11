@@ -126,25 +126,25 @@ img {
 }
 
 .btn {
-  border-color: #3182ce;
-  color: #3182ce;
+  border-color: #805ad5;
+  color: #805ad5;
   background-color: transparent;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #3182ce;
-  border-color: #3182ce;
+  background-color: #805ad5;
+  border-color: #805ad5;
   color: white;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
+  box-shadow: 0 4px 12px rgba(128, 90, 213, 0.3);
 }
 
 .btn:focus {
-  background-color: #3182ce;
-  border-color: #3182ce;
+  background-color: #805ad5;
+  border-color: #805ad5;
   color: white;
-  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+  box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.2);
 }
 
 .btn:focus {
@@ -163,14 +163,14 @@ p {
 }
 
 .contact-info a {
-  color: #3182ce;
+  color: #805ad5;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .contact-info a:hover {
   text-decoration: underline;
-  color: #2c5282;
+  color: #553c9a;
 }
 
 .bg-gradient-light {

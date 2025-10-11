@@ -139,21 +139,21 @@ div.img-div {
 .pcard {
   background: linear-gradient(145deg, #ffffff, #f8fafc);
   border-radius: 12px;
-  border: 1px solid rgba(49, 130, 206, 0.1);
-  box-shadow: 0 4px 20px rgba(49, 130, 206, 0.08);
+  border: 1px solid rgba(128, 90, 213, 0.1);
+  box-shadow: 0 4px 20px rgba(128, 90, 213, 0.08);
   transition: all 0.3s ease;
   height: 483px;
 }
 
 .pcard:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 30px rgba(49, 130, 206, 0.15);
-  border-color: rgba(49, 130, 206, 0.2);
+  box-shadow: 0 8px 30px rgba(128, 90, 213, 0.15);
+  border-color: rgba(128, 90, 213, 0.2);
 }
 
 .pcard-dark {
   border-radius: 12px;
-  border: 1px solid rgba(99, 179, 237, 0.2);
+  border: 1px solid rgba(183, 148, 246, 0.2);
   background: linear-gradient(145deg, #2d3748, #1a202c) !important;
   transition: all 0.3s ease;
   height: 483px;
@@ -161,8 +161,8 @@ div.img-div {
 
 .pcard-dark:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 30px rgba(99, 179, 237, 0.2);
-  border-color: rgba(99, 179, 237, 0.3);
+  box-shadow: 0 8px 30px rgba(183, 148, 246, 0.2);
+  border-color: rgba(183, 148, 246, 0.3);
 }
 
 .pcard-body {
@@ -191,37 +191,37 @@ div.img-div {
 }
 
 .badge {
-  background: linear-gradient(135deg, #e6f3ff, #cce7ff);
-  color: #2c5282;
-  border: 1px solid rgba(49, 130, 206, 0.2);
+  background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
+  color: #553c9a;
+  border: 1px solid rgba(128, 90, 213, 0.2);
   transition: all 0.3s ease;
   font-weight: 500;
   font-size: 13px;
 }
 
 .badge:hover {
-  background: linear-gradient(135deg, #cce7ff, #b3d9ff);
+  background: linear-gradient(135deg, #e9d5ff, #ddd6fe);
   transform: scale(1.05);
 }
 
 .btn {
-  border-color: #3182ce;
-  color: #3182ce;
+  border-color: #805ad5;
+  color: #805ad5;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #3182ce;
-  border-color: #3182ce;
+  background-color: #805ad5;
+  border-color: #805ad5;
   color: white;
   transform: translateY(-1px);
 }
 
 .btn:focus {
-  background-color: #3182ce;
-  border-color: #3182ce;
+  background-color: #805ad5;
+  border-color: #805ad5;
   color: white;
-  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+  box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.2);
 }
 
 .bg-dark3 {

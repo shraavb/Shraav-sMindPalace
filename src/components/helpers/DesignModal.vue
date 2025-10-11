@@ -216,38 +216,38 @@ a:hover {
 }
 
 .badge {
-  background: linear-gradient(135deg, #e6f3ff, #cce7ff);
-  color: #2c5282;
-  border: 1px solid rgba(49, 130, 206, 0.2);
+  background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
+  color: #553c9a;
+  border: 1px solid rgba(128, 90, 213, 0.2);
   transition: all 0.3s ease;
   font-weight: 500;
 }
 
 .badge:hover {
-  background: linear-gradient(135deg, #cce7ff, #b3d9ff);
+  background: linear-gradient(135deg, #e9d5ff, #ddd6fe);
   transform: scale(1.05);
-  box-shadow: 0 2px 8px rgba(49, 130, 206, 0.2);
+  box-shadow: 0 2px 8px rgba(128, 90, 213, 0.2);
 }
 
 .btn {
-  border-color: #3182ce;
-  color: #3182ce;
+  border-color: #805ad5;
+  color: #805ad5;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #3182ce;
-  border-color: #3182ce;
+  background-color: #805ad5;
+  border-color: #805ad5;
   color: white;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
+  box-shadow: 0 4px 12px rgba(128, 90, 213, 0.3);
 }
 
 .btn:focus {
-  background-color: #3182ce;
-  border-color: #3182ce;
+  background-color: #805ad5;
+  border-color: #805ad5;
   color: white;
-  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+  box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.2);
 }
 
 .bg-dark4 {

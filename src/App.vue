@@ -108,15 +108,15 @@ export default {
 }
 
 .pblue {
-  color: #3182ce;
+  color: #805ad5;
 }
 
 .pblue-light {
-  color: #63b3ed;
+  color: #b794f6;
 }
 
 .pblue-dark {
-  color: #2c5282;
+  color: #553c9a;
 }
 
 .purple {
