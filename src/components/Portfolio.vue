@@ -476,7 +476,7 @@ export default {
 
 
 .bg-dark4 {
-  background-color: #000000 !important;
+  background-color: #1a1a2e !important;
 }
 
 .bg-dark .badge {

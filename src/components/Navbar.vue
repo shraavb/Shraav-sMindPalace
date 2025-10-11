@@ -152,7 +152,7 @@ nav {
 }
 
 .bg-dark2 {
-  background-color: #000000 !important;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f172a 100%) !important;
   border-bottom-color: rgba(196, 181, 253, 0.2) !important;
   box-shadow: 0 2px 10px rgba(196, 181, 253, 0.1) !important;
 }
