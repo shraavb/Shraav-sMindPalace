@@ -124,6 +124,21 @@ let info = {
   ],
   portfolio: [
     {
+      name: "OpenAPS - Embedded Systems for Closed-Loop Insulin Control",
+      pictures: [
+        {
+          img: require("./assets/jetbot_jetson_nano.jpg")
+        }
+      ],
+      technologies: ["C++", "Arduino", "FreeRTOS", "MQTT", "Embedded Systems"],
+      category: "Embedded Systems",
+      date: "Oct 2025",
+      github: "https://github.com/jimmyyu123/CIS541OpenAPS_proj_Steady_State",
+      visit: "",
+      description:
+        "Built an embedded control system on Arduino Nano to simulate insulin dosing logic in a virtual patient loop. Implemented real-time CGM ingestion & insulin publishing pipeline via digital twins, coordinating asynchronous tasks using FreeRTOS and MQTT communication protocols."
+    },
+    {
       name: "JetBot w/ JetsonNano <span class='badge badge-warning ml-2'>in-progress</span>",
       pictures: [
         {
