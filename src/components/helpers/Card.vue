@@ -141,13 +141,12 @@ div.img-div {
   border-radius: 7px;
   border: none;
   box-shadow: 1px 1px 12px rgb(233, 233, 233);
-  transition: all 0.5s;
+  transition: all 0.3s ease;
   height: 483px;
 }
 
 .pcard:hover {
-  transition: all 0.5s;
-  /* cursor: pointer; */
+  transform: translateY(-5px);
   box-shadow: 1px 1px 15px rgb(216, 216, 216);
 }
 
@@ -155,14 +154,12 @@ div.img-div {
   border-radius: 7px;
   border: none;
   background-color: #30363a !important;
-  /* box-shadow: 1px 1px 12px rgb(53, 53, 53); */
-  transition: all 0.5s;
+  transition: all 0.3s ease;
   height: 483px;
 }
 
 .pcard-dark:hover {
-  transition: all 0.5s;
-  /* cursor: pointer; */
+  transform: translateY(-5px);
   box-shadow: 1px 1px 12px rgb(53, 53, 53);
 }
 

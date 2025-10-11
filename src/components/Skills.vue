@@ -67,6 +67,14 @@ export default {
   justify-content: space-between;
   padding: 15px 0;
   border-bottom: 1px solid #e0e0e0;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  background-color: rgba(102, 157, 179, 0.05);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 8px;
 }
 
 .skill-item:last-child {
@@ -102,11 +110,22 @@ export default {
   font-size: 24px;
   width: 24px;
   text-align: center;
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover .fa,
+.skill-item:hover .fas {
+  transform: scale(1.1);
+  color: #669db3ff;
 }
 
 /* Dark mode styles */
 .bg-dark .skill-item {
   border-bottom-color: #444;
+}
+
+.bg-dark .skill-item:hover {
+  background-color: rgba(102, 157, 179, 0.1);
 }
 
 .bg-dark .skill-category {
