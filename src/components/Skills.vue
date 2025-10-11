@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'bg-light': !nightMode, 'bg-dark': nightMode }" class="p-st" style="padding-bottom: 60px;">
+  <div :class="{ 'bg-light': !nightMode, 'bg-dark': nightMode }" class="py-4 p-st" style="padding-bottom: 60px;">
     <div class="container">
       <div class="text-center">
         <span
