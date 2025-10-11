@@ -5,8 +5,8 @@
   >
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center">
-          <img :src="picture" />
+        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center d-flex align-items-center justify-content-center">
+          <img :src="picture" class="avatar-image" />
         </div>
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pt-5">
           <span
@@ -99,8 +99,14 @@ export default {
 
 img {
   max-width: 300px;
-  margin-top: 60px;
-  transform: rotateY(180deg);
+  margin-top: 0;
+  transform: none;
+}
+
+.avatar-image {
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
 }
 
 @media only screen and (max-width: 580px) {

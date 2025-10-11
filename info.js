@@ -1,6 +1,6 @@
 let info = {
   logo_name: "shraav",
-  flat_picture: require("./assets/shraav_avatar.svg"),
+  flat_picture: require("./assets/shraav_avatar.png"),
   config: {
     use_cookies: true,
     navbar: {
