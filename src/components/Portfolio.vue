@@ -2,7 +2,7 @@
   <div
     class="py-4 p-st"
     :class="{
-      'bg-gradient-portfolio': !nightMode,
+      'bg-white': !nightMode,
       'bg-dark2': nightMode,
       'text-light': nightMode,
     }"
@@ -474,12 +474,9 @@ export default {
   transform: scale(1.05);
 }
 
-.bg-gradient-portfolio {
-  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 50%, #cbd5e0 100%);
-}
 
 .bg-dark4 {
-  background-color: #1a1a2e !important;
+  background-color: #000000 !important;
 }
 
 .bg-dark .badge {

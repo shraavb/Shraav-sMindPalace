@@ -251,7 +251,7 @@ a:hover {
 }
 
 .bg-dark4 {
-  background-color: #1a1a2e !important;
+  background-color: #000000 !important;
 }
 
 .bg-dark .badge {

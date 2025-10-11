@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'bg-gradient-skills': !nightMode, 'bg-dark': nightMode }" class="py-4 p-st" style="padding-bottom: 60px;">
+  <div :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }" class="py-4 p-st" style="padding-bottom: 60px;">
     <div class="container">
       <div class="text-center">
         <span
@@ -143,9 +143,6 @@ export default {
   color: #c4b5fd;
 }
 
-.bg-gradient-skills {
-  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 50%, #cbd5e0 100%);
-}
 
 /* Responsive design */
 @media screen and (max-width: 768px) {

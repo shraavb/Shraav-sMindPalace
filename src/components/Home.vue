@@ -1,6 +1,6 @@
 <template>
   <div
-    :class="{ 'bg-gradient-light': !nightMode, 'bg-dark': nightMode }"
+    :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }"
     class="pt-5 p-st"
   >
     <div class="container">
@@ -173,9 +173,6 @@ p {
   color: #553c9a;
 }
 
-.bg-gradient-light {
-  background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 50%, #e2e8f0 100%);
-}
 
 /* LEAVES */
 </style>

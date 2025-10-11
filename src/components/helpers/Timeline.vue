@@ -135,7 +135,7 @@ ul.timeline > li:before {
 }
 
 .bg-dark2 {
-  background-color: #1a1a2e !important;
+  background-color: #000000 !important;
 }
 
 .bg-dark .badge {

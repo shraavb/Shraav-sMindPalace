@@ -3,7 +3,7 @@
     <nav
       class="navbar navbar-expand-lg navbar-light fixed-top p-st"
       :class="{
-        'navbar-gradient': !nightMode,
+        'bg-white': !nightMode,
         'navbar-blur': navbarConfig.blur,
         'bg-dark2': nightMode,
       }"
@@ -138,12 +138,8 @@ nav {
   box-shadow: 0 2px 10px rgba(128, 90, 213, 0.1);
 }
 
-.navbar-gradient {
-  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 50%, #f1f5f9 100%);
-}
-
 .navbar-blur {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.8) 50%, rgba(241, 245, 249, 0.7) 100%);
+  background-color: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
 }
 
@@ -156,7 +152,7 @@ nav {
 }
 
 .bg-dark2 {
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f172a 100%) !important;
+  background-color: #000000 !important;
   border-bottom-color: rgba(196, 181, 253, 0.2) !important;
   box-shadow: 0 2px 10px rgba(196, 181, 253, 0.1) !important;
 }
