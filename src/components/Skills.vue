@@ -1,12 +1,7 @@
 <template>
   <div :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }" class="p-st">
     <div class="container">
-      <div
-        class="text-center"
-        data-aos="fade"
-        data-aos-once="true"
-        data-aos-duration="1000"
-      >
+      <div class="text-center">
         <span
           class="title text-center"
           :class="{ pgray: !nightMode, 'text-light': nightMode }"
@@ -18,27 +13,19 @@
         :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
       />
       <br />
-      <div class="row">
+      <div class="skills-list">
         <div
-          class="col-xl-4 col-bg-4 col-md-4 col-sm-12 text-center pb-5 px-4"
-          v-for="(skill, idx) in skills"
+          class="skill-item"
+          v-for="skill in skills"
           :key="skill.title"
-          data-aos="fade-up"
-          data-aos-offset="10"
-          data-aos-delay="30"
-          :style="{ 'transition-delay': idx / 4.2 + 's' }"
-          data-aos-duration="500"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="true"
         >
-          <div class="bg-div"><i :class="skill.icon"></i></div>
-          <div class="title2 pt-2">{{ skill.title }}</div>
-          <hr
-            width="50%"
-            :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
-          />
-          <span class="title3">{{ skill.info.join(", ") }}</span>
+          <div class="skill-left">
+            <i :class="skill.icon"></i>
+            <span class="skill-category">{{ skill.title }}</span>
+          </div>
+          <div class="skill-right">
+            <span class="skill-tech">{{ skill.info.join(", ") }}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -68,31 +55,92 @@ export default {
   font-size: 30px;
   font-weight: 500;
 }
-.title1 {
-  font-size: 24px;
-  font-weight: 400;
+
+.skills-list {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.title2 {
-  font-size: 20px;
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.skill-item:last-child {
+  border-bottom: none;
+}
+
+.skill-left {
+  display: flex;
+  align-items: center;
+  flex: 0 0 200px;
+}
+
+.skill-right {
+  flex: 1;
+  text-align: right;
+}
+
+.skill-category {
+  font-size: 18px;
   font-weight: 500;
+  margin-left: 15px;
+  text-transform: capitalize;
 }
 
-.title3 {
+.skill-tech {
   font-size: 16px;
   font-weight: 400;
+  color: #666;
 }
 
-.fa {
-  color: rgb(212, 149, 97);
-  font-size: 40px;
-  transition: all 0.5s;
+.fa, .fas {
+  color: #669db3ff;
+  font-size: 24px;
+  width: 24px;
+  text-align: center;
 }
 
-.fas {
-  color: rgb(212, 149, 97);
-  font-size: 40px;
-  /* font-weight: bold; */
-  transition: all 0.5s;
+/* Dark mode styles */
+.bg-dark .skill-item {
+  border-bottom-color: #444;
+}
+
+.bg-dark .skill-category {
+  color: #d3d2d2;
+}
+
+.bg-dark .skill-tech {
+  color: #a0a0a0;
+}
+
+.bg-dark .fa, .bg-dark .fas {
+  color: #669db3ff;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .skill-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0;
+  }
+  
+  .skill-left {
+    flex: none;
+    margin-bottom: 10px;
+  }
+  
+  .skill-right {
+    text-align: left;
+    width: 100%;
+  }
+  
+  .skill-category {
+    margin-left: 10px;
+  }
 }
 </style>
