@@ -141,7 +141,7 @@ img {
 }
 
 p {
-  text-align: justify;
+  text-align: left;
   font-weight: 400;
 }
 

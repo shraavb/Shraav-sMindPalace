@@ -82,7 +82,7 @@ export default {
   font-size: 18px;
   font-weight: 400;
   font-style: italic;
-  text-align: justify;
+  text-align: left;
 }
 
 .title3 {

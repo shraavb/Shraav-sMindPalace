@@ -42,7 +42,7 @@
               >
             </div>
 
-            <div style="text-align: justify;">
+            <div style="text-align: left;">
               <span v-html="portfolio.description"></span>
             </div>
             <hr />
