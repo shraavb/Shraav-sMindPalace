@@ -89,13 +89,13 @@ let info = {
     },
     {
       title: "web technologies",
-      info: ["Vue", "Angular", "React", "Node", "Flask", "HTML", "CSS"],
+      info: ["JavaScript", "React", "Node", "Flask", "HTML", "CSS"],
       icon: "fas fa-laptop-code"
     },
     {
-      title: "databases",
-      info: ["MongoDB", "MySQL", "OracleSQL", "Neo4j"],
-      icon: "fa fa-database"
+      title: "ai tools",
+      info: ["Cursor", "Lovable"],
+      icon: "fas fa-robot"
     },
     {
       title: "operating systems & tools",
