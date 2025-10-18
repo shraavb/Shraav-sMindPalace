@@ -124,6 +124,21 @@ let info = {
   ],
   portfolio: [
     {
+      name: "SpeakEasy V2: Advanced Language Learning Platform <span class='badge badge-warning ml-2'>in-progress</span>",
+      pictures: [
+        {
+          img: require("./assets/SpeakEasy_Master_Conversational_Fluency.png")
+        }
+      ],
+      technologies: ["Lovable", "AI Integration", "Advanced NLP", "Real-time Feedback", "Conversation Simulation"],
+      category: "Web Application",
+      date: "Aug 2025 - Present",
+      github: "",
+      visit: "https://senior-design-speakeasy.lovable.app",
+      description:
+        "Web platform for advanced language learners. Features sophisticated conversation simulation. This is a Senior Design Project. We intend on incorporating real-time pronunciation feedback, and contextual learning scenarios. Built using Lovable."
+    },
+    {
       name: "OpenAPS - Embedded Systems for Closed-Loop Insulin Control",
       pictures: [
         {
@@ -154,23 +169,6 @@ let info = {
         "Building an autonomous robot using NVIDIA's JetBot platform with Jetson Nano. Implementing computer vision algorithms for object detection and autonomous navigation, exploring the intersection of robotics and artificial intelligence."
     },
     {
-      name: "Human Computer Interaction Research",
-      pictures: [
-        {
-          img: require("./assets/proj1_anonymity_research.png"),
-          pdf: "Unmasking_Social_Media_Accountability___Short_Paper.pdf"
-        }
-      ],
-      presentation: "IFoRE_Twitter.pdf",
-      technologies: ["X API", "Python", "Vader", "Sentiment Analysis"],
-      category: "",
-      date: "Sep 2022 – Jun 2024 • Academic Research",
-      github: "",
-      visit: "",
-      description:
-        "Explored how user anonymity influences tweet sentiment and polarization during the COVID-19 pandemic. Following nine months of refinement, we engaged with HCI academics and submitted our findings to journals for publication."
-    },
-    {
       name: "Predicting Underdog Wins",
       pictures: [
         {
@@ -186,7 +184,7 @@ let info = {
         "Developed an ML model to predict upsets in tennis matches based on player statistics and tournament details."
     },
     {
-      name: "Bridge: Multi-Modal Language Learning Tool",
+      name: "Bridge V1: Multi-Modal Language Learning Tool",
       pictures: [
         {
           img: require("./assets/Dev_Proj3_Bridge.png")
@@ -201,19 +199,21 @@ let info = {
         "Developed a tool for language learning using multimodal information. The tool adapts to different scenarios, including business, casual conversation with friends, and dating contexts. Leveraged prompting techniques to optimize the use of LLMs."
     },
     {
-      name: "SpeakEasy: Advanced Language Learning Platform",
+      name: "Human Computer Interaction Research",
       pictures: [
         {
-          img: require("./assets/SpeakEasy_Master_Conversational_Fluency.png")
+          img: require("./assets/proj1_anonymity_research.png"),
+          pdf: "Unmasking_Social_Media_Accountability___Short_Paper.pdf"
         }
       ],
-      technologies: ["Lovable", "AI Integration", "Advanced NLP", "Real-time Feedback", "Conversation Simulation"],
-      category: "Web Application",
-      date: "Aug 2025 - Present",
+      presentation: "IFoRE_Twitter.pdf",
+      technologies: ["X API", "Python", "Vader", "Sentiment Analysis"],
+      category: "",
+      date: "Sep 2022 – Jun 2024 • Academic Research",
       github: "",
-      visit: "https://senior-design-speakeasy.lovable.app",
+      visit: "",
       description:
-        "Web platform for advanced language learners. Features sophisticated conversation simulation. This is a Senior Design Project. We intend on incorporating real-time pronunciation feedback, and contextual learning scenarios. Built using Lovable."
+        "Explored how user anonymity influences tweet sentiment and polarization during the COVID-19 pandemic. Following nine months of refinement, we engaged with HCI academics and submitted our findings to journals for publication."
     }
   ],
   portfolio_design: [
