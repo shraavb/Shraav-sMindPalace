@@ -211,11 +211,18 @@ div.img-div {
 }
 
 .badge-warning {
-  background: linear-gradient(135deg, #fef3c7, #fde68a) !important;
-  color: #92400e !important;
-  border: 1px solid rgba(245, 158, 11, 0.3) !important;
-  font-weight: 600 !important;
-  font-size: 12px !important;
+  background: linear-gradient(135deg, #f3e8ff, #e9d5ff) !important;
+  color: #553c9a !important;
+  border: 1px solid rgba(128, 90, 213, 0.2) !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  transition: all 0.3s ease !important;
+}
+
+.badge-warning:hover {
+  background: linear-gradient(135deg, #e9d5ff, #ddd6fe) !important;
+  transform: scale(1.05) !important;
+  box-shadow: 0 2px 8px rgba(128, 90, 213, 0.2) !important;
 }
 
 .btn {
