@@ -53,19 +53,29 @@
           </button>
           <button
             href="#"
-            class="btn-sm btn btn-outline-secondary no-outline ml-2"
+            :class="[
+              'btn-sm btn no-outline ml-2',
+              portfolio.name.includes('in-progress') 
+                ? 'btn-warning btn-outline-warning' 
+                : 'btn-outline-secondary'
+            ]"
             v-if="portfolio.visit"
             @click.prevent="open(portfolio.visit)"
           >
-            visit project
+            {{ portfolio.name.includes('in-progress') ? 'try demo' : 'visit project' }}
           </button>
           <button
             href="#"
-            class="btn-sm btn btn-outline-secondary no-outline ml-2"
+            :class="[
+              'btn-sm btn no-outline ml-2',
+              portfolio.name.includes('in-progress') 
+                ? 'btn-outline-info' 
+                : 'btn-outline-secondary'
+            ]"
             v-if="portfolio.github"
             @click.prevent="open(portfolio.github)"
           >
-            repo
+            {{ portfolio.name.includes('in-progress') ? 'view code' : 'repo' }}
           </button>
         </div>
       </div>
@@ -234,6 +244,48 @@ div.img-div {
   border-color: #805ad5;
   color: white;
   box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.2);
+}
+
+.btn-outline-warning {
+  border-color: #f59e0b;
+  color: #f59e0b;
+  background-color: transparent;
+}
+
+.btn-outline-warning:hover {
+  background-color: #f59e0b;
+  border-color: #f59e0b;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.btn-outline-warning:focus {
+  background-color: #f59e0b;
+  border-color: #f59e0b;
+  color: white;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+}
+
+.btn-outline-info {
+  border-color: #3b82f6;
+  color: #3b82f6;
+  background-color: transparent;
+}
+
+.btn-outline-info:hover {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.btn-outline-info:focus {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
 }
 
 .bg-dark3 {
