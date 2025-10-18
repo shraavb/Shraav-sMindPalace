@@ -18,7 +18,11 @@
         />
       </div>
       <div class="card-body pborder-top">
-        <h5 class="title2" v-html="portfolio.name"></h5>
+        <!-- Extract in-progress tag and place above title -->
+        <div v-if="portfolio.name.includes('in-progress')" class="mb-2">
+          <span class="badge badge-warning">in-progress</span>
+        </div>
+        <h5 class="title2" v-html="portfolio.name.replace(' <span class=\'badge badge-warning ml-2\'>in-progress</span>', '')"></h5>
         <div>
           <div class="pb-1 bheight">
             <span
@@ -30,7 +34,7 @@
             >
           </div>
           <p
-            class="title3 m-0 pb-2 pheight pt-1"
+            class="title3 m-0 pb-3 pheight pt-1"
             v-html="
               portfolio.description.length > 100
                 ? portfolio.description.substring(0, 105) + '...'
@@ -39,7 +43,7 @@
           >
           </p>
         </div>
-        <div class="text-center mt-2">
+        <div class="text-center mt-3">
           <button
             href=""
             class="btn-sm btn btn-outline-secondary no-outline"
@@ -202,6 +206,14 @@ div.img-div {
 .badge:hover {
   background: linear-gradient(135deg, #e9d5ff, #ddd6fe);
   transform: scale(1.05);
+}
+
+.badge-warning {
+  background: linear-gradient(135deg, #fef3c7, #fde68a) !important;
+  color: #92400e !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
 }
 
 .btn {
