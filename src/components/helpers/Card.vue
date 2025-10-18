@@ -258,10 +258,9 @@ div.img-div {
 
 .button-container .btn {
   flex: 0 0 auto;
-  min-width: 70px;
-  max-width: 90px;
-  font-size: 11px;
-  padding: 3px 6px;
+  min-width: 80px;
+  font-size: 12px;
+  padding: 4px 8px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
