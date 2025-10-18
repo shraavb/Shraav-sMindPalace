@@ -199,6 +199,21 @@ let info = {
       visit: "https://bridge-production-8580.up.railway.app",
       description:
         "Developed a tool for language learning using multimodal information. The tool adapts to different scenarios, including business, casual conversation with friends, and dating contexts. Leveraged prompting techniques to optimize the use of LLMs."
+    },
+    {
+      name: "SpeakEasy: Advanced Language Learning Platform",
+      pictures: [
+        {
+          img: require("./assets/Dev_Proj3_Bridge.png")
+        }
+      ],
+      technologies: ["Lovable", "AI Integration", "Advanced NLP", "Real-time Feedback", "Conversation Simulation"],
+      category: "Web Application",
+      date: "2025",
+      github: "",
+      visit: "https://senior-design-speakeasy.lovable.app",
+      description:
+        "Advanced iteration of language learning platform designed for proficient learners. Features sophisticated conversation simulation, real-time pronunciation feedback, and contextual learning scenarios. Built using Lovable AI platform for enhanced user experience and intelligent language assessment."
     }
   ],
   portfolio_design: [

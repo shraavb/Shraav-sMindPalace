@@ -178,7 +178,7 @@ export default {
       showDesignModal: false,
       modal_info: {},
       design_modal_info: {},
-      number: 5,
+      number: 6,
       venture_number: 3,
       showBtn: "show more",
       venture_showBtn: "show more",
