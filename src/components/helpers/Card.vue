@@ -146,7 +146,8 @@ div.img-div {
   border: 1px solid rgba(128, 90, 213, 0.1);
   box-shadow: 0 4px 20px rgba(128, 90, 213, 0.08);
   transition: all 0.3s ease;
-  height: 483px;
+  height: 520px;
+  overflow: hidden;
 }
 
 .pcard:hover {
@@ -160,7 +161,8 @@ div.img-div {
   border: 1px solid rgba(196, 181, 253, 0.3);
   background: linear-gradient(145deg, #0f0f23, #0a0a1a) !important;
   transition: all 0.3s ease;
-  height: 483px;
+  height: 520px;
+  overflow: hidden;
 }
 
 .pcard-dark:hover {
@@ -245,17 +247,23 @@ div.img-div {
 }
 
 .button-container {
-  padding: 0 10px;
+  padding: 0 15px 10px 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .button-container .btn {
   flex: 0 0 auto;
-  min-width: 80px;
-  font-size: 12px;
-  padding: 4px 8px;
+  min-width: 70px;
+  max-width: 90px;
+  font-size: 11px;
+  padding: 3px 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>
