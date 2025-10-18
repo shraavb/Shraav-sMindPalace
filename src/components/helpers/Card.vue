@@ -43,7 +43,7 @@
           >
           </p>
         </div>
-        <div class="text-center mt-2">
+        <div class="text-center mt-2 button-container">
           <button
             href=""
             class="btn-sm btn btn-outline-secondary no-outline"
@@ -53,7 +53,7 @@
           </button>
           <button
             href="#"
-            class="btn-sm btn btn-outline-secondary no-outline ml-2"
+            class="btn-sm btn btn-outline-secondary no-outline ml-1"
             v-if="portfolio.visit"
             @click.prevent="open(portfolio.visit)"
           >
@@ -61,7 +61,7 @@
           </button>
           <button
             href="#"
-            class="btn-sm btn btn-outline-secondary no-outline ml-2"
+            class="btn-sm btn btn-outline-secondary no-outline ml-1"
             v-if="portfolio.github"
             @click.prevent="open(portfolio.github)"
           >
@@ -242,5 +242,20 @@ div.img-div {
 
 .bg-dark4 {
   background-color: #494e55 !important;
+}
+
+.button-container {
+  padding: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.button-container .btn {
+  flex: 0 0 auto;
+  min-width: 80px;
+  font-size: 12px;
+  padding: 4px 8px;
 }
 </style>
