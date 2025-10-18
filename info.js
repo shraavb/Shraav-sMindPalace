@@ -204,7 +204,7 @@ let info = {
       name: "SpeakEasy: Advanced Language Learning Platform",
       pictures: [
         {
-          img: require("./assets/Dev_Proj3_Bridge.png")
+          img: require("./assets/SpeakEasy_Master_Conversational_Fluency.png")
         }
       ],
       technologies: ["Lovable", "AI Integration", "Advanced NLP", "Real-time Feedback", "Conversation Simulation"],
