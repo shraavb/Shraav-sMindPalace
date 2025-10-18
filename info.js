@@ -209,11 +209,11 @@ let info = {
       ],
       technologies: ["Lovable", "AI Integration", "Advanced NLP", "Real-time Feedback", "Conversation Simulation"],
       category: "Web Application",
-      date: "2025",
+      date: "Aug 2025 - Present",
       github: "",
       visit: "https://senior-design-speakeasy.lovable.app",
       description:
-        "Advanced iteration of language learning platform designed for proficient learners. Features sophisticated conversation simulation, real-time pronunciation feedback, and contextual learning scenarios. Built using Lovable AI platform for enhanced user experience and intelligent language assessment."
+        "Web platform for advanced language learners. Features sophisticated conversation simulation. This is a Senior Design Project. We intend on incorporating real-time pronunciation feedback, and contextual learning scenarios. Built using Lovable."
     }
   ],
   portfolio_design: [
