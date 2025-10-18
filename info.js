@@ -62,7 +62,7 @@ let info = {
   ],
   skills: [
     {
-      title: "languages",
+      title: "programming languages",
       info: [
         "Python",
         "Javascript",
