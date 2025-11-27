@@ -52,11 +52,7 @@
               <span v-html="portfolio.description"></span>
             </div>
             <hr />
-            <div>
-              <Gallery :images="portfolio.pictures" />
-            </div>
             <div v-if="portfolio.video && portfolio.video.trim() !== ''" class="mt-4">
-              <hr />
               <h5 class="mb-3" :class="{ 'text-light': nightMode }">Demo Video</h5>
               <video 
                 v-if="isLocalVideo(portfolio.video)"
@@ -77,6 +73,10 @@
                   Watch Demo Video (External Link)
                 </a>
               </div>
+            </div>
+            <div class="mt-4">
+              <hr />
+              <Gallery :images="portfolio.pictures" />
             </div>
           </div>
 
