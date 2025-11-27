@@ -134,7 +134,8 @@ let info = {
       category: "Web Application",
       date: "Aug 2025 - Present",
       github: "",
-      visit: "https://senior-design-speakeasy.lovable.app",
+      visit: "https://github.com/shraavb/-Senior-Design-SpeakEasy",
+      video: "SpeakEasy Demo V2.mov",
       description:
         "Web platform for advanced language learners. Features sophisticated conversation simulation. This is a Senior Design Project. We intend on incorporating real-time pronunciation feedback, and contextual learning scenarios. Built using Lovable."
     },

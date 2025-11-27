@@ -55,6 +55,29 @@
             <div>
               <Gallery :images="portfolio.pictures" />
             </div>
+            <div v-if="portfolio.video && portfolio.video.trim() !== ''" class="mt-4">
+              <hr />
+              <h5 class="mb-3" :class="{ 'text-light': nightMode }">Demo Video</h5>
+              <video 
+                v-if="isLocalVideo(portfolio.video)"
+                :src="getVideoUrl(portfolio.video)" 
+                controls 
+                style="width: 100%; max-height: 500px; border-radius: 7px;"
+                class="mb-3"
+              >
+                Your browser does not support the video tag.
+              </video>
+              <div v-else class="text-center mb-3">
+                <a 
+                  :href="portfolio.video" 
+                  target="_blank" 
+                  class="btn"
+                  :class="{ 'text-light': nightMode }"
+                >
+                  Watch Demo Video (External Link)
+                </a>
+              </div>
+            </div>
           </div>
 
           <div class="text-center pb-3">
@@ -89,13 +112,6 @@
               @click="openPdf(portfolio.presentation)"
             >
               {{ portfolio.category === 'Pitch Competition' ? 'Link to Pitch' : 'Link to Presentation' }}
-            </button>
-            <button 
-              v-if="portfolio.video && portfolio.video.trim() !== ''" 
-              class="btn w-25 mr-3" 
-              @click="openVideo(portfolio.video)"
-            >
-              Pitch Video
             </button>
             <button 
               v-if="portfolio.figma && portfolio.figma.trim() !== ''" 
@@ -145,11 +161,16 @@ export default {
         : `/${pdfPath}`;
       window.open(pdfUrl, "_blank");
     },
-    openVideo(videoPath) {
-      const videoUrl = process.env.NODE_ENV === 'production' 
-        ? `/Shraav-sMindPalace/${videoPath}` 
-        : `/${videoPath}`;
-      window.open(videoUrl, "_blank");
+    isLocalVideo(videoPath) {
+      // Check if it's a local file (not a URL starting with http/https)
+      return videoPath && !videoPath.startsWith('http://') && !videoPath.startsWith('https://');
+    },
+    getVideoUrl(videoPath) {
+      // Return the correct path based on environment
+      if (process.env.NODE_ENV === 'production') {
+        return `/Shraav-sMindPalace/${videoPath}`;
+      }
+      return `/${videoPath}`;
     },
   },
 };
