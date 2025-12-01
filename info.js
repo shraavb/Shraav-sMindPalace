@@ -170,6 +170,24 @@ let info = {
         "Building an autonomous robot using NVIDIA's JetBot platform with Jetson Nano. Implementing computer vision algorithms for object detection and autonomous navigation, exploring the intersection of robotics and artificial intelligence."
     },
     {
+      name: "Coral Reef Mapping Drone",
+      pictures: [
+        {
+          img: require("./assets/makerbay-coralbot.jpeg")
+        },
+        {
+          img: require("./assets/coral drone workflow.jpeg")
+        }
+      ],
+      technologies: ["Go pro", "image segmentation", "raspberry pi", "3d printing", "computer vision", "lazer cut"],
+      category: "Robotics",
+      date: "2020",
+      github: "https://github.com/MakerBay/Coral_Reef_Mapping_Drone",
+      visit: "",
+      description:
+        "An open source ocean water drone used for mapping and analyzing the health of coral reefs"
+    },
+    {
       name: "Predicting Underdog Wins",
       pictures: [
         {
