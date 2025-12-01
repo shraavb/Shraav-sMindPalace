@@ -95,6 +95,26 @@
           <br />
         </v-tab>
 
+        <v-tab title="research">
+          <br />
+          <div class="row">
+            <div
+              class="col-xl-4 col-bg-4 col-md-6 col-sm-12"
+              v-for="(research, idx) in research_info"
+              :key="research.name"
+            >
+              <Card
+                :portfolio="research"
+                @show="showModalFn"
+                :nightMode="nightMode"
+              />
+            </div>
+          </div>
+          <div class="text-center py-3" v-if="research_showBtn !== 'show less'">
+            <button class="btn" @click.prevent="showMoreResearch">{{ research_showBtn }}</button>
+          </div>
+        </v-tab>
+
         <v-tab title="venture concepts">
           <br />
           <div class="row">
@@ -168,21 +188,41 @@ export default {
   },
   data() {
     console.log('Portfolio component - info.portfolio:', info.portfolio);
+    // Filter research projects from portfolio
+    const allPortfolio = info.portfolio || [];
+    const researchProjects = allPortfolio.filter(p => 
+      (p.date && p.date.includes('Academic Research')) || 
+      (p.name && p.name.toLowerCase().includes('research')) ||
+      (p.name && p.name.toLowerCase().includes('coral reef')) ||
+      (p.github && p.github.includes('MakerBay'))
+    );
+    const developmentProjects = allPortfolio.filter(p => 
+      !((p.date && p.date.includes('Academic Research')) || 
+        (p.name && p.name.toLowerCase().includes('research')) ||
+        (p.name && p.name.toLowerCase().includes('coral reef')) ||
+        (p.github && p.github.includes('MakerBay')))
+    );
+    
     return {
-      all_info: info.portfolio || [],
+      all_info: developmentProjects,
+      all_research_info: researchProjects,
       desgin_info: info.portfolio_design || [],
       all_venture_info: info.portfolio_venture || [],
       venture_info: [],
+      research_info: [],
       portfolio_info: [],
       showModal: false,
       showDesignModal: false,
       modal_info: {},
       design_modal_info: {},
       number: 6,
+      research_number: 3,
       venture_number: 3,
       showBtn: "show more",
+      research_showBtn: "show more",
       venture_showBtn: "show more",
       shower: 0,
+      research_shower: 0,
       data: [
         '<div class="example-slide">Slide 1</div>',
         '<div class="example-slide">Slide 2</div>',
@@ -194,6 +234,11 @@ export default {
     if (this.all_info && this.all_info.length > 0) {
       for (var i = 0; i < Math.min(this.number, this.all_info.length); i++) {
         this.portfolio_info.push(this.all_info[i]);
+      }
+    }
+    if (this.all_research_info && this.all_research_info.length > 0) {
+      for (var i = 0; i < Math.min(this.research_number, this.all_research_info.length); i++) {
+        this.research_info.push(this.all_research_info[i]);
       }
     }
     if (this.all_venture_info && this.all_venture_info.length > 0) {
@@ -208,6 +253,14 @@ export default {
       if (this.all_info && this.all_info.length > 0) {
         for (var i = 0; i < Math.min(this.number, this.all_info.length); i++) {
           this.portfolio_info.push(this.all_info[i]);
+        }
+      }
+    },
+    research_number() {
+      this.research_info = [];
+      if (this.all_research_info && this.all_research_info.length > 0) {
+        for (var i = 0; i < Math.min(this.research_number, this.all_research_info.length); i++) {
+          this.research_info.push(this.all_research_info[i]);
         }
       }
     },
@@ -263,6 +316,30 @@ export default {
         this.shower = 0;
         this.number = 3;
         this.showBtn = "show more";
+      }
+    },
+    showMoreResearch() {
+      if (this.research_number != this.all_research_info.length) {
+        this.research_number += 3;
+
+        window.scrollBy({
+          top: document.getElementsByClassName("smcard")[0].clientHeight,
+          behavior: "smooth",
+        });
+
+        if (this.research_number > this.all_research_info.length)
+          this.research_number = this.all_research_info.length;
+      }
+
+      if (this.research_number == this.all_research_info.length && this.research_shower == 0) {
+        this.research_shower = 1;
+        this.research_showBtn = "show less";
+      } else if (this.research_number == this.all_research_info.length && this.research_shower == 1) {
+        var elementPosition = document.getElementById("portfolio").offsetTop;
+        window.scrollTo({ top: elementPosition + 5, behavior: "smooth" });
+        this.research_shower = 0;
+        this.research_number = 3;
+        this.research_showBtn = "show more";
       }
     },
     showMoreVenture() {
