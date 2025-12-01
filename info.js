@@ -179,7 +179,7 @@ let info = {
           img: require("./assets/coral drone workflow.jpeg")
         }
       ],
-      technologies: ["Go pro", "image segmentation", "raspberry pi", "3d printing", "computer vision", "lazer cut"],
+      technologies: ["Go Pro", "Image Segmentation", "Raspberry Pi", "3D Printing", "Computer Vision", "Laser Cutting"],
       category: "Robotics",
       date: "2020",
       github: "https://github.com/MakerBay/Coral_Reef_Mapping_Drone",
