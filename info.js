@@ -183,7 +183,7 @@ let info = {
       category: "Robotics",
       date: "2020",
       github: "https://github.com/MakerBay/Coral_Reef_Mapping_Drone",
-      visit: "",
+      visit: "https://makerbay.net/coralbot-coral-reef-mapping-drone/",
       description:
         "An open source ocean water drone used for mapping and analyzing the health of coral reefs"
     },
