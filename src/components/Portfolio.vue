@@ -36,7 +36,7 @@
               />
             </div>
           </div>
-          <div class="text-center py-3" v-if="showBtn !== 'show less'">
+          <div class="text-center py-3" v-if="showBtn !== 'show less' && number < all_info.length">
             <button class="btn" @click.prevent="showMore">{{ showBtn }}</button>
           </div>
         </v-tab>
@@ -110,7 +110,7 @@
               />
             </div>
           </div>
-          <div class="text-center py-3" v-if="research_showBtn !== 'show less'">
+          <div class="text-center py-3" v-if="research_showBtn !== 'show less' && research_number < all_research_info.length">
             <button class="btn" @click.prevent="showMoreResearch">{{ research_showBtn }}</button>
           </div>
         </v-tab>
@@ -130,7 +130,7 @@
               />
             </div>
           </div>
-          <div class="text-center py-3" v-if="venture_showBtn !== 'show less'">
+          <div class="text-center py-3" v-if="venture_showBtn !== 'show less' && venture_number < all_venture_info.length">
             <button class="btn" @click.prevent="showMoreVenture">{{ venture_showBtn }}</button>
           </div>
         </v-tab>
