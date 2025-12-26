@@ -89,13 +89,18 @@ let info = {
     },
     {
       title: "web technologies",
-      info: ["JavaScript", "React", "Node", "Flask", "HTML", "CSS"],
+      info: ["JavaScript", "React", "Node", "Flask", "FastAPI", "HTML", "CSS"],
       icon: "fas fa-laptop-code"
     },
     {
-      title: "ai tools",
-      info: ["Cursor", "Lovable"],
+      title: "ai & ml frameworks",
+      info: ["LangChain", "Claude API", "OpenAI API", "Whisper ASR", "ElevenLabs TTS", "LangSmith", "MCP", "TensorFlow"],
       icon: "fas fa-robot"
+    },
+    {
+      title: "ai tools",
+      info: ["Cursor", "Lovable", "Claude Code"],
+      icon: "fas fa-wand-magic-sparkles"
     },
     {
       title: "operating systems & tools",
@@ -124,6 +129,22 @@ let info = {
   ],
   portfolio: [
     {
+      name: "Orbit: Voice-First AI Personal Agent",
+      pictures: [
+        {
+          img: require("./assets/Orbit_Project_Image.png")
+        }
+      ],
+      technologies: ["LangChain", "AI Agents", "MCP", "Claude API", "Whisper ASR", "ElevenLabs TTS", "FastAPI", "React", "PostgreSQL", "LangSmith"],
+      category: "AI Application",
+      date: "Dec 2025 - Present",
+      github: "",
+      visit: "",
+      video: "Orbit_Agent_Demo.mp4",
+      description:
+        "<ul><li>Built voice-first AI assistant using <strong>Claude Sonnet 4.5</strong> with <strong>LangChain tool-calling agents</strong></li><li>Integrated <strong>Model Context Protocol (MCP)</strong> with custom FastMCP server for memory tools</li><li>Implemented <strong>self-hosted Whisper ASR</strong> and <strong>ElevenLabs TTS</strong> with lip-sync animation</li><li>Built multi-channel messaging integrations: SMS, Email, Slack, WhatsApp via custom BaseTool subclasses</li><li>Developed real-time voice-to-voice pipeline with <strong>FastAPI</strong> backend and <strong>React</strong> frontend</li><li>Added <strong>LangSmith</strong> observability with distributed tracing</li></ul>"
+    },
+    {
       name: "SpeakEasy V2: Advanced Language Learning Platform <span class='badge badge-warning ml-2'>in-progress</span>",
       pictures: [
         {
@@ -137,7 +158,7 @@ let info = {
       visit: "https://github.com/shraavb/-Senior-Design-SpeakEasy",
       video: "SpeakEasy Demo V2.mov",
       description:
-        "Web platform for advanced language learners. Features sophisticated conversation simulation. This is a Senior Design Project. We intend on incorporating real-time pronunciation feedback, and contextual learning scenarios. Built using Lovable."
+        "<ul><li>Senior Design Project: Web platform for advanced language learners</li><li>Features sophisticated <strong>conversation simulation</strong> with AI-powered dialogue</li><li>Implementing real-time <strong>pronunciation feedback</strong> and contextual learning scenarios</li><li>Built using <strong>Lovable</strong> AI-assisted development platform</li></ul>"
     },
     {
       name: "OpenAPS - Embedded Systems for Closed-Loop Insulin Control",
@@ -152,7 +173,7 @@ let info = {
       github: "https://github.com/jimmyyu123/CIS541OpenAPS_proj_Steady_State",
       visit: "",
       description:
-        "Built an embedded control system on Arduino Nano to simulate insulin dosing logic in a virtual patient loop. Implemented real-time CGM ingestion & insulin publishing pipeline via digital twins, coordinating asynchronous tasks using FreeRTOS and MQTT communication protocols."
+        "<ul><li>Built embedded control system on <strong>Arduino Nano</strong> to simulate insulin dosing logic</li><li>Implemented real-time <strong>CGM ingestion</strong> and insulin publishing pipeline via digital twins</li><li>Coordinated asynchronous tasks using <strong>FreeRTOS</strong></li><li>Established device communication using <strong>MQTT</strong> protocol</li></ul>"
     },
     {
       name: "JetBot w/ JetsonNano <span class='badge badge-warning ml-2'>in-progress</span>",
@@ -167,7 +188,7 @@ let info = {
       github: "https://github.com/shraavb/jetbot_waveshare",
       visit: "",
       description:
-        "Building an autonomous robot using NVIDIA's JetBot platform with Jetson Nano. Implementing computer vision algorithms for object detection and autonomous navigation, exploring the intersection of robotics and artificial intelligence."
+        "<ul><li>Building autonomous robot using <strong>NVIDIA JetBot</strong> platform with <strong>Jetson Nano</strong></li><li>Implementing <strong>computer vision</strong> algorithms for object detection</li><li>Developing <strong>autonomous navigation</strong> capabilities</li><li>Exploring intersection of <strong>robotics</strong> and <strong>AI</strong></li></ul>"
     },
     {
       name: "Coral Reef Mapping Drone",
@@ -185,7 +206,7 @@ let info = {
       github: "https://github.com/MakerBay/Coral_Reef_Mapping_Drone",
       visit: "https://makerbay.net/coralbot-coral-reef-mapping-drone/",
       description:
-        "An open source ocean water drone used for mapping and analyzing the health of coral reefs"
+        "<ul><li>Open source ocean water drone for mapping and analyzing coral reef health</li><li>Integrated <strong>GoPro</strong> camera with <strong>image segmentation</strong> for reef analysis</li><li>Built with <strong>Raspberry Pi</strong> for onboard processing</li><li>Fabricated components using <strong>3D printing</strong> and <strong>laser cutting</strong></li></ul>"
     },
     {
       name: "Predicting Underdog Wins",
@@ -200,7 +221,7 @@ let info = {
       github: "https://github.com/shraavb/Predicting-Tennis-Upsets-with-Machine-Learning",
       visit: "",
       description:
-        "Developed an ML model to predict upsets in tennis matches based on player statistics and tournament details."
+        "<ul><li>Developed <strong>ML model</strong> to predict upsets in tennis matches</li><li>Analyzed player statistics and tournament details using <strong>Pandas</strong> and <strong>PandaSQL</strong></li><li>Implemented data processing pipelines with <strong>Polars</strong> and <strong>DuckDB</strong></li></ul>"
     },
     {
       name: "Bridge V1: Multi-Modal Language Learning Tool",
@@ -215,7 +236,7 @@ let info = {
       github: "https://github.com/shraavb/Bridge",
       visit: "https://bridge-production-8580.up.railway.app",
       description:
-        "Developed a tool for language learning using multimodal information. The tool adapts to different scenarios, including business, casual conversation with friends, and dating contexts. Leveraged prompting techniques to optimize the use of LLMs."
+        "<ul><li>Built language learning tool using <strong>multimodal</strong> information</li><li>Integrated <strong>Grok API</strong> and <strong>OpenAI API</strong> for intelligent responses</li><li>Adapts to different scenarios: business, casual, and dating contexts</li><li>Leveraged <strong>prompting techniques</strong> to optimize LLM performance</li><li>Built with <strong>Cursor</strong> AI-assisted development</li></ul>"
     },
     {
       name: "Human Computer Interaction Research",
@@ -232,7 +253,7 @@ let info = {
       github: "",
       visit: "",
       description:
-        "Explored how user anonymity influences tweet sentiment and polarization during the COVID-19 pandemic. Following nine months of refinement, we engaged with HCI academics and submitted our findings to journals for publication."
+        "<ul><li>Explored how user anonymity influences tweet sentiment and polarization during COVID-19</li><li>Collected and analyzed data using <strong>X API</strong> (Twitter)</li><li>Implemented <strong>sentiment analysis</strong> using <strong>VADER</strong></li><li>Refined research over 9 months with HCI academics</li><li>Submitted findings to journals for publication</li></ul>"
     }
   ],
   portfolio_design: [
@@ -253,7 +274,7 @@ let info = {
       visit: "",
       figma: "https://www.figma.com/design/irN4xAPXArsqolPwFo6y2j/RenewConnect?node-id=48-7&t=7zY9vpRk9XVm1Q1C-1",
       description:
-        "As part of a 1 hour web design challenge, I designed addresses the challenge of transitioning low and middle-income rural populations in nations like Africa and India to renewable energy sources. By promoting self-sufficiency through Solar Home Systems, the website aims to empower households in accessing reliable and eco-friendly power, while providing testimonials and guidance. It focuses on African regions where Solar Home Systems have gained some adoption, serving as a valuable resource for low-middle income households seeking to be more self-sufficient, digitized, and environmentally friendly, particularly those affected by utility bill hikes resulting from oil price fluctuations and supply limitations."
+        "<ul><li>Completed in <strong>1-hour web design challenge</strong></li><li>Designed solution for transitioning rural populations to <strong>renewable energy</strong></li><li>Focused on <strong>Solar Home Systems</strong> for low-middle income households</li><li>Built using <strong>Figma</strong> and <strong>Illustrator</strong></li></ul>"
     },
     {
       name: "Pantree",
@@ -270,7 +291,7 @@ let info = {
       date: "",
       visit: "",
       description:
-        "Supported design, sponsorship outreach and relations, developed sponsor packages, and managed the website. Made weekly part purchases based on the needs of the Mechanical and Electrical Teams. Below is a Mock Board Meeting Presentation we developed for the Business aspect of the FSAE Competition. We were awarded 3rd place overall at the Formula SAE Lincoln event in 2022."
+        "<ul><li>Designed product concepts using <strong>Adobe XD</strong> and <strong>Illustrator</strong></li><li>Supported sponsorship outreach and developed sponsor packages</li><li>Managed website and weekly part purchases for Mechanical/Electrical teams</li><li>Awarded <strong>3rd place overall</strong> at Formula SAE Lincoln 2022</li></ul>"
     },
     {
       name: "Bunder",
@@ -287,7 +308,7 @@ let info = {
       date: "",
       visit: "",
       description:
-        "Supported design, sponsorship outreach and relations, developed sponsor packages, and managed the website. Made weekly part purchases based on the needs of the Mechanical and Electrical Teams. Below is a Mock Board Meeting Presentation we developed for the Business aspect of the FSAE Competition. We were awarded 3rd place overall at the Formula SAE Lincoln event in 2022."
+        "<ul><li>Media & Operations role at <strong>Penn Electric Racing</strong></li><li>Created visual designs using <strong>Adobe Creative Suite</strong></li><li>Worked with <strong>CAD</strong> for technical documentation</li><li>Awarded <strong>3rd place overall</strong> at Formula SAE Lincoln 2022</li></ul>"
     },
     {
       name: "Proposal to the City of Philadelphia",
@@ -306,7 +327,7 @@ let info = {
       presentation: "Venture3_Proposal to COP_Presentation.pdf",
       figma: "https://www.figma.com/design/UoJA67LhKlwBUO75MAtJ1N/PCV--Project-for-City-of-Philadelphia---Local-Carbon-Offset-Platform?node-id=101-2&t=Gw9V976dL0JRTQ4G-1",
       description:
-        "As Consultant and Project Lead at PCV, I led a team of 4+ students on two projects: developing a strategy to boost student subscriptions to a circular economy membership, and creating a carbon offset platform for Philadelphia-based corporations, including four local offset projects to reduce reliance on foreign offsets."
+        "<ul><li>Consultant and Project Lead at <strong>PCV</strong>, leading team of 4+ students</li><li>Developed strategy to boost student subscriptions to circular economy membership</li><li>Created <strong>carbon offset platform</strong> for Philadelphia-based corporations</li><li>Designed four local offset projects to reduce reliance on foreign offsets</li><li>Built prototypes in <strong>Figma</strong></li></ul>"
     }
   ],
   portfolio_venture: [
@@ -326,7 +347,7 @@ let info = {
       date: "Jan 2022",
       visit: "",
       description:
-        "With three teammates, I developed a commercialization proposal for Penn GRASP Lab's Steerable Needle, focusing on Neuroblastoma surgery. Over 5–6 months, we consulted neurosurgeons, medical device companies, and researchers to identify procedural challenges. Our proposal was selected as a Y-Prize finalist, earning mentorship to refine our idea."
+        "<ul><li>Developed commercialization proposal for <strong>Penn GRASP Lab's Steerable Needle</strong></li><li>Focused on <strong>Neuroblastoma surgery</strong> applications</li><li>Consulted neurosurgeons, medical device companies, and researchers over 5-6 months</li><li>Selected as <strong>Y-Prize finalist</strong>, earning mentorship to refine idea</li><li>Created pitch video and competitive analysis</li></ul>"
     },
     {
       name: "A Proposal to GE",
@@ -343,7 +364,7 @@ let info = {
       date: "Spring 2023",
       visit: "",
       description:
-        "During Spring 2023's M&T Sophomore Immersive Week, my team explored Flow Battery technology and applied business concepts to develop a strategy. We proposed a Joint Venture between General Electric and ESS Inc., a leader in Flow Battery innovation, to enhance renewable energy accessibility."
+        "<ul><li>M&T Sophomore Immersive Week project (Spring 2023)</li><li>Explored <strong>Flow Battery technology</strong> and applied business concepts</li><li>Proposed <strong>Joint Venture</strong> between General Electric and ESS Inc.</li><li>Focused on enhancing <strong>renewable energy</strong> accessibility</li></ul>"
     },
     {
       name: "Proposal to the City of Philadelphia",
@@ -361,7 +382,7 @@ let info = {
       date: "Sep 2022",
       visit: "",
       description:
-        "As Consultant and Project Lead at PCV, I led a team of 4+ students on two projects: developing a strategy to boost student subscriptions to a circular economy membership, and creating a carbon offset platform for Philadelphia-based corporations, including four local offset projects to reduce reliance on foreign offsets."
+        "<ul><li>Consultant and Project Lead at <strong>PCV</strong>, leading team of 4+ students</li><li>Developed strategy to boost student subscriptions to circular economy membership</li><li>Created <strong>carbon offset platform</strong> for Philadelphia-based corporations</li><li>Designed four local offset projects to reduce reliance on foreign offsets</li></ul>"
     }
   ],
   recommendations: [
