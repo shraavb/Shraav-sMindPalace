@@ -150,7 +150,7 @@ let info = {
       technologies: ["PyTorch", "NVIDIA Isaac Sim", "SmolVLA", "RunPod", "ZMQ", "HuggingFace", "NVIDIA Jetson"],
       category: "Robotics & ML",
       date: "Sep 2025 - Present",
-      github: "https://github.com/shraavb/jetbot_waveshare",
+      github: "https://github.com/shraavb/jetbot",
       visit: "",
       description:
         "<ul><li>Built end-to-end <strong>sim-to-real ML pipeline</strong> for autonomous robot navigation using <strong>Vision-Language-Action (VLA)</strong> models</li><li>Generated <strong>16,500+ training samples</strong> using <strong>NVIDIA Isaac Sim</strong> with domain randomization for robust transfer</li><li>Fine-tuned <strong>SmolVLA (450M params)</strong> with custom action head, achieving <strong>1.5GB memory footprint</strong> for edge deployment</li><li>Deployed training on <strong>RunPod RTX 4090</strong> GPUs with <strong>ZMQ-based inference server</strong> (~50-100ms latency)</li><li>Implemented natural language instruction understanding for flexible robot control</li></ul>"
