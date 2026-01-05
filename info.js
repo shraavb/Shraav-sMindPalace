@@ -180,6 +180,18 @@ let info = {
       pictures: [
         {
           img: require("./assets/jetbot_jetson_nano.jpg")
+        },
+        {
+          img: require("./assets/jetbot_sim_1.jpg")
+        },
+        {
+          img: require("./assets/jetbot_sim_2.jpg")
+        },
+        {
+          img: require("./assets/jetbot_sim_3.jpg")
+        },
+        {
+          img: require("./assets/jetbot_sim_4.jpg")
         }
       ],
       technologies: ["Python", "ROS", "Computer Vision", "TensorFlow", "NVIDIA Jetson"],
