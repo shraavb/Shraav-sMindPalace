@@ -176,7 +176,7 @@ let info = {
         "<ul><li>Built embedded control system on <strong>Arduino Nano</strong> to simulate insulin dosing logic</li><li>Implemented real-time <strong>CGM ingestion</strong> and insulin publishing pipeline via digital twins</li><li>Coordinated asynchronous tasks using <strong>FreeRTOS</strong></li><li>Established device communication using <strong>MQTT</strong> protocol</li></ul>"
     },
     {
-      name: "JetBot w/ JetsonNano <span class='badge badge-warning ml-2'>in-progress</span>",
+      name: "JetBot VLA Navigation System <span class='badge badge-warning ml-2'>in-progress</span>",
       pictures: [
         {
           img: require("./assets/jetbot_jetson_nano.jpg")
@@ -194,13 +194,13 @@ let info = {
           img: require("./assets/jetbot_sim_4.jpg")
         }
       ],
-      technologies: ["Python", "ROS", "Computer Vision", "TensorFlow", "NVIDIA Jetson"],
-      category: "AI and IOT",
-      date: "Sep-Oct 2025",
+      technologies: ["PyTorch", "NVIDIA Isaac Sim", "SmolVLA", "RunPod", "ZMQ", "HuggingFace", "NVIDIA Jetson"],
+      category: "Robotics & ML",
+      date: "Sep 2025 - Present",
       github: "https://github.com/shraavb/jetbot_waveshare",
       visit: "",
       description:
-        "<ul><li>Building autonomous robot using <strong>NVIDIA JetBot</strong> platform with <strong>Jetson Nano</strong></li><li>Implementing <strong>computer vision</strong> algorithms for object detection</li><li>Developing <strong>autonomous navigation</strong> capabilities</li><li>Exploring intersection of <strong>robotics</strong> and <strong>AI</strong></li></ul>"
+        "<ul><li>Built end-to-end <strong>sim-to-real ML pipeline</strong> for autonomous robot navigation using <strong>Vision-Language-Action (VLA)</strong> models</li><li>Generated <strong>16,500+ training samples</strong> using <strong>NVIDIA Isaac Sim</strong> with domain randomization for robust transfer</li><li>Fine-tuned <strong>SmolVLA (450M params)</strong> with custom action head, achieving <strong>1.5GB memory footprint</strong> for edge deployment</li><li>Deployed training on <strong>RunPod RTX 4090</strong> GPUs with <strong>ZMQ-based inference server</strong> (~50-100ms latency)</li><li>Implemented natural language instruction understanding for flexible robot control</li></ul>"
     },
     {
       name: "Coral Reef Mapping Drone",

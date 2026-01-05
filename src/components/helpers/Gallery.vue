@@ -1,15 +1,10 @@
 <template>
   <div style="overflow: auto;">
-    <div class="prow">
+    <div class="prow" :class="{ 'design-mode': design }">
       <div
         class="pcolumn"
         v-for="(i, idx) in images"
-        :key="i.title"
-        :class="{
-          flex: design ? '100%' : '50%',
-          '-ms-flex': design ? '100%' : '50%',
-          'max-width': design ? '100%' : '50%',
-        }"
+        :key="idx"
       >
         <img
           :src="i.img"
@@ -18,7 +13,7 @@
           @click="i.link ? openLink(i.link) : showImg(idx)"
           class="g-img"
         />
-        <div class="mt-1">
+        <div class="mt-1" v-if="i.title">
           <p style="font-weight: 500">{{ i.title }}</p>
         </div>
       </div>
@@ -83,6 +78,14 @@ export default {
   padding: 0 4px;
 }
 
+.pcolumn {
+  -ms-flex: 50%;
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 4px;
+  box-sizing: border-box;
+}
+
 .pcolumn img {
   border-radius: 5px;
   margin-top: 8px;
@@ -90,13 +93,11 @@ export default {
   width: 100%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .pcolumn {
-    -ms-flex: 50%;
-    flex: 50%;
-    max-width: 50%;
-  }
+/* Design mode - single column */
+.design-mode .pcolumn {
+  -ms-flex: 100%;
+  flex: 100%;
+  max-width: 100%;
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
