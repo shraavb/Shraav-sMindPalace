@@ -11,20 +11,23 @@
           }"
         >
           <div class="title1 px-4 pt-3">
-            <span
-              ><a
-                href="#"
-                @click.prevent="open(portfolio.visit)"
-                :class="{ 'text-light': nightMode }"
-                v-html="portfolio.name"></a
-              ></span
-            >
-            <a
-              class="pull-right"
-              style="font-size: 18px;"
-              @click="$emit('close')"
-              ><i class="fas fa-times"></i
-            ></a>
+            <div class="d-flex align-items-center">
+              <span
+                ><a
+                  href="#"
+                  @click.prevent="open(portfolio.visit)"
+                  :class="{ 'text-light': nightMode }"
+                  v-html="cleanName(portfolio.name)"></a
+                ></span
+              >
+              <span v-if="portfolio.name.includes('in-progress')" class="badge badge-warning ml-2">in-progress</span>
+              <a
+                class="pull-right ml-auto"
+                style="font-size: 18px;"
+                @click="$emit('close')"
+                ><i class="fas fa-times"></i
+              ></a>
+            </div>
             <hr
               class="my-1"
               :class="{ pgray: !nightMode, 'bg-secondary': nightMode }"
@@ -152,6 +155,9 @@ export default {
     document.getElementsByTagName("body")[0].classList.add("modal-open");
   },
   methods: {
+    cleanName(name) {
+      return name.replace(/ <span class='badge badge-warning ml-2'>in-progress<\/span>/, '');
+    },
     open(url) {
       window.open(url, "_blank");
     },
@@ -335,5 +341,21 @@ a:hover {
   background: linear-gradient(135deg, rgba(196, 181, 253, 0.3), rgba(124, 58, 237, 0.2));
   transform: scale(1.05);
   box-shadow: 0 2px 8px rgba(196, 181, 253, 0.2);
+}
+
+.badge-warning {
+  background: linear-gradient(135deg, #fef3c7, #fde68a) !important;
+  color: #92400e !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  padding: 4px 10px !important;
+  border-radius: 4px !important;
+}
+
+.bg-dark .badge-warning {
+  background: linear-gradient(135deg, #fef3c7, #fde68a) !important;
+  color: #92400e !important;
+  border: 1px solid rgba(245, 158, 11, 0.3) !important;
 }
 </style>
