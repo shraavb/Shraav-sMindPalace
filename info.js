@@ -176,7 +176,7 @@ let info = {
       ],
       technologies: ["C++", "Arduino", "FreeRTOS", "MQTT", "Embedded Systems"],
       category: "Embedded Systems",
-      projectCategory: "robotics",
+      projectCategory: "product",
       featured: false,
       date: "Oct 2025",
       github: "https://github.com/jimmyyu123/CIS541OpenAPS_proj_Steady_State",

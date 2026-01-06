@@ -112,7 +112,7 @@
             target="_blank"
             class="project-link"
           >
-            <i class="fab fa-github"></i> GitHub
+            <i class="fab fa-github"></i> Repo
           </a>
           <a
             v-if="project.visit"
@@ -120,7 +120,7 @@
             target="_blank"
             class="project-link"
           >
-            <i class="fas fa-external-link-alt"></i> Demo
+            <i class="fab fa-github"></i> Repo
           </a>
           <a
             v-if="project.pictures[0] && project.pictures[0].pdf"

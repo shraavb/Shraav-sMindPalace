@@ -26,15 +26,16 @@
         >
           Your browser does not support the video tag.
         </video>
-        <!-- Video toggle button -->
-        <button
-          v-if="project.video && isLocalVideo(project.video)"
-          class="video-toggle"
-          @click="showVideo = !showVideo"
-        >
-          <i :class="showVideo ? 'fas fa-image' : 'fas fa-play'"></i>
-          {{ showVideo ? 'Show Image' : 'Watch Demo' }}
-        </button>
+        <!-- Video toggle button - below media -->
+        <div v-if="project.video && isLocalVideo(project.video)" class="video-toggle-container">
+          <button
+            class="video-toggle"
+            @click="showVideo = !showVideo"
+          >
+            <i :class="showVideo ? 'fas fa-image' : 'fas fa-play'"></i>
+            {{ showVideo ? 'Show Image' : 'Watch Demo' }}
+          </button>
+        </div>
       </div>
 
       <!-- Right: Info -->
@@ -88,7 +89,7 @@
             class="action-link"
             :class="{ 'link-dark': nightMode }"
           >
-            <i class="fab fa-github"></i> GitHub
+            <i class="fab fa-github"></i> Repo
           </a>
           <a
             v-if="project.visit"
@@ -97,7 +98,7 @@
             class="action-link"
             :class="{ 'link-dark': nightMode }"
           >
-            <i class="fas fa-external-link-alt"></i> Demo
+            <i class="fab fa-github"></i> Repo
           </a>
         </div>
       </div>
@@ -236,17 +237,19 @@ export default {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+.video-toggle-container {
+  margin-top: 0.75rem;
+  text-align: center;
+}
+
 .video-toggle {
-  position: absolute;
-  bottom: 12px;
-  right: 12px;
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   padding: 0.5rem 1rem;
-  background: rgba(128, 90, 213, 0.9);
-  color: white;
-  border: none;
+  background: transparent;
+  color: #805ad5;
+  border: 1.5px solid #805ad5;
   border-radius: 6px;
   font-size: 0.85rem;
   font-weight: 500;
@@ -256,7 +259,7 @@ export default {
 
 .video-toggle:hover {
   background: #805ad5;
-  transform: scale(1.02);
+  color: white;
 }
 
 /* Info Section */

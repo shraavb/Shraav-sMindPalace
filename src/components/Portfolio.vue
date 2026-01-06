@@ -42,10 +42,10 @@
           <i class="fas fa-folder-open"></i> All Projects
         </h2>
 
-        <!-- Robotics & AI Category -->
+        <!-- Robotics & Research Category -->
         <div class="category-section mb-4" v-if="roboticsProjects.length > 0">
           <h3 class="category-header" :class="{ 'text-muted': !nightMode, 'text-secondary': nightMode }">
-            Robotics & AI Research
+            Robotics & Research
           </h3>
           <ProjectCard
             v-for="project in roboticsProjects"

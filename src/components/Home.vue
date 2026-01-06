@@ -14,9 +14,10 @@
             {{ name }}
           </h1>
 
-          <!-- Tagline -->
+          <!-- Tagline with links -->
           <p class="hero-tagline" :class="{ 'text-muted': !nightMode, 'text-secondary': nightMode }">
-            {{ tagline }}
+            <a href="https://fisher.wharton.upenn.edu" target="_blank" class="tagline-link">M&T</a> @
+            <a href="https://www.upenn.edu" target="_blank" class="tagline-link">University of Pennsylvania</a> | Computer Science + Management
           </p>
 
           <!-- Research Focus -->
@@ -100,9 +101,10 @@ export default {
 
 <style scoped>
 .hero-section {
-  min-height: 80vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
+  padding-bottom: 1rem;
 }
 
 .hero-content {
@@ -121,6 +123,18 @@ export default {
   font-weight: 500;
   margin-bottom: 1.5rem;
   opacity: 0.8;
+}
+
+.tagline-link {
+  color: #805ad5;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.tagline-link:hover {
+  color: #553c9a;
+  text-decoration: underline;
 }
 
 .hero-focus {
@@ -142,7 +156,6 @@ export default {
   max-width: 280px;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 /* Quick Links Bar */
