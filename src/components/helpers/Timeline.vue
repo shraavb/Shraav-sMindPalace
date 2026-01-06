@@ -27,13 +27,18 @@
           >
             <li class="m-0 pb-2">
               <div>
-                <div class="px-2 title2">{{ e.name }}, {{ e.place }}</div>
+                <div class="px-2 title2">
+                  {{ e.name }}
+                  <span v-if="e.place" class="location-text">
+                    <i class="fas fa-map-marker-alt"></i> {{ e.place }}
+                  </span>
+                </div>
                 <div class="px-2 title3">
                   {{ e.degree || e.position }}
                   {{ e.gpa ? "(" + e.gpa + ")" : "" }}
                 </div>
                 <div class="px-2 date">{{ e.date }}</div>
-                <div class="px-2 pb-2 pt-2" style="text-align: left;" v-html="e.description">
+                <div class="px-2 pb-2 pt-2 description-content" style="text-align: left;" v-html="formatDescription(e.description)">
                 </div>
                 <span
                   class="mx-2 badge p-2 mb-2"
@@ -63,6 +68,19 @@ export default {
       type: Boolean,
     },
   },
+  methods: {
+    formatDescription(description) {
+      if (!description) return '';
+      // Split by periods and create bullet points, preserving HTML links
+      const sentences = description.split(/(?<=[.!?])\s+(?=[A-Z])/);
+      if (sentences.length > 1) {
+        return '<ul class="desc-bullets">' +
+          sentences.map(s => `<li>${s.trim()}</li>`).join('') +
+          '</ul>';
+      }
+      return description;
+    }
+  }
 };
 </script>
 
@@ -75,11 +93,40 @@ export default {
 .title2 {
   font-size: 20px;
   font-weight: 400;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.location-text {
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #6b7280;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.location-text i {
+  font-size: 0.75rem;
+  color: #805ad5;
 }
 
 .title3 {
   font-size: 16px;
   font-weight: 400;
+}
+
+.description-content :deep(.desc-bullets) {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.description-content :deep(.desc-bullets li) {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .badge {
@@ -147,5 +194,16 @@ ul.timeline > li:before {
 .bg-dark .badge:hover {
   background: linear-gradient(135deg, rgba(196, 181, 253, 0.3), rgba(124, 58, 237, 0.2));
   transform: scale(1.05);
+}
+
+/* Dark mode location text */
+.bg-dark2 .location-text,
+.text-light .location-text {
+  color: #9ca3af;
+}
+
+.bg-dark2 .location-text i,
+.text-light .location-text i {
+  color: #b794f6;
 }
 </style>

@@ -98,7 +98,7 @@
             class="action-link"
             :class="{ 'link-dark': nightMode }"
           >
-            <i class="fab fa-github"></i> Repo
+            <i class="fas fa-globe"></i> Website
           </a>
         </div>
       </div>

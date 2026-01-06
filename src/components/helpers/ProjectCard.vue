@@ -120,7 +120,7 @@
             target="_blank"
             class="project-link"
           >
-            <i class="fab fa-github"></i> Repo
+            <i class="fas fa-globe"></i> Website
           </a>
           <a
             v-if="project.pictures[0] && project.pictures[0].pdf"
@@ -136,7 +136,7 @@
             target="_blank"
             class="project-link"
           >
-            <i class="fas fa-presentation"></i> Presentation
+            <i class="fas fa-file-alt"></i> Presentation
           </a>
         </div>
       </div>

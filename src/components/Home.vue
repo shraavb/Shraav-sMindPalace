@@ -101,10 +101,11 @@ export default {
 
 <style scoped>
 .hero-section {
-  min-height: 60vh;
+  min-height: auto;
   display: flex;
   align-items: center;
-  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 }
 
 .hero-content {

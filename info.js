@@ -28,11 +28,10 @@ let info = {
     {
       name: "University of Pennsylvania",
       place: "",
-      date: "Aug, 2021 - May, 2026",
+      date: "Aug 2021 – May 2026",
       degree: "Dual Degree in Computer Science & Management",
       gpa: "",
-      description:
-        "Currently pursuing a Bachelors Degree in Computer Science and Management.",
+      description: "",
       skills: [
         "Human-Computer Interaction",
         "Computer Vision",
@@ -54,7 +53,7 @@ let info = {
     },
     {
       name: "Manatal",
-      place: "",
+      place: "Bangkok, Thailand",
       date: "Dec 2023 - June 2024",
       position: "Product & Project Management Intern",
       description:
@@ -139,7 +138,7 @@ let info = {
       projectCategory: "product",
       featured: true,
       date: "Dec 2025 - Present",
-      github: "",
+      github: "https://github.com/shraavb/Orbit-your-personal-agent",
       visit: "",
       video: "Orbit_Agent_Demo.mp4",
       description:
@@ -147,23 +146,23 @@ let info = {
     },
     {
       id: "speakeasy",
-      name: "SpeakEasy V2: Advanced Language Learning Platform <span class='badge badge-warning ml-2'>in-progress</span>",
-      preview: "AI-powered language learning platform with conversation simulation and real-time pronunciation feedback.",
+      name: "SpeakEasy: AI-Powered Conversational Language Learning <span class='badge badge-warning ml-2'>in-progress</span>",
+      preview: "Speech-to-speech learning platform with fine-tuned LLMs, 6-metric fluency scoring, and scenario-based curriculum.",
       pictures: [
         {
           img: require("./assets/SpeakEasy_Master_Conversational_Fluency.png")
         }
       ],
-      technologies: ["Lovable", "AI Integration", "Advanced NLP", "Real-time Feedback", "Conversation Simulation"],
-      category: "Web Application",
+      technologies: ["Llama 3", "LoRA Fine-tuning", "React", "FastAPI", "Whisper ASR", "PostgreSQL", "Capacitor"],
+      category: "Senior Design Project",
       projectCategory: "product",
       featured: true,
       date: "Aug 2025 - Present",
-      github: "",
-      visit: "https://github.com/shraavb/-Senior-Design-SpeakEasy",
+      github: "https://github.com/shraavb/-Senior-Design-SpeakEasy",
+      visit: "",
       video: "SpeakEasy Demo V2.mov",
       description:
-        "<ul><li>Senior Design Project: Web platform for advanced language learners</li><li>Features sophisticated <strong>conversation simulation</strong> with AI-powered dialogue</li><li>Implementing real-time <strong>pronunciation feedback</strong> and contextual learning scenarios</li><li>Built using <strong>Lovable</strong> AI-assisted development platform</li></ul>"
+        "<ul><li>Built speech-to-speech language learning platform with <strong>LoRA fine-tuned Llama 3</strong> on dialect-specific conversational data</li><li>Processed <strong>4,383 dialogue segments</strong> from 102 Spanish films with automated scenario classification and CEFR difficulty tagging</li><li>Designed <strong>6-metric fluency scoring engine</strong> using Whisper ASR for pronunciation, fluency, and communicative competence evaluation</li><li>Created curriculum with <strong>37 conversation scenarios</strong> across 3 modules and 8 AI conversation partners</li><li>Deployed full-stack app (<strong>React/FastAPI/PostgreSQL</strong>) to web and iOS/Android via Capacitor</li></ul>"
     },
     {
       id: "openaps",
@@ -182,7 +181,7 @@ let info = {
       github: "https://github.com/jimmyyu123/CIS541OpenAPS_proj_Steady_State",
       visit: "",
       description:
-        "<ul><li>Built embedded control system on <strong>Arduino Nano</strong> to simulate insulin dosing logic</li><li>Implemented real-time <strong>CGM ingestion</strong> and insulin publishing pipeline via digital twins</li><li>Coordinated asynchronous tasks using <strong>FreeRTOS</strong></li><li>Established device communication using <strong>MQTT</strong> protocol</li></ul>"
+        "<ul><li>Built embedded insulin dosing controller on <strong>Arduino Nano</strong> using the OpenAPS algorithm, processing CGM readings every 5 minutes</li><li>Connected hardware to simulation via <strong>MQTT</strong> for safe testing against virtual patient models</li><li>Used <strong>FreeRTOS</strong> for concurrent task management with strict timing guarantees for medical-grade reliability</li><li>Implemented fail-safes: dosing rate limiters, sensor validation, and automatic fallback to safe basal rates</li></ul>"
     },
     {
       id: "coral-drone",
@@ -204,7 +203,7 @@ let info = {
       github: "https://github.com/MakerBay/Coral_Reef_Mapping_Drone",
       visit: "https://makerbay.net/coralbot-coral-reef-mapping-drone/",
       description:
-        "<ul><li>Open source ocean water drone for mapping and analyzing coral reef health</li><li>Integrated <strong>GoPro</strong> camera with <strong>image segmentation</strong> for reef analysis</li><li>Built with <strong>Raspberry Pi</strong> for onboard processing</li><li>Fabricated components using <strong>3D printing</strong> and <strong>laser cutting</strong></li></ul>"
+        "<ul><li>Contributed to <a href='https://makerbay.net/coralbot-coral-reef-mapping-drone/' target='_blank'><strong>MakerBay's CoralBot</strong></a> open-source project in Hong Kong for coral reef monitoring</li><li>Integrated <strong>GoPro Hero</strong> with <strong>image segmentation</strong> to classify coral species and detect bleaching events</li><li>Configured <strong>Raspberry Pi</strong> for onboard processing and GPS waypoint navigation with real-time data logging</li><li>Fabricated waterproof enclosures using <strong>3D printing</strong> (PETG) and <strong>laser cutting</strong> (acrylic)</li></ul>"
     },
     {
       id: "tennis-ml",
@@ -222,27 +221,28 @@ let info = {
       date: "March 2025 - Apr 2025",
       github: "https://github.com/shraavb/Predicting-Tennis-Upsets-with-Machine-Learning",
       visit: "",
+      video: "cis545project_upset_events.mp4",
       description:
-        "<ul><li>Developed <strong>ML model</strong> to predict upsets in tennis matches</li><li>Analyzed player statistics and tournament details using <strong>Pandas</strong> and <strong>PandaSQL</strong></li><li>Implemented data processing pipelines with <strong>Polars</strong> and <strong>DuckDB</strong></li></ul>"
+        "<ul><li>Built ML model to predict tennis upsets using <strong>10+ years of ATP tour data</strong> with <strong>40+ engineered features</strong></li><li>Processed match data using <strong>Polars</strong>, <strong>DuckDB</strong>, and <strong>PandaSQL</strong> for efficient large-scale analytics</li><li>Trained classification models (Random Forest, XGBoost, Neural Networks) with <strong>SMOTE</strong> for class imbalance handling</li><li>Identified key upset predictors: ranking gap, recent form, surface matchups, and tournament round</li></ul>"
     },
     {
       id: "bridge",
       name: "Bridge V1: Multi-Modal Language Learning Tool",
-      preview: "Language learning tool with multimodal AI adapting to business, casual, and social contexts.",
+      preview: "36-hour hackathon project: Language learning tool with multimodal AI adapting to business, casual, and social contexts.",
       pictures: [
         {
           img: require("./assets/Dev_Proj3_Bridge.png")
         }
       ],
       technologies: ["Grok API", "OpenAI API", "HTML", "CSS", "JavaScript", "Cursor"],
-      category: "Web Application",
+      category: "Hackathon Project",
       projectCategory: "product",
       featured: false,
       date: "2024 - 2025",
       github: "https://github.com/shraavb/Bridge",
-      visit: "https://bridge-production-8580.up.railway.app",
+      visit: "",
       description:
-        "<ul><li>Built language learning tool using <strong>multimodal</strong> information</li><li>Integrated <strong>Grok API</strong> and <strong>OpenAI API</strong> for intelligent responses</li><li>Adapts to different scenarios: business, casual, and dating contexts</li><li>Leveraged <strong>prompting techniques</strong> to optimize LLM performance</li><li>Built with <strong>Cursor</strong> AI-assisted development</li></ul>"
+        "<ul><li>Built context-aware language learning tool in 36 hours at the <a href='https://mec.mit.edu/mec-sprint/' target='_blank'><strong>MEC@MIT Sprint</strong></a> hackathon</li><li>Integrated <strong>Grok API</strong> and <strong>OpenAI API</strong> with intelligent routing for real-time responses and grammar explanations</li><li>Tailors vocabulary and formality based on scenarios: business, casual, and social contexts</li><li>Precursor project that inspired the SpeakEasy senior design project</li></ul>"
     },
     {
       id: "hci-research",
@@ -263,7 +263,7 @@ let info = {
       github: "",
       visit: "",
       description:
-        "<ul><li>Explored how user anonymity influences tweet sentiment and polarization during COVID-19</li><li>Collected and analyzed data using <strong>X API</strong> (Twitter)</li><li>Implemented <strong>sentiment analysis</strong> using <strong>VADER</strong></li><li>Refined research over 9 months with HCI academics</li><li>Submitted findings to journals for publication</li></ul>"
+        "<ul><li>9-month research project investigating user anonymity and toxic discourse on Twitter during COVID-19</li><li>Collected <strong>50,000+ tweets</strong> using <strong>Twitter/X API v2</strong> with automated metadata extraction</li><li>Implemented sentiment classification using <strong>VADER</strong> with custom pandemic-specific lexicons</li><li>Conducted regression analysis controlling for follower count, account age, and topic to isolate anonymity effects</li><li>Submitted findings to academic journals for peer review</li></ul>"
     }
   ],
   portfolio_design: [
