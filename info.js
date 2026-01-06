@@ -1,6 +1,6 @@
 let info = {
   // Hero Section - Credential-forward
-  name: "Shraavasti Bhat",
+  name: "Shraavasti (Shraav) Bhat",
   tagline: "M&T @ University of Pennsylvania | Computer Science + Management",
   research_focus: "Building intelligent systems at the intersection of robotics, AI, and human-centered product design.",
   current_work: "Currently exploring Vision-Language-Action models for robotic control and voice-first AI agents.",
