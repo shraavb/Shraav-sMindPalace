@@ -1,47 +1,66 @@
 <template>
   <div
     :class="{ 'bg-white': !nightMode, 'bg-dark': nightMode }"
-    class="pt-5 p-st"
+    class="pt-5 p-st hero-section"
   >
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 text-center d-flex align-items-center justify-content-center">
+        <div class="col-xl-4 col-lg-4 col-md-5 col-sm-12 text-center d-flex align-items-center justify-content-center">
           <img :src="picture" class="avatar-image" />
         </div>
-        <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pt-5">
-          <span
-            class="home-title"
-            :class="{ pgray: !nightMode, 'text-light': nightMode }"
-            >hey there...</span
-          >
-          <div>
-            <p v-html="description"></p>
-            <p class="contact-info" :class="{ pgray: !nightMode, 'text-light': nightMode }">
-              get in touch at <a href="mailto:shraavasti.b@gmail.com" :class="{ pgray: !nightMode, 'text-light': nightMode }">shraavasti.b@gmail.com</a>
-            </p>
-          </div>
-          <div class="text-center pb-4">
-            <button
-              class="btn btn-outline-secondary mx-2 "
-              @click="open('linkedin')"
-              v-tooltip.bottom="'LinkedIn'"
+        <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12 hero-content">
+          <!-- Name -->
+          <h1 class="hero-name" :class="{ 'text-dark': !nightMode, 'text-light': nightMode }">
+            {{ name }}
+          </h1>
+
+          <!-- Tagline -->
+          <p class="hero-tagline" :class="{ 'text-muted': !nightMode, 'text-secondary': nightMode }">
+            {{ tagline }}
+          </p>
+
+          <!-- Research Focus -->
+          <p class="hero-focus" :class="{ 'text-dark': !nightMode, 'text-light': nightMode }">
+            {{ research_focus }}
+          </p>
+
+          <!-- Current Work -->
+          <p class="hero-current" :class="{ 'text-muted': !nightMode, 'text-secondary': nightMode }">
+            {{ current_work }}
+          </p>
+
+          <!-- Quick Links Bar -->
+          <div class="quick-links">
+            <a
+              :href="'mailto:' + email"
+              class="quick-link-btn"
+              :class="{ 'btn-light-mode': !nightMode, 'btn-dark-mode': nightMode }"
             >
-              <i class="fab fa-linkedin"></i>
-            </button>
+              <i class="fas fa-envelope"></i> Email
+            </a>
             <button
-              class="btn btn-outline-secondary mx-2"
-              @click="open('github')"
-              v-tooltip.bottom="'GitHub'"
-            >
-              <i class="fab fa-github"></i>
-            </button>
-            <button
-              class="btn btn-outline-secondary mx-2"
+              class="quick-link-btn"
+              :class="{ 'btn-light-mode': !nightMode, 'btn-dark-mode': nightMode }"
               @click="openResume"
-              v-tooltip.bottom="'Resume'"
             >
-              <i class="fa fa-file"></i>
+              <i class="fas fa-file-alt"></i> Resume
             </button>
+            <a
+              :href="linkedin"
+              target="_blank"
+              class="quick-link-btn"
+              :class="{ 'btn-light-mode': !nightMode, 'btn-dark-mode': nightMode }"
+            >
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a
+              :href="github"
+              target="_blank"
+              class="quick-link-btn"
+              :class="{ 'btn-light-mode': !nightMode, 'btn-dark-mode': nightMode }"
+            >
+              <i class="fab fa-github"></i> GitHub
+            </a>
           </div>
         </div>
       </div>
@@ -52,13 +71,8 @@
 <script>
 import info from "../../info";
 
-import Wave from "./helpers/Wave";
-
 export default {
   name: "Home",
-  components: {
-    Wave,
-  },
   props: {
     nightMode: {
       type: Boolean,
@@ -67,23 +81,16 @@ export default {
   data() {
     return {
       picture: info.flat_picture,
-      description: info.description,
       name: info.name,
+      tagline: info.tagline,
+      research_focus: info.research_focus,
+      current_work: info.current_work,
+      email: info.email,
       linkedin: info.links.linkedin,
       github: info.links.github
     };
   },
   methods: {
-    open(link) {
-      switch (link) {
-        case "linkedin":
-          window.open(this.linkedin, "_blank");
-          break;
-        case "github":
-          window.open(this.github, "_blank");
-          break;
-      }
-    },
     openResume() {
       this.$emit('showResume');
     },
@@ -92,87 +99,143 @@ export default {
 </script>
 
 <style scoped>
-.home-title {
-  font-size: 28px;
-  font-weight: 500;
+.hero-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
 }
 
-img {
-  max-width: 300px;
-  margin-top: 0;
-  transform: none;
+.hero-content {
+  padding: 2rem 0;
+}
+
+.hero-name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.5px;
+}
+
+.hero-tagline {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  opacity: 0.8;
+}
+
+.hero-focus {
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.hero-current {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 2rem;
+  opacity: 0.85;
 }
 
 .avatar-image {
-  max-width: 300px;
+  max-width: 280px;
   height: auto;
-  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
-@media only screen and (max-width: 580px) {
-  img {
-    object-fit: cover;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 2px solid rgb(205, 205, 205);
-  }
+/* Quick Links Bar */
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
 }
 
-.fa {
-  font-size: 15px;
-}
-
-.btn {
-  border-color: #805ad5;
-  color: #805ad5;
+.quick-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: 1.5px solid #805ad5;
   background-color: transparent;
-  transition: all 0.3s ease;
+  color: #805ad5;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
-.btn:hover {
+.quick-link-btn:hover {
   background-color: #805ad5;
-  border-color: #805ad5;
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(128, 90, 213, 0.3);
+  text-decoration: none;
 }
 
-.btn:focus {
+.quick-link-btn i {
+  font-size: 0.95rem;
+}
+
+/* Dark mode button styles */
+.btn-dark-mode {
+  border-color: #b794f6;
+  color: #b794f6;
+}
+
+.btn-dark-mode:hover {
   background-color: #805ad5;
   border-color: #805ad5;
   color: white;
-  box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.2);
 }
 
-.btn:focus {
-  outline: none !important;
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .hero-section {
+    min-height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding-top: 1.5rem;
+  }
+
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .hero-tagline {
+    font-size: 1rem;
+  }
+
+  .hero-focus {
+    font-size: 1rem;
+  }
+
+  .quick-links {
+    justify-content: center;
+  }
+
+  .avatar-image {
+    max-width: 200px;
+    border-radius: 50%;
+    border: 3px solid rgba(128, 90, 213, 0.3);
+  }
 }
 
-p {
-  text-align: left;
-  font-weight: 400;
+@media only screen and (max-width: 576px) {
+  .hero-name {
+    font-size: 1.75rem;
+  }
+
+  .quick-link-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
 }
-
-.contact-info {
-  margin-top: 15px;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.contact-info a {
-  color: #805ad5;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
-  color: #553c9a;
-}
-
-
-/* LEAVES */
 </style>

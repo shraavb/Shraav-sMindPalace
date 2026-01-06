@@ -1,4 +1,15 @@
 let info = {
+  // Hero Section - Credential-forward
+  name: "Shraavasti Bhat",
+  tagline: "M&T @ University of Pennsylvania | Computer Science + Management",
+  research_focus: "Building intelligent systems at the intersection of robotics, AI, and human-centered product design.",
+  current_work: "Currently exploring Vision-Language-Action models for robotic control and voice-first AI agents.",
+  email: "shraavb@wharton.upenn.edu",
+
+  // Featured projects (by id)
+  featured_projects: ["jetbot-vla", "orbit", "speakeasy", "tennis-ml"],
+
+  // Legacy fields
   logo_name: "shraav",
   flat_picture: require("./assets/shraav_avatar_.png"),
   config: {
@@ -62,74 +73,31 @@ let info = {
   ],
   skills: [
     {
-      title: "programming languages",
-      info: [
-        "Python",
-        "Javascript",
-        "TypeScript",
-        "Java",
-        "C",
-        "C++",
-        "SQL"
-      ],
-      icon: "fa fa-code"
+      title: "product & strategy",
+      info: ["Jira", "Asana", "Notion", "Figma", "SQL", "User Research", "Roadmapping", "A/B Testing"],
+      icon: "fa fa-chart-line"
     },
     {
-      title: "data frameworks",
-      info: [
-        "X API",
-        "Python",
-        "Vader",
-        "Sentiment Analysis",
-        "Numpy",
-        "Pandas",
-        "OpenCV"
-      ],
-      icon: "fa fa-cubes"
-    },
-    {
-      title: "web technologies",
-      info: ["JavaScript", "React", "Node", "Flask", "FastAPI", "HTML", "CSS"],
-      icon: "fas fa-laptop-code"
-    },
-    {
-      title: "ai & ml frameworks",
-      info: ["LangChain", "Claude API", "OpenAI API", "Whisper ASR", "ElevenLabs TTS", "LangSmith", "MCP", "TensorFlow"],
+      title: "ai & robotics",
+      info: ["PyTorch", "Isaac Sim", "SmolVLA", "LangChain", "Claude API", "MCP", "HuggingFace", "TensorFlow"],
       icon: "fas fa-robot"
     },
     {
-      title: "ai tools",
-      info: ["Cursor", "Lovable", "Claude Code"],
-      icon: "fas fa-wand-magic-sparkles"
+      title: "software engineering",
+      info: ["Python", "JavaScript", "TypeScript", "C++", "React", "FastAPI", "Node.js", "PostgreSQL"],
+      icon: "fa fa-code"
     },
     {
-      title: "operating systems & tools",
-      info: [
-        "MacOS",
-        "Windows",
-        "Android",
-        "Agile",
-        "Scrum",
-        "JIRA",
-        "Heroku",
-        "AWS S3"
-      ],
+      title: "tools & platforms",
+      info: ["Git", "Docker", "AWS", "RunPod", "Cursor", "Claude Code", "NVIDIA Jetson", "Raspberry Pi"],
       icon: "fas fa-tools"
-    },
-    {
-      title: "design",
-      info: ["Figma", "Illustrator", "Photoshop"],
-      icon: "fa fa-pencil-square-o"
-    },
-    {
-      title: "product management",
-      info: ["Jira", "Git", "Slack", "Asana", "Notion", "SQL", "Pandas"],
-      icon: "fa fa-tasks"
     }
   ],
   portfolio: [
     {
+      id: "jetbot-vla",
       name: "JetBot VLA Navigation System <span class='badge badge-warning ml-2'>in-progress</span>",
+      preview: "End-to-end sim-to-real ML pipeline for autonomous robot navigation using Vision-Language-Action models.",
       pictures: [
         {
           img: require("./assets/jetbot_jetson_nano.jpg")
@@ -149,6 +117,8 @@ let info = {
       ],
       technologies: ["PyTorch", "NVIDIA Isaac Sim", "SmolVLA", "RunPod", "ZMQ", "HuggingFace", "NVIDIA Jetson"],
       category: "Robotics & ML",
+      projectCategory: "robotics",
+      featured: true,
       date: "Sep 2025 - Present",
       github: "https://github.com/shraavb/jetbot",
       visit: "",
@@ -156,7 +126,9 @@ let info = {
         "<ul><li>Built end-to-end <strong>sim-to-real ML pipeline</strong> for autonomous robot navigation using <strong>Vision-Language-Action (VLA)</strong> models</li><li>Generated <strong>16,500+ training samples</strong> using <strong>NVIDIA Isaac Sim</strong> with domain randomization for robust transfer</li><li>Fine-tuned <strong>SmolVLA (450M params)</strong> with custom action head, achieving <strong>1.5GB memory footprint</strong> for edge deployment</li><li>Deployed training on <strong>RunPod RTX 4090</strong> GPUs with <strong>ZMQ-based inference server</strong> (~50-100ms latency)</li><li>Implemented natural language instruction understanding for flexible robot control</li></ul>"
     },
     {
+      id: "orbit",
       name: "Orbit: Voice-First AI Personal Agent",
+      preview: "Voice-first AI assistant with LangChain agents, MCP integration, and multi-channel messaging.",
       pictures: [
         {
           img: require("./assets/Orbit_Project_Image.png")
@@ -164,6 +136,8 @@ let info = {
       ],
       technologies: ["LangChain", "AI Agents", "MCP", "Claude API", "Whisper ASR", "ElevenLabs TTS", "FastAPI", "React", "PostgreSQL", "LangSmith"],
       category: "AI Application",
+      projectCategory: "product",
+      featured: true,
       date: "Dec 2025 - Present",
       github: "",
       visit: "",
@@ -172,7 +146,9 @@ let info = {
         "<ul><li>Built voice-first AI assistant using <strong>Claude Sonnet 4.5</strong> with <strong>LangChain tool-calling agents</strong></li><li>Integrated <strong>Model Context Protocol (MCP)</strong> with custom FastMCP server for memory tools</li><li>Implemented <strong>self-hosted Whisper ASR</strong> and <strong>ElevenLabs TTS</strong> with lip-sync animation</li><li>Built multi-channel messaging integrations: SMS, Email, Slack, WhatsApp via custom BaseTool subclasses</li><li>Developed real-time voice-to-voice pipeline with <strong>FastAPI</strong> backend and <strong>React</strong> frontend</li><li>Added <strong>LangSmith</strong> observability with distributed tracing</li></ul>"
     },
     {
+      id: "speakeasy",
       name: "SpeakEasy V2: Advanced Language Learning Platform <span class='badge badge-warning ml-2'>in-progress</span>",
+      preview: "AI-powered language learning platform with conversation simulation and real-time pronunciation feedback.",
       pictures: [
         {
           img: require("./assets/SpeakEasy_Master_Conversational_Fluency.png")
@@ -180,6 +156,8 @@ let info = {
       ],
       technologies: ["Lovable", "AI Integration", "Advanced NLP", "Real-time Feedback", "Conversation Simulation"],
       category: "Web Application",
+      projectCategory: "product",
+      featured: true,
       date: "Aug 2025 - Present",
       github: "",
       visit: "https://github.com/shraavb/-Senior-Design-SpeakEasy",
@@ -188,7 +166,9 @@ let info = {
         "<ul><li>Senior Design Project: Web platform for advanced language learners</li><li>Features sophisticated <strong>conversation simulation</strong> with AI-powered dialogue</li><li>Implementing real-time <strong>pronunciation feedback</strong> and contextual learning scenarios</li><li>Built using <strong>Lovable</strong> AI-assisted development platform</li></ul>"
     },
     {
+      id: "openaps",
       name: "OpenAPS - Embedded Systems for Closed-Loop Insulin Control",
+      preview: "Embedded control system simulating insulin dosing logic with real-time CGM integration.",
       pictures: [
         {
           img: require("./assets/OpenAPS_project.png")
@@ -196,6 +176,8 @@ let info = {
       ],
       technologies: ["C++", "Arduino", "FreeRTOS", "MQTT", "Embedded Systems"],
       category: "Embedded Systems",
+      projectCategory: "robotics",
+      featured: false,
       date: "Oct 2025",
       github: "https://github.com/jimmyyu123/CIS541OpenAPS_proj_Steady_State",
       visit: "",
@@ -203,7 +185,9 @@ let info = {
         "<ul><li>Built embedded control system on <strong>Arduino Nano</strong> to simulate insulin dosing logic</li><li>Implemented real-time <strong>CGM ingestion</strong> and insulin publishing pipeline via digital twins</li><li>Coordinated asynchronous tasks using <strong>FreeRTOS</strong></li><li>Established device communication using <strong>MQTT</strong> protocol</li></ul>"
     },
     {
+      id: "coral-drone",
       name: "Coral Reef Mapping Drone",
+      preview: "Open source ocean drone for mapping and analyzing coral reef health using computer vision.",
       pictures: [
         {
           img: require("./assets/makerbay-coralbot.jpeg")
@@ -214,6 +198,8 @@ let info = {
       ],
       technologies: ["Go Pro", "Image Segmentation", "Raspberry Pi", "3D Printing", "Computer Vision", "Laser Cutting"],
       category: "Robotics",
+      projectCategory: "robotics",
+      featured: false,
       date: "2020",
       github: "https://github.com/MakerBay/Coral_Reef_Mapping_Drone",
       visit: "https://makerbay.net/coralbot-coral-reef-mapping-drone/",
@@ -221,14 +207,18 @@ let info = {
         "<ul><li>Open source ocean water drone for mapping and analyzing coral reef health</li><li>Integrated <strong>GoPro</strong> camera with <strong>image segmentation</strong> for reef analysis</li><li>Built with <strong>Raspberry Pi</strong> for onboard processing</li><li>Fabricated components using <strong>3D printing</strong> and <strong>laser cutting</strong></li></ul>"
     },
     {
+      id: "tennis-ml",
       name: "Predicting Underdog Wins",
+      preview: "ML model to predict upsets in tennis matches using player statistics and tournament data.",
       pictures: [
         {
           img: require("./assets/dev_project2_tennisupset.jpg")
         }
       ],
-      technologies: ["Pandas", "PandaSQL", "Polar", "DuckDB"],
+      technologies: ["Pandas", "PandaSQL", "Polars", "DuckDB", "Machine Learning"],
       category: "ML Project",
+      projectCategory: "product",
+      featured: true,
       date: "March 2025 - Apr 2025",
       github: "https://github.com/shraavb/Predicting-Tennis-Upsets-with-Machine-Learning",
       visit: "",
@@ -236,7 +226,9 @@ let info = {
         "<ul><li>Developed <strong>ML model</strong> to predict upsets in tennis matches</li><li>Analyzed player statistics and tournament details using <strong>Pandas</strong> and <strong>PandaSQL</strong></li><li>Implemented data processing pipelines with <strong>Polars</strong> and <strong>DuckDB</strong></li></ul>"
     },
     {
+      id: "bridge",
       name: "Bridge V1: Multi-Modal Language Learning Tool",
+      preview: "Language learning tool with multimodal AI adapting to business, casual, and social contexts.",
       pictures: [
         {
           img: require("./assets/Dev_Proj3_Bridge.png")
@@ -244,6 +236,8 @@ let info = {
       ],
       technologies: ["Grok API", "OpenAI API", "HTML", "CSS", "JavaScript", "Cursor"],
       category: "Web Application",
+      projectCategory: "product",
+      featured: false,
       date: "2024 - 2025",
       github: "https://github.com/shraavb/Bridge",
       visit: "https://bridge-production-8580.up.railway.app",
@@ -251,7 +245,9 @@ let info = {
         "<ul><li>Built language learning tool using <strong>multimodal</strong> information</li><li>Integrated <strong>Grok API</strong> and <strong>OpenAI API</strong> for intelligent responses</li><li>Adapts to different scenarios: business, casual, and dating contexts</li><li>Leveraged <strong>prompting techniques</strong> to optimize LLM performance</li><li>Built with <strong>Cursor</strong> AI-assisted development</li></ul>"
     },
     {
+      id: "hci-research",
       name: "Human Computer Interaction Research",
+      preview: "Research on how user anonymity influences tweet sentiment and polarization during COVID-19.",
       pictures: [
         {
           img: require("./assets/proj1_anonymity_research.png"),
@@ -260,8 +256,10 @@ let info = {
       ],
       presentation: "IFoRE_Twitter.pdf",
       technologies: ["X API", "Python", "Vader", "Sentiment Analysis"],
-      category: "",
-      date: "Sep 2022 – Jun 2024 • Academic Research",
+      category: "Academic Research",
+      projectCategory: "robotics",
+      featured: false,
+      date: "Sep 2022 – Jun 2024",
       github: "",
       visit: "",
       description:
