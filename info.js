@@ -19,7 +19,7 @@ let info = {
     }
   },
   description:
-    "I'm Shraav! I'm studying Computer Science and Management at the University of Pennsylvania. I have worked as a product manager at TE Connectivity, Manatal, and Develop for Good, working with teams across Design, Engineering, Marketing, and Sales. I have also had the chance to dive into cool projects in areas like Embedded Systems and Computer Vision. Feel free to scroll through and check them out!",
+    "I'm a Computer Science and Management student at the University of Pennsylvania. I have worked as a product manager at TE Connectivity, Manatal, and Develop for Good, collaborating with teams across Design, Engineering, Marketing, and Sales. I have also worked on projects in Embedded Systems, Computer Vision, and AI.",
   links: {
     linkedin: "https://www.linkedin.com/in/shraavasti-bhat/",
     github: "https://github.com/shraavb"
@@ -263,7 +263,7 @@ let info = {
       github: "",
       visit: "",
       description:
-        "<ul><li>9-month research project investigating user anonymity and toxic discourse on Twitter during COVID-19</li><li>Collected <strong>50,000+ tweets</strong> using <strong>Twitter/X API v2</strong> with automated metadata extraction</li><li>Implemented sentiment classification using <strong>VADER</strong> with custom pandemic-specific lexicons</li><li>Conducted regression analysis controlling for follower count, account age, and topic to isolate anonymity effects</li><li>Submitted findings to academic journals for peer review</li></ul>"
+        "<ul><li>Analyzed user anonymity and how this impacted sentiment and polarization displayed among users</li><li>Collected <strong>50,000+ tweets</strong> using <strong>Twitter/X API v2</strong> with automated metadata extraction</li><li>Implemented sentiment classification using <strong>VADER</strong> with custom pandemic-specific lexicons</li><li>Conducted regression analysis controlling for follower count, account age, and topic to isolate anonymity effects</li><li>Submitted findings to academic journals for peer review</li></ul>"
     }
   ],
   portfolio_design: [
