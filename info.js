@@ -7,7 +7,7 @@ let info = {
   email: "shraavb@wharton.upenn.edu",
 
   // Featured projects (by id)
-  featured_projects: ["jetbot-vla", "orbit", "speakeasy", "tennis-ml"],
+  featured_projects: ["jetbot-vla", "orbit", "speakeasy", "spanish-slang-stt", "tennis-ml"],
 
   // Legacy fields
   logo_name: "shraav",
