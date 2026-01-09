@@ -165,6 +165,28 @@ let info = {
         "<ul><li>Built speech-to-speech language learning platform with <strong>LoRA fine-tuned Llama 3</strong> on dialect-specific conversational data</li><li>Processed <strong>4,383 dialogue segments</strong> from 102 Spanish films with automated scenario classification and CEFR difficulty tagging</li><li>Designed <strong>6-metric fluency scoring engine</strong> using Whisper ASR for pronunciation, fluency, and communicative competence evaluation</li><li>Created curriculum with <strong>37 conversation scenarios</strong> across 3 modules and 8 AI conversation partners</li><li>Deployed full-stack app (<strong>React/FastAPI/PostgreSQL</strong>) to web and iOS/Android via Capacitor</li></ul>"
     },
     {
+      id: "spanish-slang-stt",
+      name: "Spanish Slang STT: Regional Dialect Recognition <span class='badge badge-warning ml-2'>in-progress</span>",
+      preview: "Fine-tuned Whisper model for recognizing regional Spanish slang and informal speech across Mexico, Argentina, Spain, and Chile.",
+      pictures: [
+        {
+          img: require("./assets/spanish_slang_stt_architecture.png")
+        },
+        {
+          img: require("./assets/spanish_slang_stt.png")
+        }
+      ],
+      technologies: ["PyTorch", "Whisper", "HuggingFace", "FastAPI", "faster-whisper", "ElevenLabs TTS", "librosa"],
+      category: "ML & NLP",
+      projectCategory: "robotics",
+      featured: false,
+      date: "Dec 2025 - Present",
+      github: "https://github.com/shraavb/spanish-slang-stt",
+      visit: "",
+      description:
+        "<ul><li>Built <strong>fine-tuned Speech-to-Text system</strong> optimized for regional Spanish slang and informal speech recognition</li><li>Processed <strong>31,000+ audio samples</strong> across 4 regions (Mexico, Argentina, Spain, Chile) with automated dialect attribution</li><li>Fine-tuned <strong>OpenAI Whisper</strong> achieving <strong>16.27% WER</strong> on test set (8.33% median) for slang-heavy speech</li><li>Created <strong>1,335+ regional slang dictionary entries</strong> with formality-level tagging for training data augmentation</li><li>Built production-ready <strong>FastAPI service</strong> with region-aware model selection, word-level timestamps, and evaluation endpoints</li><li>Implemented <strong>synthetic data pipeline</strong> using ElevenLabs TTS for bootstrapping training data with multiple Spanish voice variations</li></ul>"
+    },
+    {
       id: "openaps",
       name: "OpenAPS - Embedded Systems for Closed-Loop Insulin Control",
       preview: "Embedded control system simulating insulin dosing logic with real-time CGM integration.",
