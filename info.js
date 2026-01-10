@@ -127,7 +127,7 @@ let info = {
     {
       id: "orbit",
       name: "Orbit: Voice-First AI Personal Agent",
-      preview: "Voice-first AI assistant with LangChain agents, MCP integration, and multi-channel messaging.",
+      preview: "Voice-first AI assistant powered by a multi-step agent that handles messaging across SMS, email, Slack, and WhatsApp with confirmation before execution.",
       pictures: [
         {
           img: require("./assets/Orbit_Project_Image.png")
@@ -142,7 +142,7 @@ let info = {
       visit: "",
       video: "Orbit_Agent_Demo.mp4",
       description:
-        "<ul><li>Built voice-first AI assistant using <strong>Claude Sonnet 4.5</strong> with <strong>LangChain tool-calling agents</strong></li><li>Integrated <strong>Model Context Protocol (MCP)</strong> with custom FastMCP server for memory tools</li><li>Implemented <strong>self-hosted Whisper ASR</strong> and <strong>ElevenLabs TTS</strong> with lip-sync animation</li><li>Built multi-channel messaging integrations: SMS, Email, Slack, WhatsApp via custom BaseTool subclasses</li><li>Developed real-time voice-to-voice pipeline with <strong>FastAPI</strong> backend and <strong>React</strong> frontend</li><li>Added <strong>LangSmith</strong> observability with distributed tracing</li></ul>"
+        "<ul><li>Built voice-first AI assistant using <strong>Claude Sonnet 4.5</strong> with a <strong>multi-step LangChain agent</strong> that breaks down requests, collects missing parameters through follow-up questions, and confirms actions before execution</li><li>Integrated <strong>Model Context Protocol (MCP)</strong> with custom FastMCP server for memory tools</li><li>Implemented <strong>self-hosted Whisper ASR</strong> and <strong>ElevenLabs TTS</strong> with lip-sync animation</li><li>Built multi-channel messaging integrations: SMS, Email, Slack, WhatsApp via custom BaseTool subclasses</li><li>Developed real-time voice-to-voice pipeline with <strong>FastAPI</strong> backend and <strong>React</strong> frontend</li><li>Added <strong>LangSmith</strong> observability with distributed tracing</li></ul>"
     },
     {
       id: "speakeasy",
