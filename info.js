@@ -7,7 +7,7 @@ let info = {
   email: "shraavb@wharton.upenn.edu",
 
   // Featured projects (by id)
-  featured_projects: ["jetbot-vla", "orbit", "speakeasy", "spanish-slang-stt", "tennis-ml"],
+  featured_projects: ["jetbot-vla", "orbit", "procura", "speakeasy", "spanish-slang-stt"],
 
   // Legacy fields
   logo_name: "shraav",
@@ -156,7 +156,7 @@ let info = {
       technologies: ["LangGraph", "LangChain", "Claude Sonnet", "FastAPI", "React", "PostgreSQL", "pgvector", "RAG", "WebSockets"],
       category: "AI Application",
       projectCategory: "product",
-      featured: false,
+      featured: true,
       date: "Jan 2026 - Present",
       github: "https://github.com/shraavb/Procura",
       visit: "",
