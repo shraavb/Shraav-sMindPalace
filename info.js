@@ -145,6 +145,25 @@ let info = {
         "<ul><li>Built voice-first AI assistant using <strong>Claude Sonnet 4.5</strong> with a <strong>multi-step LangChain agent</strong> that breaks down requests, collects missing parameters through follow-up questions, and confirms actions before execution</li><li>Integrated <strong>Model Context Protocol (MCP)</strong> with custom FastMCP server for memory tools</li><li>Implemented <strong>self-hosted Whisper ASR</strong> and <strong>ElevenLabs TTS</strong> with lip-sync animation</li><li>Built multi-channel messaging integrations: SMS, Email, Slack, WhatsApp via custom BaseTool subclasses</li><li>Developed real-time voice-to-voice pipeline with <strong>FastAPI</strong> backend and <strong>React</strong> frontend</li><li>Added <strong>LangSmith</strong> observability with distributed tracing</li></ul>"
     },
     {
+      id: "procura",
+      name: "Procura: BOM/PO Multi-Agent System",
+      preview: "Multi-agent AI system for Bill of Materials processing and Purchase Order automation with 5 specialized LangGraph agents working together.",
+      pictures: [
+        {
+          img: require("./assets/procura_proj_img.png")
+        }
+      ],
+      technologies: ["LangGraph", "LangChain", "Claude Sonnet", "FastAPI", "React", "PostgreSQL", "pgvector", "RAG", "WebSockets"],
+      category: "AI Application",
+      projectCategory: "product",
+      featured: false,
+      date: "Jan 2026 - Present",
+      github: "https://github.com/shraavb/Procura",
+      visit: "",
+      description:
+        "<ul><li>Built <strong>multi-agent AI system</strong> for BOM processing with <strong>5 specialized LangGraph agents</strong>: Parser, Matcher, Optimizer, PO Generator, and Order Tracker</li><li>Implemented <strong>RAG-powered supplier matching</strong> using pgvector for semantic search across supplier catalogs</li><li>Designed <strong>human-in-the-loop approval workflows</strong> for low-confidence matches and high-value purchase orders</li><li>Built real-time progress tracking with <strong>WebSocket updates</strong> during multi-step agent processing</li><li>Created auto-generated PO tagging system linking purchase orders back to source BOMs for full traceability</li><li>Developed modern UI with <strong>React + Tailwind + Framer Motion</strong> animations</li></ul>"
+    },
+    {
       id: "speakeasy",
       name: "SpeakEasy: AI-Powered Conversational Language Learning <span class='badge badge-warning ml-2'>in-progress</span>",
       preview: "Speech-to-speech learning platform with fine-tuned LLMs, 6-metric fluency scoring, and scenario-based curriculum.",
@@ -184,7 +203,7 @@ let info = {
       github: "https://github.com/shraavb/spanish-slang-stt",
       visit: "",
       description:
-        "<ul><li>Built <strong>fine-tuned Speech-to-Text system</strong> optimized for regional Spanish slang and informal speech recognition</li><li>Processed <strong>31,000+ audio samples</strong> across 4 regions (Mexico, Argentina, Spain, Chile) with automated dialect attribution</li><li>Fine-tuned <strong>OpenAI Whisper</strong> achieving <strong>16.27% WER</strong> on test set (8.33% median) for slang-heavy speech</li><li>Created <strong>1,335+ regional slang dictionary entries</strong> with formality-level tagging for training data augmentation</li><li>Built production-ready <strong>FastAPI service</strong> with region-aware model selection, word-level timestamps, and evaluation endpoints</li><li>Implemented <strong>synthetic data pipeline</strong> using ElevenLabs TTS for bootstrapping training data with multiple Spanish voice variations</li></ul>"
+        "<ul><li>Built <strong>fine-tuned Speech-to-Text system</strong> optimized for regional Spanish slang and informal speech recognition</li><li>Processed <strong>31,000+ audio samples</strong> across 4 regions (Spain, Argentina, Chile, Mexico) with automated dialect attribution</li><li>Fine-tuned <strong>OpenAI Whisper</strong> achieving <strong>16.27% WER</strong> on test set (8.33% median) for slang-heavy speech</li><li>Created <strong>1,335+ regional slang dictionary entries</strong> with formality-level tagging for training data augmentation</li><li>Built production-ready <strong>FastAPI service</strong> with region-aware model selection, word-level timestamps, and evaluation endpoints</li><li>Implemented <strong>synthetic data pipeline</strong> using ElevenLabs TTS for bootstrapping training data with multiple Spanish voice variations</li></ul>"
     },
     {
       id: "openaps",
