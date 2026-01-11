@@ -160,6 +160,7 @@ let info = {
       date: "Jan 2026 - Present",
       github: "https://github.com/shraavb/Procura",
       visit: "",
+      video: "Procura-demo.mp4",
       description:
         "<ul><li>Built <strong>multi-agent AI system</strong> for BOM processing with <strong>5 specialized LangGraph agents</strong>: Parser, Matcher, Optimizer, PO Generator, and Order Tracker</li><li>Implemented <strong>RAG-powered supplier matching</strong> using pgvector for semantic search across supplier catalogs</li><li>Designed <strong>human-in-the-loop approval workflows</strong> for low-confidence matches and high-value purchase orders</li><li>Built real-time progress tracking with <strong>WebSocket updates</strong> during multi-step agent processing</li><li>Created auto-generated PO tagging system linking purchase orders back to source BOMs for full traceability</li><li>Developed modern UI with <strong>React + Tailwind + Framer Motion</strong> animations</li></ul>"
     },
