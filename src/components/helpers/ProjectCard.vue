@@ -115,6 +115,14 @@
             <i class="fab fa-github"></i> Repo
           </a>
           <a
+            v-if="project.huggingface"
+            :href="getHuggingFaceUrl(project.huggingface)"
+            target="_blank"
+            class="project-link"
+          >
+            🤗 Model
+          </a>
+          <a
             v-if="project.visit"
             :href="project.visit"
             target="_blank"
@@ -195,6 +203,10 @@ export default {
     openImageModal(imgSrc) {
       // Could emit event to parent for full-screen modal
       window.open(imgSrc, '_blank');
+    },
+    getHuggingFaceUrl(huggingface) {
+      // If it's an array, return the first URL (model), otherwise return the string
+      return Array.isArray(huggingface) ? huggingface[0] : huggingface;
     }
   }
 };

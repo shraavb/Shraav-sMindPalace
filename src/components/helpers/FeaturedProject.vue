@@ -92,6 +92,15 @@
             <i class="fab fa-github"></i> Repo
           </a>
           <a
+            v-if="project.huggingface"
+            :href="getHuggingFaceUrl(project.huggingface)"
+            target="_blank"
+            class="action-link"
+            :class="{ 'link-dark': nightMode }"
+          >
+            🤗 Model
+          </a>
+          <a
             v-if="project.visit"
             :href="project.visit"
             target="_blank"
@@ -196,6 +205,10 @@ export default {
     },
     openImage(imgSrc) {
       window.open(imgSrc, '_blank');
+    },
+    getHuggingFaceUrl(huggingface) {
+      // If it's an array, return the first URL (model), otherwise return the string
+      return Array.isArray(huggingface) ? huggingface[0] : huggingface;
     }
   }
 };

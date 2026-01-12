@@ -95,14 +95,21 @@
             >
               visit project
             </button>
-            <button 
-              v-if="portfolio.github && portfolio.github.trim() !== ''" 
-              class="btn w-25 mr-3" 
+            <button
+              v-if="portfolio.github && portfolio.github.trim() !== ''"
+              class="btn w-25 mr-3"
               @click="open(portfolio.github)"
             >
               repo
             </button>
-            <button 
+            <button
+              v-if="portfolio.huggingface && (Array.isArray(portfolio.huggingface) ? portfolio.huggingface.length > 0 : portfolio.huggingface.trim() !== '')"
+              class="btn w-25 mr-3"
+              @click="openHuggingFace(portfolio.huggingface)"
+            >
+              🤗 model
+            </button>
+            <button
               v-if="portfolio.pictures && portfolio.pictures[0] && portfolio.pictures[0].pdf" 
               class="btn w-25 mr-3" 
               @click="openPdf(portfolio.pictures[0].pdf)"
@@ -160,6 +167,13 @@ export default {
     },
     open(url) {
       window.open(url, "_blank");
+    },
+    openHuggingFace(huggingface) {
+      if (Array.isArray(huggingface)) {
+        huggingface.forEach(url => window.open(url, "_blank"));
+      } else {
+        window.open(huggingface, "_blank");
+      }
     },
     openPdf(pdfPath) {
       const pdfUrl = process.env.NODE_ENV === 'production' 
