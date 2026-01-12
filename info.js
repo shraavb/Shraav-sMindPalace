@@ -7,7 +7,7 @@ let info = {
   email: "shraavb@wharton.upenn.edu",
 
   // Featured projects (by id)
-  featured_projects: ["jetbot-vla", "orbit", "procura", "speakeasy", "spanish-slang-stt"],
+  featured_projects: ["lerobot-so101", "jetbot-vla", "orbit", "procura", "speakeasy", "spanish-slang-stt"],
 
   // Legacy fields
   logo_name: "shraav",
@@ -94,6 +94,25 @@ let info = {
   ],
   portfolio: [
     {
+      id: "lerobot-so101",
+      name: "LeRobot SO-101 <span class='badge badge-warning ml-2'>in-progress</span>",
+      preview: "Building and training a low-cost robotic manipulation system using HuggingFace LeRobot framework with leader-follower teleoperation.",
+      pictures: [
+        {
+          img: require("./assets/le_robot_cover_img.jpg")
+        }
+      ],
+      technologies: ["HuggingFace LeRobot", "VLA Models", "NVIDIA Groot", "Imitation Learning", "Data Collection", "ACT Architecture"],
+      category: "Robotics & ML",
+      projectCategory: "robotics",
+      featured: true,
+      date: "Jan 2026 - Present",
+      github: "https://github.com/huggingface/lerobot",
+      visit: "",
+      description:
+        "<ul><li>Building <strong>SO-101 robotic arm</strong> using HuggingFace's open-source <strong>LeRobot framework</strong> for low-cost manipulation research</li><li>Assembled leader-follower arm setup with <strong>Feetech STS3215 servos</strong> for teleoperation data collection</li><li>Implementing <strong>imitation learning pipeline</strong> to train policies from human demonstrations</li><li>Debugging motor communication and calibration for reliable <strong>60fps teleoperation</strong></li><li>Goal: Train vision-based manipulation policies using <strong>ACT (Action Chunking Transformer)</strong> architecture</li></ul>"
+    },
+    {
       id: "jetbot-vla",
       name: "JetBot VLA Navigation System <span class='badge badge-warning ml-2'>in-progress</span>",
       preview: "End-to-end sim-to-real ML pipeline for autonomous robot navigation using Vision-Language-Action models.",
@@ -120,6 +139,7 @@ let info = {
       featured: true,
       date: "Sep 2025 - Present",
       github: "https://github.com/shraavb/jetbot",
+      huggingface: "https://huggingface.co/shraavb/smolvla-jetbot",
       visit: "",
       description:
         "<ul><li>Built end-to-end <strong>sim-to-real ML pipeline</strong> for autonomous robot navigation using <strong>Vision-Language-Action (VLA)</strong> models</li><li>Generated <strong>16,500+ training samples</strong> using <strong>NVIDIA Isaac Sim</strong> with domain randomization for robust transfer</li><li>Fine-tuned <strong>SmolVLA (450M params)</strong> with custom action head, achieving <strong>1.5GB memory footprint</strong> for edge deployment</li><li>Deployed training on <strong>RunPod RTX 4090</strong> GPUs with <strong>ZMQ-based inference server</strong> (~50-100ms latency)</li><li>Implemented natural language instruction understanding for flexible robot control</li></ul>"
@@ -179,6 +199,7 @@ let info = {
       featured: true,
       date: "Aug 2025 - Present",
       github: "https://github.com/shraavb/-Senior-Design-SpeakEasy",
+      huggingface: "https://huggingface.co/shraavb/spanish-slang-whisper",
       visit: "",
       video: "SpeakEasy Demo V2.mov",
       description:
@@ -199,9 +220,10 @@ let info = {
       technologies: ["PyTorch", "Whisper", "HuggingFace", "FastAPI", "faster-whisper", "ElevenLabs TTS", "librosa"],
       category: "ML & NLP",
       projectCategory: "robotics",
-      featured: false,
+      featured: true,
       date: "Dec 2025 - Present",
       github: "https://github.com/shraavb/spanish-slang-stt",
+      huggingface: ["https://huggingface.co/datasets/shraavb/spanish-slang-stt-data", "https://huggingface.co/datasets/shraavb/spanish-slang-stt"],
       visit: "",
       description:
         "<ul><li>Built <strong>fine-tuned Speech-to-Text system</strong> optimized for regional Spanish slang and informal speech recognition</li><li>Processed <strong>31,000+ audio samples</strong> across 4 regions (Spain, Argentina, Chile, Mexico) with automated dialect attribution</li><li>Fine-tuned <strong>OpenAI Whisper</strong> achieving <strong>16.27% WER</strong> on test set (8.33% median) for slang-heavy speech</li><li>Created <strong>1,335+ regional slang dictionary entries</strong> with formality-level tagging for training data augmentation</li><li>Built production-ready <strong>FastAPI service</strong> with region-aware model selection, word-level timestamps, and evaluation endpoints</li><li>Implemented <strong>synthetic data pipeline</strong> using ElevenLabs TTS for bootstrapping training data with multiple Spanish voice variations</li></ul>"
@@ -237,7 +259,7 @@ let info = {
           img: require("./assets/coral drone workflow.jpeg")
         }
       ],
-      technologies: ["Go Pro", "Image Segmentation", "Raspberry Pi", "3D Printing", "Computer Vision", "Laser Cutting"],
+      technologies: ["Computer Vision", "Image Segmentation", "Raspberry Pi", "Python", "GPS Navigation", "3D Printing"],
       category: "Robotics",
       projectCategory: "robotics",
       featured: false,
@@ -256,7 +278,7 @@ let info = {
           img: require("./assets/dev_project2_tennisupset.jpg")
         }
       ],
-      technologies: ["Pandas", "PandaSQL", "Polars", "DuckDB", "Machine Learning"],
+      technologies: ["XGBoost", "Random Forest", "Polars", "DuckDB", "Feature Engineering", "SMOTE"],
       category: "ML Project",
       projectCategory: "robotics",
       featured: false,
@@ -276,7 +298,7 @@ let info = {
           img: require("./assets/Dev_Proj3_Bridge.png")
         }
       ],
-      technologies: ["Grok API", "OpenAI API", "HTML", "CSS", "JavaScript", "Cursor"],
+      technologies: ["Grok API", "OpenAI API", "JavaScript", "Prompt Engineering", "Real-time Chat", "Context Switching"],
       category: "Hackathon Project",
       projectCategory: "product",
       featured: false,
