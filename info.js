@@ -77,18 +77,23 @@ let info = {
       icon: "fa fa-chart-line"
     },
     {
-      title: "ai & robotics",
-      info: ["PyTorch", "Isaac Sim", "SmolVLA", "LangChain", "Claude API", "MCP", "HuggingFace", "TensorFlow"],
+      title: "ai & ml",
+      info: ["PyTorch", "LangChain", "LangGraph", "RAG", "Whisper ASR", "LoRA Fine-tuning", "XGBoost", "HuggingFace"],
+      icon: "fas fa-brain"
+    },
+    {
+      title: "robotics & simulation",
+      info: ["NVIDIA Isaac Sim", "SmolVLA", "LeRobot", "Imitation Learning", "FreeRTOS", "Arduino", "NVIDIA Jetson"],
       icon: "fas fa-robot"
     },
     {
       title: "software engineering",
-      info: ["Python", "JavaScript", "TypeScript", "C++", "React", "FastAPI", "Node.js", "PostgreSQL"],
+      info: ["Python", "JavaScript", "TypeScript", "C++", "React", "FastAPI", "PostgreSQL", "WebSockets"],
       icon: "fa fa-code"
     },
     {
       title: "tools & platforms",
-      info: ["Git", "Docker", "AWS", "RunPod", "Cursor", "Claude Code", "NVIDIA Jetson", "Raspberry Pi"],
+      info: ["Git", "Docker", "AWS", "RunPod", "Claude API", "MCP", "ElevenLabs", "Raspberry Pi"],
       icon: "fas fa-tools"
     }
   ],
