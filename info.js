@@ -114,7 +114,7 @@ let info = {
     },
     {
       id: "jetbot-vla",
-      name: "JetBot VLA Navigation System <span class='badge badge-warning ml-2'>in-progress</span>",
+      name: "JetBot VLA Navigation System",
       preview: "End-to-end sim-to-real ML pipeline for autonomous robot navigation using Vision-Language-Action models.",
       pictures: [
         {
@@ -137,12 +137,12 @@ let info = {
       category: "Robotics & ML",
       projectCategory: "robotics",
       featured: true,
-      date: "Sep 2025 - Present",
+      date: "Sep 2025 - Dec 2025",
       github: "https://github.com/shraavb/jetbot",
       huggingface: "https://huggingface.co/shraavb/smolvla-jetbot",
       visit: "",
       description:
-        "<ul><li>Built end-to-end <strong>sim-to-real ML pipeline</strong> for autonomous robot navigation using <strong>Vision-Language-Action (VLA)</strong> models</li><li>Generated <strong>16,500+ training samples</strong> using <strong>NVIDIA Isaac Sim</strong> with domain randomization for robust transfer</li><li>Fine-tuned <strong>SmolVLA (450M params)</strong> with custom action head, achieving <strong>1.5GB memory footprint</strong> for edge deployment</li><li>Deployed training on <strong>RunPod RTX 4090</strong> GPUs with <strong>ZMQ-based inference server</strong> (~50-100ms latency)</li><li>Implemented natural language instruction understanding for flexible robot control</li></ul>"
+        "<ul><li>Built end-to-end <strong>sim-to-real ML pipeline</strong> for autonomous robot navigation using <strong>Vision-Language-Action (VLA)</strong> models</li><li>Generated <strong>16,500+ training samples</strong> using <strong>NVIDIA Isaac Sim</strong> with domain randomization for robust transfer</li><li>Fine-tuned <strong>SmolVLA (450M params)</strong> with custom action head, achieving <strong>1.5GB memory footprint</strong> for edge deployment</li><li>Deployed training on cloud GPUs (RunPod RTX 4090) with <strong>ZMQ-based inference server</strong> achieving ~50-100ms latency for real-time robot control</li><li>Implemented natural language instruction understanding for flexible robot control</li></ul>"
     },
     {
       id: "orbit",
@@ -157,7 +157,7 @@ let info = {
       category: "AI Application",
       projectCategory: "product",
       featured: true,
-      date: "Dec 2025 - Present",
+      date: "Dec 2025 - Jan 2026",
       github: "https://github.com/shraavb/Orbit-your-personal-agent",
       visit: "",
       video: "Orbit_Agent_Demo.mp4",
@@ -177,7 +177,7 @@ let info = {
       category: "AI Application",
       projectCategory: "product",
       featured: true,
-      date: "Jan 2026 - Present",
+      date: "Jan 2026",
       github: "https://github.com/shraavb/Procura",
       visit: "",
       video: "Procura-demo.mp4",
@@ -207,7 +207,7 @@ let info = {
     },
     {
       id: "spanish-slang-stt",
-      name: "Spanish Slang STT: Regional Dialect Recognition <span class='badge badge-warning ml-2'>in-progress</span>",
+      name: "Spanish Slang STT: Regional Dialect Recognition",
       preview: "Fine-tuned Whisper model for recognizing regional Spanish slang and informal speech across Mexico, Argentina, Spain, and Chile.",
       pictures: [
         {
@@ -221,7 +221,7 @@ let info = {
       category: "ML & NLP",
       projectCategory: "robotics",
       featured: true,
-      date: "Dec 2025 - Present",
+      date: "Dec 2025",
       github: "https://github.com/shraavb/spanish-slang-stt",
       huggingface: ["https://huggingface.co/datasets/shraavb/spanish-slang-stt-data", "https://huggingface.co/datasets/shraavb/spanish-slang-stt"],
       visit: "",
