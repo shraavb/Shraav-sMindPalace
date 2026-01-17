@@ -1,5 +1,7 @@
 # Shraav's Mind Palace
 
+[![CI/CD Pipeline](https://github.com/shraavb/Shraav-sMindPalace/actions/workflows/ci.yml/badge.svg)](https://github.com/shraavb/Shraav-sMindPalace/actions/workflows/ci.yml)
+
 A Vue.js portfolio website showcasing projects, skills, and experience - Shraav's digital mind palace.
 
 🌐 **Live Website**: [https://shraavb.github.io/Shraav-sMindPalace/](https://shraavb.github.io/Shraav-sMindPalace/)
@@ -22,6 +24,23 @@ npm run serve:legacy
 ```
 
 The development server will be available at `http://localhost:8080` (or another port if 8080 is busy).
+
+### Testing
+```bash
+# Run tests
+npm test
+
+# Run tests with coverage report
+npm run test:coverage
+
+# Run tests in watch mode
+npm run test:watch
+```
+
+### Linting
+```bash
+npm run lint
+```
 
 ## Deployment
 
