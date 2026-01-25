@@ -43,6 +43,15 @@ let info = {
   ],
   experience: [
     {
+      name: "AdminifAI",
+      place: "New York, NY",
+      date: "Jan 2026 - Present",
+      position: "Backend Software Engineer",
+      description:
+        "Building software for salons to automate customer management through AI. Designed and implemented an automated customer reminder system enabling salons to send timely SMS/email notifications for appointments, reducing no-shows and driving rebookings. Built voice agent for CRM to automate appointment scheduling and customer support.",
+      skills: ["Python", "FastAPI", "Celery", "Docker", "Kubernetes", "Twilio", "PostgreSQL", "React"]
+    },
+    {
       name: "TE Connectivity",
       place: "Middletown, PA",
       date: "May 2025 – Aug 2025",
@@ -93,29 +102,37 @@ let info = {
     },
     {
       title: "tools & platforms",
-      info: ["Git", "Docker", "AWS", "RunPod", "Claude API", "MCP", "ElevenLabs", "Raspberry Pi"],
+      info: ["Git", "Docker", "Kubernetes", "AWS", "RunPod", "Claude API", "MCP", "ElevenLabs", "Raspberry Pi"],
       icon: "fas fa-tools"
+    },
+    {
+      title: "backend & infrastructure",
+      info: ["Celery", "Redis", "PostgreSQL", "FastAPI", "Flask", "CI/CD", "GitHub Actions"],
+      icon: "fas fa-server"
     }
   ],
   portfolio: [
     {
       id: "lerobot-so101",
-      name: "LeRobot SO-101 <span class='badge badge-warning ml-2'>in-progress</span>",
-      preview: "Building and training a low-cost robotic manipulation system using HuggingFace LeRobot framework with leader-follower teleoperation.",
+      name: "LeRobot SO-101: Pick & Place with ACT",
+      preview: "Trained ACT policy for autonomous pick-and-place manipulation on SO-101 arm using HuggingFace LeRobot framework.",
       pictures: [
         {
           img: require("./assets/le_robot_cover_img.jpg")
         }
       ],
-      technologies: ["HuggingFace LeRobot", "VLA Models", "NVIDIA Groot", "Imitation Learning", "Data Collection", "ACT Architecture"],
+      technologies: ["HuggingFace LeRobot", "ACT Policy", "Imitation Learning", "PyTorch", "macOS", "Feetech Servos"],
       category: "Robotics & ML",
       projectCategory: "robotics",
       featured: true,
-      date: "Jan 2026 - Present",
+      date: "Jan 2026",
       github: "https://github.com/huggingface/lerobot",
+      huggingface: "https://huggingface.co/shraavb/act_pick_place_cube",
+      dataset: "https://huggingface.co/datasets/shraavb/pick_place_cube",
       visit: "",
+      video: "lerobot_pick_place_demo.mp4",
       description:
-        "<ul><li>Building <strong>SO-101 robotic arm</strong> using HuggingFace's open-source <strong>LeRobot framework</strong> for low-cost manipulation research</li><li>Assembled leader-follower arm setup with <strong>Feetech STS3215 servos</strong> for teleoperation data collection</li><li>Implementing <strong>imitation learning pipeline</strong> to train policies from human demonstrations</li><li>Debugging motor communication and calibration for reliable <strong>60fps teleoperation</strong></li><li>Goal: Train vision-based manipulation policies using <strong>ACT (Action Chunking Transformer)</strong> architecture</li></ul>"
+        "<ul><li>Built and trained <strong>SO-101 robotic arm</strong> for autonomous pick-and-place using HuggingFace's <strong>LeRobot framework</strong></li><li>Collected <strong>51 teleoperation demonstrations</strong> (~45,000 frames) with leader-follower arm setup and RGB camera</li><li>Trained <strong>ACT (Action Chunking Transformer)</strong> policy for 100K steps achieving <strong>0.07 loss</strong></li><li>Debugged <strong>macOS USB serial latency</strong> issues with custom SDK patches for reliable motor communication</li><li>Implemented adaptive position filtering to handle corrupted motor readings during teleoperation</li><li>Model and dataset published to <strong>HuggingFace Hub</strong> for reproducibility</li></ul>"
     },
     {
       id: "jetbot-vla",
