@@ -7,7 +7,7 @@ let info = {
   email: "shraavb@wharton.upenn.edu",
 
   // Featured projects (by id)
-  featured_projects: ["lerobot-so101", "jetbot-vla", "orbit", "procura", "speakeasy", "spanish-slang-stt"],
+  featured_projects: ["ego4d-hierarchical-rl", "lerobot-so101", "jetbot-vla", "orbit", "procura", "speakeasy", "spanish-slang-stt"],
 
   // Legacy fields
   logo_name: "shraav",
@@ -48,8 +48,8 @@ let info = {
       date: "Jan 2026 - Present",
       position: "Backend Software Engineer",
       description:
-        "Building software for salons to automate customer management through AI. Designed and implemented an automated customer reminder system enabling salons to send timely SMS/email notifications for appointments, reducing no-shows and driving rebookings. Built voice agent for CRM to automate appointment scheduling and customer support.",
-      skills: ["Python", "FastAPI", "Celery", "Docker", "Kubernetes", "Twilio", "PostgreSQL", "React"]
+        "Built an automated SMS/email reminder system with Celery and Twilio that reduces no-shows and drives rebookings for salon businesses. Developed a real-time AI voice agent that handles inbound phone calls for appointment scheduling and customer support, using Pipecat and Twilio Media Streams. Engineered sub-300ms interruption handling and multi-speaker filtering so the agent responds naturally during live conversations. Designed a pluggable LLM architecture supporting four providers (Anthropic, OpenAI, Google, Ollama), switchable via environment config with no code changes. Wrote 25 unit tests and CI/CD pipeline covering API routes and voice processing logic.",
+      skills: ["Python", "Flask", "Celery", "Docker", "Twilio", "PostgreSQL", "React", "Pipecat", "WebSockets", "Deepgram", "ElevenLabs"]
     },
     {
       name: "TE Connectivity",
@@ -87,12 +87,12 @@ let info = {
     },
     {
       title: "ai & ml",
-      info: ["PyTorch", "LangChain", "LangGraph", "RAG", "Whisper ASR", "LoRA Fine-tuning", "XGBoost", "HuggingFace"],
+      info: ["PyTorch", "Offline RL (IQL)", "Decision Transformer", "LangChain", "LangGraph", "RAG", "Whisper ASR", "LoRA Fine-tuning", "HuggingFace"],
       icon: "fas fa-brain"
     },
     {
       title: "robotics & simulation",
-      info: ["NVIDIA Isaac Sim", "SmolVLA", "LeRobot", "Imitation Learning", "FreeRTOS", "Arduino", "NVIDIA Jetson"],
+      info: ["NVIDIA Isaac Sim", "ROS 2", "SmolVLA", "LeRobot", "Imitation Learning", "DINOv2", "FreeRTOS", "NVIDIA Jetson"],
       icon: "fas fa-robot"
     },
     {
@@ -113,26 +113,45 @@ let info = {
   ],
   portfolio: [
     {
+      id: "ego4d-hierarchical-rl",
+      name: "Ego4D Hierarchical Offline RL <span class='badge badge-warning ml-2'>in-progress</span>",
+      preview: "Two-stage hierarchical policy: Ego4D video pretraining (Decision Transformer) + LeRobot SO-101 fine-tuning (action chunking controller) for long-horizon robot manipulation.",
+      pictures: [
+        {
+          img: require("./assets/ego4d_hierarchical_rl_cover.png")
+        }
+      ],
+      technologies: ["Offline RL (IQL)", "Decision Transformer", "PyTorch", "DINOv2", "ROS 2", "Ego4D", "RunPod", "Jetson Nano", "WebSockets", "LeRobot", "Action Chunking", "pytest"],
+      category: "Robotics & ML",
+      projectCategory: "robotics",
+      featured: true,
+      date: "Jan 2026 - Present",
+      github: "https://github.com/shraavb/ego4d-hierarchical-rl",
+      visit: "",
+      description:
+        "<ul><li>Designed <strong>two-stage training pipeline</strong>: Stage 1 pretrains Decision Transformer on <strong>Ego4D egocentric video</strong> (717 videos, 13,342 step segments) for subgoal prediction; Stage 2 fine-tunes on real <strong>LeRobot SO-101</strong> teleoperation demos for motor control</li><li>Built <strong>Decision Transformer</strong> (GPT-based, 4 layers, 4 heads) as high-level planner predicting subgoal embeddings at 1-2Hz with returns-to-go conditioning and autoregressive subgoal history</li><li>Implemented <strong>action-chunking low-level controller</strong> with 10-step chunks at 30Hz, proprioceptive state input (6-DOF joint positions), and relative action convention matching RynnVLA's proven approach</li><li>Implemented <strong>Implicit Q-Learning (IQL)</strong> from scratch with expectile regression for V(s), TD learning for Q(s,a,g), and advantage-weighted policy extraction</li><li>Architected <strong>hybrid cloud/edge deployment</strong>: DINOv2 feature extraction + hierarchical inference on RunPod via WebSocket, action chunk execution on Jetson Nano at 30Hz with &lt;200ms replanning latency</li><li>Integrated <strong>LeRobot SDK</strong> for SO-101 robot bridge with relative-to-absolute action conversion, joint limit safety clipping, and proprioceptive state publishing over ROS 2</li><li>Built comprehensive <strong>test suite (61/62 passing)</strong>: 25 hierarchical policy tests, 11 dataset tests, 9 training integration tests, and 12 WebSocket server tests including async fixtures and mock inference</li><li>Extracted visual features with <strong>DINOv2 ViT-B/14</strong> (768-dim) and goal embeddings with <strong>SentenceTransformer all-MiniLM-L6-v2</strong> (384-dim) from Ego4D Goal-Step benchmark</li></ul>"
+    },
+    {
       id: "lerobot-so101",
-      name: "LeRobot SO-101: Pick & Place with ACT",
-      preview: "Trained ACT policy for autonomous pick-and-place manipulation on SO-101 arm using HuggingFace LeRobot framework.",
+      name: "LeRobot SO-101: Pick & Place with ACT <span class='badge badge-warning ml-2'>in-progress</span>",
+      preview: "Built a 6-DOF robotic arm that autonomously picks and places objects, trained end-to-end from 50 human demonstrations using imitation learning.",
       pictures: [
         {
           img: require("./assets/le_robot_cover_img.jpg")
         }
       ],
-      technologies: ["HuggingFace LeRobot", "ACT Policy", "Imitation Learning", "PyTorch", "macOS", "Feetech Servos"],
+      technologies: ["HuggingFace LeRobot", "ACT Policy", "Imitation Learning", "PyTorch", "macOS", "Feetech ST-3215", "OpenCV"],
       category: "Robotics & ML",
       projectCategory: "robotics",
       featured: true,
-      date: "Jan 2026",
+      date: "Jan 2026 - Present",
       github: "https://github.com/huggingface/lerobot",
       huggingface: "https://huggingface.co/shraavb/act_pick_place_cube",
       dataset: "https://huggingface.co/datasets/shraavb/pick_place_cube",
       visit: "",
       video: "lerobot_pick_place_demo.mp4",
       description:
-        "<ul><li>Built and trained <strong>SO-101 robotic arm</strong> for autonomous pick-and-place using HuggingFace's <strong>LeRobot framework</strong></li><li>Collected <strong>51 teleoperation demonstrations</strong> (~45,000 frames) with leader-follower arm setup and RGB camera</li><li>Trained <strong>ACT (Action Chunking Transformer)</strong> policy for 100K steps achieving <strong>0.07 loss</strong></li><li>Debugged <strong>macOS USB serial latency</strong> issues with custom SDK patches for reliable motor communication</li><li>Implemented adaptive position filtering to handle corrupted motor readings during teleoperation</li><li>Model and dataset published to <strong>HuggingFace Hub</strong> for reproducibility</li></ul>"
+        "<p><strong>What I built:</strong> A 6-DOF robotic arm that learns to pick up a cube and place it in a container from human demonstrations — no manual programming of trajectories.</p><ul><li>Collected <strong>50 demonstrations</strong> (36,750 frames at 30 FPS) via leader-follower teleoperation with RGB camera, published as an open dataset on HuggingFace</li><li>Trained an <strong>ACT (Action Chunking Transformer)</strong> imitation learning policy for 100K steps, achieving <strong>0.07 training loss</strong></li></ul><p><strong>Hard problems solved:</strong></p><ul><li><strong>macOS motor reliability:</strong> Feetech servos had 20-200ms USB serial latency on macOS (vs 34ms on Linux). Wrote platform-specific SDK patches with timeout overrides and serial buffer clearing to make motor communication reliable</li><li><strong>Arm stability under gravity:</strong> Tuned per-joint P-coefficients (120 for shoulder/elbow fighting gravity, 60 for wrist, 16 for others) and set torque caps to prevent jerky motion</li><li><strong>Noisy sensor readings:</strong> Built a bad-reading filter and replaced sync reads with individual motor reads + 2ms delays to eliminate corrupted position data</li></ul><p><strong>Next steps:</strong> Scaling to 100+ demonstrations with varied object placement, adding a second camera for depth perception, and tuning gripper force for more reliable grasps.</p>"
     },
     {
       id: "jetbot-vla",
