@@ -44,7 +44,7 @@ let info = {
   experience: [
     {
       name: "AdminifAI",
-      place: "New York, NY",
+      place: "Philadelphia, PA",
       date: "Jan 2026 - Present",
       position: "Backend Software Engineer",
       description:
