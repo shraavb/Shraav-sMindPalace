@@ -70,6 +70,24 @@ let info = {
       skills: ["Jira", "Git", "Python", "HTML", "CSS", "JS", "XML"]
     },
     {
+      name: "CLP Holdings",
+      place: "Hong Kong",
+      date: "Jun 2023 – Aug 2023",
+      position: "Business Development & Asset Management Intern",
+      description:
+        "Modeled renewable energy (solar & wind) projects for IC review and analyzed cost of capital across 15+ Asia Pacific markets using Bloomberg Terminal, covering 40+ energy & infrastructure firms.",
+      skills: ["Bloomberg Terminal", "Excel", "Financial Modeling", "Equity Research"]
+    },
+    {
+      name: "IESE Entrepreneurship Department",
+      place: "Barcelona, Spain",
+      date: "May 2022 – Jul 2022",
+      position: "Research Assistant",
+      description:
+        "Built Python data scrapers to verify funding & patent data on US biotech startups and evaluated 10+ applicants for a new technology transfer course.",
+      skills: ["Python", "Research", "Venture Capital"]
+    },
+    {
       name: "Develop For Good",
       place: "San Francisco, CA (Remote)",
       date: "Mar 2025 - Apr 2025",
