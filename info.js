@@ -48,7 +48,7 @@ let info = {
       date: "Jan 2026 - Present",
       position: "Backend Software Engineer",
       description:
-        "Built an automated SMS/email reminder system with Celery and Twilio that reduces no-shows and drives rebookings for salon businesses. Developed a real-time AI voice agent that handles inbound phone calls for appointment scheduling and customer support, using Pipecat and Twilio Media Streams. Engineered sub-300ms interruption handling and multi-speaker filtering so the agent responds naturally during live conversations. Designed a pluggable LLM architecture supporting four providers (Anthropic, OpenAI, Google, Ollama), switchable via environment config with no code changes. Wrote 25 unit tests and CI/CD pipeline covering API routes and voice processing logic.",
+        "Built a real-time AI voice agent and automated SMS/email reminder system for salon appointment management, with sub-300ms interruption handling and a pluggable LLM backend supporting Anthropic, OpenAI, Google, and Ollama.",
       skills: ["Python", "Flask", "Celery", "Docker", "Twilio", "PostgreSQL", "React", "Pipecat", "WebSockets", "Deepgram", "ElevenLabs"]
     },
     {
@@ -57,7 +57,7 @@ let info = {
       date: "May 2025 – Aug 2025",
       position: "Product Management Intern",
       description:
-        "Worked cross-functionally across Marketing, Sales, Engineering and Product. Led IP risk analysis for legal team, identifying $1.9M in potential infringement for high-speed cable products. Uncovered $5.6M in lost profit across 12 top-performing SKUs",
+        "Led IP risk analysis identifying $1.9M in potential infringement and uncovered $5.6M in lost profit across 12 top-performing SKUs for high-speed cable products.",
       skills: ["Excel"]
     },
     {
@@ -66,7 +66,7 @@ let info = {
       date: "Dec 2023 - June 2024",
       position: "Product & Project Management Intern",
       description:
-        "Led 0-1 development of job board, <a href='https://sleekjob.com/' target='_blank'>SleekJob</a>, with team of 10, reporting to CTO. Achieved 1.2k users in 10+ countries. Benchmarked 15 Project Management solutions to reduce dropoff for 4000+ clients.",
+        "Led 0-to-1 development of <a href='https://sleekjob.com/' target='_blank'>SleekJob</a> with a team of 10, reaching 1.2k users across 10+ countries while reporting directly to the CTO.",
       skills: ["Jira", "Git", "Python", "HTML", "CSS", "JS", "XML"]
     },
     {
@@ -75,7 +75,7 @@ let info = {
       date: "Mar 2025 - Apr 2025",
       position: "Product Lead & Designer (Volunteer)",
       description:
-        "Designed and implemented solutions for non-profits, leading student teams to support clients with limited resources. Led two client projects for <a href='https://simbi.com/' target='_blank'>Simbi</a> and <a href='https://buildingbeats.org/' target='_blank'>Building Beats</a>, managing teams of 20+ students for platforms with 260k users.",
+        "Led volunteer product teams of 20+ students building for non-profits <a href='https://simbi.com/' target='_blank'>Simbi</a> and <a href='https://buildingbeats.org/' target='_blank'>Building Beats</a>, serving platforms with 260k combined users.",
       skills: ["Figma"]
     }
   ],
