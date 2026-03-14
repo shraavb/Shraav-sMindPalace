@@ -33,7 +33,7 @@ describe('Footer.vue', () => {
 
   it('displays the copyright text', () => {
     const copyrightText = wrapper.find('span')
-    expect(copyrightText.text()).toContain('2024 Copyright')
+    expect(copyrightText.text()).toContain('2026')
     expect(copyrightText.text()).toContain('Shraavasti Bhat')
   })
 
