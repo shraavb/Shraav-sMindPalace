@@ -127,14 +127,14 @@ export default {
 }
 
 .tagline-link {
-  color: #805ad5;
+  color: #0f766e;
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s;
 }
 
 .tagline-link:hover {
-  color: #553c9a;
+  color: #0d6b62;
   text-decoration: underline;
 }
 
@@ -175,18 +175,16 @@ export default {
   font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
-  border: 1.5px solid #805ad5;
+  border: 1.5px solid #0f766e;
   background-color: transparent;
-  color: #805ad5;
+  color: #0f766e;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .quick-link-btn:hover {
-  background-color: #805ad5;
+  background-color: #0f766e;
   color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(128, 90, 213, 0.3);
   text-decoration: none;
 }
 
@@ -196,13 +194,13 @@ export default {
 
 /* Dark mode button styles */
 .btn-dark-mode {
-  border-color: #b794f6;
-  color: #b794f6;
+  border-color: #2dd4bf;
+  color: #2dd4bf;
 }
 
 .btn-dark-mode:hover {
-  background-color: #805ad5;
-  border-color: #805ad5;
+  background-color: #0f766e;
+  border-color: #0f766e;
   color: white;
 }
 
@@ -238,7 +236,7 @@ export default {
   .avatar-image {
     max-width: 200px;
     border-radius: 50%;
-    border: 3px solid rgba(128, 90, 213, 0.3);
+    border: 3px solid rgba(15, 118, 110, 0.2);
   }
 }
 

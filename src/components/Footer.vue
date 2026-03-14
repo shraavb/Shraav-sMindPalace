@@ -6,7 +6,7 @@
           class="col-xl-6 col-bg-6 col-md-6 col-sm-12 pbelow"
           style="color: white;"
         >
-          <span>© 2024 Copyright: Shraavasti Bhat | Adapted Template by hrishikeshpaul</span>
+          <span>© 2026 Shraavasti Bhat</span>
         </div>
 
         <div class="col-xl-6 col-bg-6 col-md-6 col-sm-12">
@@ -71,45 +71,27 @@ span {
 }
 
 .btn {
-  border-color: #b794f6;
-  color: #b794f6;
+  border-color: #64748b;
+  color: #94a3b8;
   background-color: transparent;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #b794f6;
-  border-color: #b794f6;
+  background-color: #0f766e;
+  border-color: #0f766e;
   color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(183, 148, 246, 0.3);
 }
 
 .btn:focus {
-  background-color: #b794f6;
-  border-color: #b794f6;
+  background-color: #0f766e;
+  border-color: #0f766e;
   color: white;
-  box-shadow: 0 0 0 3px rgba(183, 148, 246, 0.2);
+  box-shadow: none;
 }
 
 .footer-gradient {
-  background: linear-gradient(135deg, #553c9a 0%, #805ad5 50%, #b794f6 100%);
-}
-
-.bg-dark .footer-gradient {
-  background: linear-gradient(135deg, #0f0f23 0%, #0a0a1a 50%, #050508 100%);
-}
-
-.bg-dark .btn {
-  border-color: #c4b5fd;
-  color: #c4b5fd;
-}
-
-.bg-dark .btn:hover {
-  background-color: #c4b5fd;
-  border-color: #c4b5fd;
-  color: #1a1a2e;
-  box-shadow: 0 4px 12px rgba(196, 181, 253, 0.3);
+  background-color: #1e293b;
 }
 
 @media screen and (max-width: 580px) {

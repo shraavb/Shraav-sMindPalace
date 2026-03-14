@@ -118,8 +118,7 @@ export default {
 }
 
 .nav-link:hover {
-  color: #805ad5 !important;
-  transform: translateY(-1px);
+  color: #0f766e !important;
 }
 
 button {
@@ -133,9 +132,9 @@ button:hover {
 }
 
 nav {
-  border-bottom: 1px solid rgba(128, 90, 213, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   position: fixed !important;
-  box-shadow: 0 2px 10px rgba(128, 90, 213, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
 }
 
 .navbar-blur {
@@ -148,12 +147,12 @@ nav {
 }
 
 .bg-dark2 .nav-link:hover {
-  color: #c4b5fd !important;
+  color: #2dd4bf !important;
 }
 
 .bg-dark2 {
-  background: linear-gradient(135deg, #0f0f23 0%, #0a0a1a 50%, #050508 100%) !important;
-  border-bottom-color: rgba(196, 181, 253, 0.2) !important;
-  box-shadow: 0 2px 10px rgba(196, 181, 253, 0.1) !important;
+  background-color: #0d1117 !important;
+  border-bottom-color: rgba(255, 255, 255, 0.06) !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) !important;
 }
 </style>

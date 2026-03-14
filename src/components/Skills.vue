@@ -72,11 +72,11 @@ export default {
 }
 
 .skill-item:hover {
-  background: linear-gradient(135deg, rgba(128, 90, 213, 0.08), rgba(183, 148, 246, 0.05));
+  background-color: rgba(15, 118, 110, 0.04);
   padding-left: 15px;
   padding-right: 15px;
-  border-radius: 12px;
-  border-left: 4px solid #805ad5;
+  border-radius: 8px;
+  border-left: 3px solid #0f766e;
 }
 
 .skill-item:last-child {
@@ -102,23 +102,23 @@ export default {
 }
 
 .skill-tech {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #666;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .fa, .fas {
-  color: #805ad5;
+  color: #64748b;
   font-size: 24px;
   width: 24px;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .skill-item:hover .fa,
 .skill-item:hover .fas {
-  transform: scale(1.2);
-  color: #b794f6;
+  color: #0f766e;
 }
 
 /* Dark mode styles */
@@ -127,8 +127,8 @@ export default {
 }
 
 .bg-dark .skill-item:hover {
-  background: linear-gradient(135deg, rgba(196, 181, 253, 0.1), rgba(124, 58, 237, 0.05));
-  border-left-color: #c4b5fd;
+  background-color: rgba(15, 118, 110, 0.06);
+  border-left-color: #2dd4bf;
 }
 
 .bg-dark .skill-category {
@@ -140,7 +140,7 @@ export default {
 }
 
 .bg-dark .fa, .bg-dark .fas {
-  color: #c4b5fd;
+  color: #64748b;
 }
 
 

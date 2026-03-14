@@ -29,16 +29,10 @@ export default {
 </script>
 
 <style scoped>
-.logo-div:hover .logo-title-name {
-  letter-spacing: 0px;
-  transition: 0.5s all;
-}
-
 .logo-title-name {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 500;
-  letter-spacing: 2px;
-  transition: 0.5s all;
+  letter-spacing: 0px;
 }
 
 .logo-title-dot {

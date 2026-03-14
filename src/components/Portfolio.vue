@@ -24,7 +24,7 @@
       <!-- Featured Work Section -->
       <section class="featured-section mb-5">
         <h2 class="section-header" :class="{ 'text-light': nightMode }">
-          <i class="fas fa-star"></i> Featured Work
+          Featured Work
         </h2>
         <div class="featured-grid">
           <FeaturedProject
@@ -39,7 +39,7 @@
       <!-- All Projects Section -->
       <section class="all-projects-section mb-5">
         <h2 class="section-header" :class="{ 'text-light': nightMode }">
-          <i class="fas fa-folder-open"></i> All Projects
+          All Projects
         </h2>
 
         <!-- Robotics & Research Category -->
@@ -242,17 +242,12 @@ export default {
   gap: 0.75rem;
 }
 
-.section-header i {
-  color: #805ad5;
-  font-size: 1.25rem;
-}
-
 .category-header {
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid rgba(128, 90, 213, 0.15);
+  border-bottom: 1px solid #e2e8f0;
 }
 
 /* Featured Grid */
@@ -274,12 +269,11 @@ export default {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: 1px solid rgba(128, 90, 213, 0.15);
+  border: 1px solid #e2e8f0;
 }
 
 .design-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 25px rgba(128, 90, 213, 0.15);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 .design-image {
@@ -305,19 +299,20 @@ export default {
 }
 
 .tech-tag {
-  background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
-  color: #553c9a;
-  border: 1px solid rgba(128, 90, 213, 0.2);
+  background-color: #f0fdfa;
+  color: #134e4a;
+  border: 1px solid #99f6e4;
   font-size: 0.7rem;
-  font-weight: 500;
+  font-weight: 400;
   padding: 0.15rem 0.5rem;
   border-radius: 3px;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .tech-tag.tag-dark {
-  background: linear-gradient(135deg, rgba(196, 181, 253, 0.2), rgba(124, 58, 237, 0.1));
-  color: #c4b5fd;
-  border: 1px solid rgba(196, 181, 253, 0.3);
+  background-color: rgba(45, 212, 191, 0.1);
+  color: #2dd4bf;
+  border: 1px solid rgba(45, 212, 191, 0.2);
 }
 
 /* Toggle Button */
@@ -326,30 +321,29 @@ export default {
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  border: 2px solid #805ad5;
+  border: 1px solid #cbd5e1;
   background: transparent;
-  color: #805ad5;
+  color: #64748b;
   border-radius: 8px;
-  font-size: 0.95rem;
+  font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .toggle-secondary-btn:hover {
-  background: #805ad5;
-  color: white;
+  border-color: #0f766e;
+  color: #0f766e;
 }
 
 .toggle-secondary-btn.btn-dark {
-  border-color: #b794f6;
-  color: #b794f6;
+  border-color: #334155;
+  color: #94a3b8;
 }
 
 .toggle-secondary-btn.btn-dark:hover {
-  background: #805ad5;
-  border-color: #805ad5;
-  color: white;
+  border-color: #2dd4bf;
+  color: #2dd4bf;
 }
 
 /* Transitions */
@@ -381,7 +375,7 @@ export default {
 }
 
 .bg-dark3 {
-  background-color: #1a1a2e;
+  background-color: #161b22;
 }
 
 /* Responsive */

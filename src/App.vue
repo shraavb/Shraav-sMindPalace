@@ -108,19 +108,19 @@ export default {
 }
 
 .pblue {
-  color: #805ad5;
+  color: #0f766e;
 }
 
 .pblue-light {
-  color: #b794f6;
+  color: #2dd4bf;
 }
 
 .pblue-dark {
-  color: #553c9a;
+  color: #0d6b62;
 }
 
 .purple {
-  color: #805ad5;
+  color: #0f766e;
 }
 
 .green {
@@ -132,19 +132,19 @@ export default {
 }
 
 .bg-dark2 {
-  background-color: #0f0f23 !important;
+  background-color: #0d1117 !important;
 }
 
 .bg-dark-purple {
-  background-color: #0a0a1a !important;
+  background-color: #0d1117 !important;
 }
 
 .text-purple-light {
-  color: #c4b5fd !important;
+  color: #2dd4bf !important;
 }
 
 .text-purple-dark {
-  color: #7c3aed !important;
+  color: #0f766e !important;
 }
 
 .text-light {

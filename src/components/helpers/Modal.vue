@@ -307,69 +307,67 @@ a:hover {
 }
 
 .badge {
-  background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
-  color: #553c9a;
-  border: 1px solid rgba(128, 90, 213, 0.2);
-  transition: all 0.3s ease;
-  font-weight: 500;
+  background-color: #f0fdfa;
+  color: #134e4a;
+  border: 1px solid #99f6e4;
+  transition: background-color 0.2s ease;
+  font-weight: 400;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
 }
 
 .badge:hover {
-  background: linear-gradient(135deg, #e9d5ff, #ddd6fe);
-  transform: scale(1.05);
-  box-shadow: 0 2px 8px rgba(128, 90, 213, 0.2);
+  background-color: #ccfbf1;
 }
 
 .btn {
-  border-color: #805ad5;
-  color: #805ad5;
+  border-color: #0f766e;
+  color: #0f766e;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #805ad5;
-  border-color: #805ad5;
+  background-color: #0f766e;
+  border-color: #0f766e;
   color: white;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(128, 90, 213, 0.3);
 }
 
 .btn:focus {
-  background-color: #805ad5;
-  border-color: #805ad5;
+  background-color: #0f766e;
+  border-color: #0f766e;
   color: white;
-  box-shadow: 0 0 0 3px rgba(128, 90, 213, 0.2);
+  box-shadow: none;
 }
 
 .bg-dark4 {
-  background-color: #0f0f23 !important;
+  background-color: #161b22 !important;
 }
 
 .bg-dark .badge {
-  background: linear-gradient(135deg, rgba(196, 181, 253, 0.2), rgba(124, 58, 237, 0.1));
-  color: #c4b5fd;
-  border: 1px solid rgba(196, 181, 253, 0.3);
+  background-color: #1e293b;
+  color: #94a3b8;
+  border: 1px solid #334155;
 }
 
 .bg-dark .badge:hover {
-  background: linear-gradient(135deg, rgba(196, 181, 253, 0.3), rgba(124, 58, 237, 0.2));
-  transform: scale(1.05);
-  box-shadow: 0 2px 8px rgba(196, 181, 253, 0.2);
+  background-color: #334155;
 }
 
 .badge-warning {
-  background: linear-gradient(135deg, #fef3c7, #fde68a) !important;
-  color: #92400e !important;
-  border: 1px solid rgba(245, 158, 11, 0.3) !important;
-  font-weight: 600 !important;
-  font-size: 12px !important;
+  background-color: #f8fafc !important;
+  color: #64748b !important;
+  border: 1px solid #cbd5e1 !important;
+  font-weight: 400 !important;
+  font-size: 10px !important;
   padding: 4px 10px !important;
   border-radius: 4px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
 }
 
 .bg-dark .badge-warning {
-  background: linear-gradient(135deg, #fef3c7, #fde68a) !important;
-  color: #92400e !important;
-  border: 1px solid rgba(245, 158, 11, 0.3) !important;
+  background-color: #1e293b !important;
+  color: #64748b !important;
+  border: 1px solid #334155 !important;
 }
 </style>

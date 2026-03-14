@@ -45,7 +45,7 @@
           <h2 class="featured-title" :class="{ 'text-light': nightMode }">
             {{ cleanName }}
           </h2>
-          <span v-if="isInProgress" class="badge badge-warning">in-progress</span>
+          <span v-if="isInProgress" class="badge badge-warning"><span class="status-dot"></span>in progress</span>
         </div>
 
         <!-- Date & Category -->
@@ -219,14 +219,14 @@ export default {
   border-radius: 16px;
   padding: 2rem;
   margin-bottom: 2rem;
-  border: 2px solid rgba(128, 90, 213, 0.2);
+  border: 1px solid #e2e8f0;
+  border-left: 4px solid #0f766e;
   transition: all 0.3s ease;
-  background: linear-gradient(135deg, rgba(128, 90, 213, 0.03), transparent);
+  background: transparent;
 }
 
 .featured-project:hover {
-  box-shadow: 0 8px 30px rgba(128, 90, 213, 0.15);
-  border-color: rgba(128, 90, 213, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 .featured-content {
@@ -261,8 +261,8 @@ export default {
   gap: 0.4rem;
   padding: 0.5rem 1rem;
   background: transparent;
-  color: #805ad5;
-  border: 1.5px solid #805ad5;
+  color: #0f766e;
+  border: 1px solid #99f6e4;
   border-radius: 6px;
   font-size: 0.85rem;
   font-weight: 500;
@@ -271,8 +271,8 @@ export default {
 }
 
 .video-toggle:hover {
-  background: #805ad5;
-  color: white;
+  background: #f0fdfa;
+  color: #0d6b62;
 }
 
 /* Info Section */
@@ -297,13 +297,31 @@ export default {
 }
 
 .badge-warning {
-  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #fffbeb;
   color: #92400e;
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  font-weight: 600;
-  font-size: 12px;
+  border: 1px solid #fcd34d;
+  font-weight: 500;
+  font-size: 11px;
   padding: 4px 10px;
-  border-radius: 4px;
+  border-radius: 20px;
+  letter-spacing: 0.2px;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #f59e0b;
+  flex-shrink: 0;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
 }
 
 .featured-meta {
@@ -319,19 +337,20 @@ export default {
 }
 
 .tech-tag {
-  background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
-  color: #553c9a;
-  border: 1px solid rgba(128, 90, 213, 0.2);
-  font-size: 0.8rem;
-  font-weight: 500;
+  background-color: #f0fdfa;
+  color: #134e4a;
+  border: 1px solid #99f6e4;
+  font-size: 0.75rem;
+  font-weight: 400;
   padding: 0.25rem 0.75rem;
   border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .tech-tag.tag-dark {
-  background: linear-gradient(135deg, rgba(196, 181, 253, 0.2), rgba(124, 58, 237, 0.1));
-  color: #c4b5fd;
-  border: 1px solid rgba(196, 181, 253, 0.3);
+  background-color: rgba(45, 212, 191, 0.1);
+  color: #2dd4bf;
+  border: 1px solid rgba(45, 212, 191, 0.2);
 }
 
 .featured-preview {
@@ -346,12 +365,12 @@ export default {
   align-items: center;
   gap: 0.5rem;
   padding: 0.6rem 1.25rem;
-  border: 2px solid #805ad5;
+  border: 1.5px solid #0f766e;
   background: transparent;
-  color: #805ad5;
+  color: #0f766e;
   border-radius: 8px;
   font-size: 0.9rem;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
   align-self: flex-start;
@@ -359,18 +378,18 @@ export default {
 }
 
 .expand-btn:hover {
-  background: #805ad5;
+  background: #0f766e;
   color: white;
 }
 
 .expand-btn.btn-dark {
-  border-color: #b794f6;
-  color: #b794f6;
+  border-color: #2dd4bf;
+  color: #2dd4bf;
 }
 
 .expand-btn.btn-dark:hover {
-  background: #805ad5;
-  border-color: #805ad5;
+  background: #0f766e;
+  border-color: #0f766e;
   color: white;
 }
 
@@ -383,7 +402,7 @@ export default {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  color: #805ad5;
+  color: #0f766e;
   font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
@@ -391,23 +410,23 @@ export default {
 }
 
 .action-link:hover {
-  color: #553c9a;
+  color: #0d6b62;
   text-decoration: underline;
 }
 
 .action-link.link-dark {
-  color: #b794f6;
+  color: #2dd4bf;
 }
 
 .action-link.link-dark:hover {
-  color: #d6bcfa;
+  color: #99f6e4;
 }
 
 /* Expanded Details */
 .featured-details {
   margin-top: 2rem;
   padding-top: 2rem;
-  border-top: 1px solid rgba(128, 90, 213, 0.2);
+  border-top: 1px solid #e2e8f0;
 }
 
 .featured-description {
@@ -461,8 +480,8 @@ export default {
   align-items: center;
   gap: 0.5rem;
   padding: 0.6rem 1.25rem;
-  background: rgba(128, 90, 213, 0.1);
-  color: #805ad5;
+  background: #f0fdfa;
+  color: #0f766e;
   border-radius: 8px;
   font-weight: 500;
   text-decoration: none;
@@ -470,7 +489,7 @@ export default {
 }
 
 .doc-link:hover {
-  background: rgba(128, 90, 213, 0.2);
+  background: #ccfbf1;
 }
 
 /* Slide transition */
@@ -522,6 +541,6 @@ export default {
 }
 
 .bg-dark2 {
-  background-color: #1a1a2e;
+  background-color: #161b22;
 }
 </style>

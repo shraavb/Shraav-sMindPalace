@@ -110,7 +110,7 @@ export default {
 
 .location-text i {
   font-size: 0.75rem;
-  color: #805ad5;
+  color: #64748b;
 }
 
 .title3 {
@@ -130,16 +130,17 @@ export default {
 }
 
 .badge {
-  background: linear-gradient(135deg, #f3e8ff, #e9d5ff);
-  color: #553c9a;
-  border: 1px solid rgba(128, 90, 213, 0.2);
-  transition: all 0.3s ease;
-  font-weight: 500;
+  background-color: #f0fdfa;
+  color: #134e4a;
+  border: 1px solid #99f6e4;
+  transition: background-color 0.2s ease;
+  font-weight: 400;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
 }
 
 .badge:hover {
-  background: linear-gradient(135deg, #e9d5ff, #ddd6fe);
-  transform: scale(1.05);
+  background-color: #ccfbf1;
 }
 
 .date {
@@ -153,11 +154,11 @@ ul.timeline {
 }
 ul.timeline:before {
   content: " ";
-  background: linear-gradient(180deg, #805ad5, #b794f6);
+  background-color: #cbd5e1;
   display: inline-block;
   position: absolute;
   left: 29px;
-  width: 3px;
+  width: 2px;
   height: 93%;
   margin-top: 20px;
   z-index: 400;
@@ -169,7 +170,7 @@ ul.timeline > li {
 }
 ul.timeline > li:before {
   content: " ";
-  background: linear-gradient(135deg, #805ad5, #b794f6);
+  background-color: #0f766e;
   display: inline-block;
   position: absolute;
   border-radius: 50%;
@@ -178,22 +179,20 @@ ul.timeline > li:before {
   width: 20px;
   height: 20px;
   z-index: 400;
-  box-shadow: 0 2px 8px rgba(128, 90, 213, 0.3);
 }
 
 .bg-dark2 {
-  background-color: #0f0f23 !important;
+  background-color: #161b22 !important;
 }
 
 .bg-dark .badge {
-  background: linear-gradient(135deg, rgba(196, 181, 253, 0.2), rgba(124, 58, 237, 0.1));
-  color: #c4b5fd;
-  border: 1px solid rgba(196, 181, 253, 0.3);
+  background-color: #1e293b;
+  color: #94a3b8;
+  border: 1px solid #334155;
 }
 
 .bg-dark .badge:hover {
-  background: linear-gradient(135deg, rgba(196, 181, 253, 0.3), rgba(124, 58, 237, 0.2));
-  transform: scale(1.05);
+  background-color: #334155;
 }
 
 /* Dark mode location text */
@@ -204,6 +203,6 @@ ul.timeline > li:before {
 
 .bg-dark2 .location-text i,
 .text-light .location-text i {
-  color: #b794f6;
+  color: #64748b;
 }
 </style>
