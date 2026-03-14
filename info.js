@@ -57,7 +57,7 @@ let info = {
       date: "May 2025 - Aug 2025",
       position: "Product Management Intern",
       description:
-        "Led IP risk analysis identifying $1.9M in potential infringement and uncovered $5.6M in lost profit across 12 top-performing SKUs for high-speed cable products.",
+        "Led IP risk analysis identifying $XXM in potential infringement and uncovered $XXM in lost profit across 12 top-performing SKUs for high-speed cable products.",
       skills: ["Excel"]
     },
     {
