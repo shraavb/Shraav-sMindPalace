@@ -28,7 +28,7 @@ let info = {
     {
       name: "University of Pennsylvania",
       place: "",
-      date: "Aug 2021 – May 2026",
+      date: "Aug 2021 - May 2026",
       degree: "Dual Degree in Computer Science & Management",
       gpa: "",
       description: "",
@@ -54,7 +54,7 @@ let info = {
     {
       name: "TE Connectivity",
       place: "Middletown, PA",
-      date: "May 2025 – Aug 2025",
+      date: "May 2025 - Aug 2025",
       position: "Product Management Intern",
       description:
         "Led IP risk analysis identifying $1.9M in potential infringement and uncovered $5.6M in lost profit across 12 top-performing SKUs for high-speed cable products.",
@@ -72,7 +72,7 @@ let info = {
     {
       name: "CLP Holdings",
       place: "Hong Kong",
-      date: "Jun 2023 – Aug 2023",
+      date: "Jun 2023 - Aug 2023",
       position: "Business Development & Asset Management Intern",
       description:
         "Modeled renewable energy (solar & wind) projects for IC review and analyzed cost of capital across 15+ Asia Pacific markets using Bloomberg Terminal, covering 40+ energy & infrastructure firms.",
@@ -81,7 +81,7 @@ let info = {
     {
       name: "IESE Entrepreneurship Department",
       place: "Barcelona, Spain",
-      date: "May 2022 – Jul 2022",
+      date: "May 2022 - Jul 2022",
       position: "Research Assistant",
       description:
         "Built Python data scrapers to verify funding & patent data on US biotech startups and evaluated 10+ applicants for a new technology transfer course.",
@@ -169,7 +169,7 @@ let info = {
       visit: "",
       video: "lerobot_pick_place_demo.mp4",
       description:
-        "<p><strong>What I built:</strong> A 6-DOF robotic arm that learns to pick up a cube and place it in a container from human demonstrations — no manual programming of trajectories.</p><ul><li>Collected <strong>50 demonstrations</strong> (36,750 frames at 30 FPS) via leader-follower teleoperation with RGB camera, published as an open dataset on HuggingFace</li><li>Trained an <strong>ACT (Action Chunking Transformer)</strong> imitation learning policy for 100K steps, achieving <strong>0.07 training loss</strong></li></ul><p><strong>Hard problems solved:</strong></p><ul><li><strong>macOS motor reliability:</strong> Feetech servos had 20-200ms USB serial latency on macOS (vs 34ms on Linux). Wrote platform-specific SDK patches with timeout overrides and serial buffer clearing to make motor communication reliable</li><li><strong>Arm stability under gravity:</strong> Tuned per-joint P-coefficients (120 for shoulder/elbow fighting gravity, 60 for wrist, 16 for others) and set torque caps to prevent jerky motion</li><li><strong>Noisy sensor readings:</strong> Built a bad-reading filter and replaced sync reads with individual motor reads + 2ms delays to eliminate corrupted position data</li></ul><p><strong>Next steps:</strong> Scaling to 100+ demonstrations with varied object placement, adding a second camera for depth perception, and tuning gripper force for more reliable grasps.</p>"
+        "<p><strong>What I built:</strong> A 6-DOF robotic arm that learns to pick up a cube and place it in a container from human demonstrations, no manual programming of trajectories.</p><ul><li>Collected <strong>50 demonstrations</strong> (36,750 frames at 30 FPS) via leader-follower teleoperation with RGB camera, published as an open dataset on HuggingFace</li><li>Trained an <strong>ACT (Action Chunking Transformer)</strong> imitation learning policy for 100K steps, achieving <strong>0.07 training loss</strong></li></ul><p><strong>Hard problems solved:</strong></p><ul><li><strong>macOS motor reliability:</strong> Feetech servos had 20-200ms USB serial latency on macOS (vs 34ms on Linux). Wrote platform-specific SDK patches with timeout overrides and serial buffer clearing to make motor communication reliable</li><li><strong>Arm stability under gravity:</strong> Tuned per-joint P-coefficients (120 for shoulder/elbow fighting gravity, 60 for wrist, 16 for others) and set torque caps to prevent jerky motion</li><li><strong>Noisy sensor readings:</strong> Built a bad-reading filter and replaced sync reads with individual motor reads + 2ms delays to eliminate corrupted position data</li></ul><p><strong>Next steps:</strong> Scaling to 100+ demonstrations with varied object placement, adding a second camera for depth perception, and tuning gripper force for more reliable grasps.</p>"
     },
     {
       id: "jetbot-vla",
@@ -382,7 +382,7 @@ let info = {
       category: "Academic Research",
       projectCategory: "robotics",
       featured: false,
-      date: "Sep 2022 – Jun 2024",
+      date: "Sep 2022 - Jun 2024",
       github: "",
       visit: "",
       description:
