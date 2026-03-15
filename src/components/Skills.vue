@@ -123,24 +123,24 @@ export default {
 
 /* Dark mode styles */
 .bg-dark .skill-item {
-  border-bottom-color: #4a5568;
+  border-bottom-color: #1e293b;
 }
 
 .bg-dark .skill-item:hover {
-  background-color: rgba(15, 118, 110, 0.06);
+  background-color: rgba(45, 212, 191, 0.06);
   border-left-color: #2dd4bf;
 }
 
 .bg-dark .skill-category {
-  color: #e2e8f0;
+  color: #f1f5f9;
 }
 
 .bg-dark .skill-tech {
-  color: #cbd5e0;
+  color: #94a3b8;
 }
 
 .bg-dark .fa, .bg-dark .fas {
-  color: #64748b;
+  color: #475569;
 }
 
 

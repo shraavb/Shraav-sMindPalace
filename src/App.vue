@@ -131,6 +131,11 @@ export default {
   color: #ed8936;
 }
 
+/* Override Bootstrap's flat #343a40 with a refined slate */
+.bg-dark {
+  background-color: #111827 !important;
+}
+
 .bg-dark2 {
   background-color: #0d1117 !important;
 }
@@ -147,8 +152,9 @@ export default {
   color: #0f766e !important;
 }
 
+/* Softer off-white — easier on eyes than pure #d3d2d2 */
 .text-light {
-  color: #d3d2d2 !important;
+  color: #e2e8f0 !important;
 }
 
 .p-st {

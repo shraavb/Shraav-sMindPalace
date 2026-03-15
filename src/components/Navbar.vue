@@ -143,7 +143,7 @@ nav {
 }
 
 .bg-dark2 .nav-link {
-  color: #e2e8f0 !important;
+  color: #cbd5e0 !important;
 }
 
 .bg-dark2 .nav-link:hover {
@@ -152,7 +152,7 @@ nav {
 
 .bg-dark2 {
   background-color: #0d1117 !important;
-  border-bottom-color: rgba(255, 255, 255, 0.06) !important;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3) !important;
+  border-bottom: 1px solid #1e293b !important;
+  box-shadow: none !important;
 }
 </style>

@@ -204,6 +204,15 @@ export default {
   color: white;
 }
 
+/* Dark mode text overrides */
+.bg-dark .tagline-link {
+  color: #2dd4bf;
+}
+
+.bg-dark .hero-current {
+  color: #64748b;
+}
+
 /* Responsive */
 @media only screen and (max-width: 768px) {
   .hero-section {
