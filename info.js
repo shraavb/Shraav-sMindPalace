@@ -134,7 +134,7 @@ let info = {
       id: "trekker",
       name: "Trekker <span class='badge badge-warning ml-2'>in-progress</span>",
       preview: "Autonomous construction site inspection rover using GPS-fused EKF localization, visual SLAM, Nav2 geofenced navigation, and YOLOv8 + VLM hazard detection streamed to a live supervisory dashboard.",
-      pictures: [],
+      pictures: [{ img: require("./assets/trekker.jpeg") }],
       technologies: ["ROS 2", "Nav2", "EKF Localization", "Visual SLAM", "YOLOv8", "VLM", "GPS", "Python", "C++"],
       category: "Robotics & ML",
       projectCategory: "robotics",
@@ -168,7 +168,7 @@ let info = {
     */ // end ego4d-hierarchical-rl
     {
       id: "lerobot-so101",
-      name: "LeRobot SO-101: Pick & Place with ACT <span class='badge badge-warning ml-2'>in-progress</span>",
+      name: "LeRobot SO-101: Pick & Place with ACT",
       preview: "Built a 6-DOF robotic arm that autonomously picks and places objects, trained end-to-end from 50 human demonstrations using imitation learning.",
       pictures: [
         {
