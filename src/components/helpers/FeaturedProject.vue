@@ -39,7 +39,7 @@
           allowfullscreen
         ></iframe>
         <!-- Video toggle button - below media -->
-        <div v-if="project.video && isLocalVideo(project.video)" class="video-toggle-container">
+        <div v-if="project.video && (isLocalVideo(project.video) || getYouTubeId(project.video))" class="video-toggle-container">
           <button
             class="video-toggle"
             @click="showVideo = !showVideo"
