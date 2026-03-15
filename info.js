@@ -361,7 +361,7 @@ let info = {
       date: "March 2025 - Apr 2025",
       github: "https://github.com/shraavb/Predicting-Tennis-Upsets-with-Machine-Learning",
       visit: "",
-      video: "cis545project_upset_events.mp4",
+      video: "https://youtu.be/qmItQkBXOJY",
       description:
         "<ul><li>Built ML model to predict tennis upsets using <strong>10+ years of ATP tour data</strong> with <strong>40+ engineered features</strong></li><li>Processed match data using <strong>Polars</strong>, <strong>DuckDB</strong>, and <strong>PandaSQL</strong> for efficient large-scale analytics</li><li>Trained classification models (Random Forest, XGBoost, Neural Networks) with <strong>SMOTE</strong> for class imbalance handling</li><li>Identified key upset predictors: ranking gap, recent form, surface matchups, and tournament round</li></ul>"
     },

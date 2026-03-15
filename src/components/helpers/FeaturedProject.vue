@@ -30,6 +30,14 @@
           <source :src="getVideoUrl(project.video)" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
+        <iframe
+          v-else-if="getYouTubeId(project.video)"
+          :src="`https://www.youtube.com/embed/${getYouTubeId(project.video)}`"
+          class="featured-video"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
         <!-- Video toggle button - below media -->
         <div v-if="project.video && isLocalVideo(project.video)" class="video-toggle-container">
           <button
@@ -194,6 +202,10 @@ export default {
     },
     isLocalVideo(videoPath) {
       return videoPath && !videoPath.startsWith('http://') && !videoPath.startsWith('https://');
+    },
+    getYouTubeId(url) {
+      const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([^?&]+)/);
+      return match ? match[1] : null;
     },
     getVideoUrl(videoPath) {
       if (process.env.NODE_ENV === 'production') {

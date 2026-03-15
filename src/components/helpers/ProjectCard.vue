@@ -83,14 +83,14 @@
             <source :src="getVideoUrl(project.video)" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <a
-            v-else
-            :href="project.video"
-            target="_blank"
-            class="video-link"
-          >
-            <i class="fas fa-play-circle"></i> Watch Demo Video
-          </a>
+          <iframe
+            v-else-if="getYouTubeId(project.video)"
+            :src="`https://www.youtube.com/embed/${getYouTubeId(project.video)}`"
+            class="video-player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
 
         <!-- Image gallery -->
@@ -187,6 +187,10 @@ export default {
     },
     isLocalVideo(videoPath) {
       return videoPath && !videoPath.startsWith('http://') && !videoPath.startsWith('https://');
+    },
+    getYouTubeId(url) {
+      const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/))([^?&]+)/);
+      return match ? match[1] : null;
     },
     getVideoUrl(videoPath) {
       if (process.env.NODE_ENV === 'production') {
