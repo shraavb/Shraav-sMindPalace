@@ -221,6 +221,27 @@ let info = {
         "<ul><li>Built end-to-end <strong>sim-to-real ML pipeline</strong> for autonomous robot navigation using <strong>Vision-Language-Action (VLA)</strong> models</li><li>Generated <strong>16,500+ training samples</strong> using <strong>NVIDIA Isaac Sim</strong> with domain randomization for robust transfer</li><li>Fine-tuned <strong>SmolVLA (450M params)</strong> with custom action head, achieving <strong>1.5GB memory footprint</strong> for edge deployment</li><li>Deployed training on cloud GPUs (RunPod RTX 4090) with <strong>ZMQ-based inference server</strong> achieving ~50-100ms latency for real-time robot control</li><li>Implemented natural language instruction understanding for flexible robot control</li></ul>"
     },
     {
+      id: "speakeasy",
+      name: "SpeakEasy: AI-Powered Conversational Language Learning <span class='badge badge-warning ml-2'>in-progress</span>",
+      preview: "Speech-to-speech learning platform with fine-tuned LLMs, 6-metric fluency scoring, and scenario-based curriculum.",
+      pictures: [
+        {
+          img: require("./assets/SpeakEasy_Master_Conversational_Fluency.png")
+        }
+      ],
+      technologies: ["Llama 3", "LoRA Fine-tuning", "React", "FastAPI", "Whisper ASR", "PostgreSQL", "Capacitor"],
+      category: "Senior Design Project",
+      projectCategory: "product",
+      featured: true,
+      date: "Aug 2025 - Present",
+      github: "https://github.com/shraavb/-Senior-Design-SpeakEasy",
+      huggingface: "https://huggingface.co/shraavb/spanish-slang-whisper",
+      visit: "",
+      video: "SpeakEasy Demo V2.mp4",
+      description:
+        "<ul><li>Built speech-to-speech language learning platform with <strong>LoRA fine-tuned Llama 3</strong> on dialect-specific conversational data</li><li>Processed <strong>4,383 dialogue segments</strong> from 102 Spanish films with automated scenario classification and CEFR difficulty tagging</li><li>Designed <strong>6-metric fluency scoring engine</strong> using Whisper ASR for pronunciation, fluency, and communicative competence evaluation</li><li>Created curriculum with <strong>37 conversation scenarios</strong> across 3 modules and 8 AI conversation partners</li><li>Deployed full-stack app (<strong>React/FastAPI/PostgreSQL</strong>) to web and iOS/Android via Capacitor</li></ul>"
+    },
+    {
       id: "orbit",
       name: "Orbit: Voice-First AI Personal Agent",
       preview: "Voice-first AI assistant powered by a multi-step agent that handles messaging across SMS, email, Slack, and WhatsApp with confirmation before execution.",
@@ -259,27 +280,6 @@ let info = {
       video: "Procura-demo.mp4",
       description:
         "<ul><li>Built <strong>multi-agent AI system</strong> for BOM processing with <strong>5 specialized LangGraph agents</strong>: Parser, Matcher, Optimizer, PO Generator, and Order Tracker</li><li>Implemented <strong>RAG-powered supplier matching</strong> using pgvector for semantic search across supplier catalogs</li><li>Designed <strong>human-in-the-loop approval workflows</strong> for low-confidence matches and high-value purchase orders</li><li>Built real-time progress tracking with <strong>WebSocket updates</strong> during multi-step agent processing</li><li>Created auto-generated PO tagging system linking purchase orders back to source BOMs for full traceability</li><li>Developed modern UI with <strong>React + Tailwind + Framer Motion</strong> animations</li></ul>"
-    },
-    {
-      id: "speakeasy",
-      name: "SpeakEasy: AI-Powered Conversational Language Learning <span class='badge badge-warning ml-2'>in-progress</span>",
-      preview: "Speech-to-speech learning platform with fine-tuned LLMs, 6-metric fluency scoring, and scenario-based curriculum.",
-      pictures: [
-        {
-          img: require("./assets/SpeakEasy_Master_Conversational_Fluency.png")
-        }
-      ],
-      technologies: ["Llama 3", "LoRA Fine-tuning", "React", "FastAPI", "Whisper ASR", "PostgreSQL", "Capacitor"],
-      category: "Senior Design Project",
-      projectCategory: "product",
-      featured: true,
-      date: "Aug 2025 - Present",
-      github: "https://github.com/shraavb/-Senior-Design-SpeakEasy",
-      huggingface: "https://huggingface.co/shraavb/spanish-slang-whisper",
-      visit: "",
-      video: "SpeakEasy Demo V2.mov",
-      description:
-        "<ul><li>Built speech-to-speech language learning platform with <strong>LoRA fine-tuned Llama 3</strong> on dialect-specific conversational data</li><li>Processed <strong>4,383 dialogue segments</strong> from 102 Spanish films with automated scenario classification and CEFR difficulty tagging</li><li>Designed <strong>6-metric fluency scoring engine</strong> using Whisper ASR for pronunciation, fluency, and communicative competence evaluation</li><li>Created curriculum with <strong>37 conversation scenarios</strong> across 3 modules and 8 AI conversation partners</li><li>Deployed full-stack app (<strong>React/FastAPI/PostgreSQL</strong>) to web and iOS/Android via Capacitor</li></ul>"
     },
     {
       id: "spanish-slang-stt",
