@@ -24,10 +24,10 @@
         />
         <video
           v-else-if="isLocalVideo(project.video)"
-          :src="getVideoUrl(project.video)"
           controls
           class="featured-video"
         >
+          <source :src="getVideoUrl(project.video)" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <!-- Video toggle button - below media -->

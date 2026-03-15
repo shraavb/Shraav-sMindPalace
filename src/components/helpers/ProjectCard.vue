@@ -77,10 +77,10 @@
         <div v-if="project.video" class="project-video">
           <video
             v-if="isLocalVideo(project.video)"
-            :src="getVideoUrl(project.video)"
             controls
             class="video-player"
           >
+            <source :src="getVideoUrl(project.video)" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <a
