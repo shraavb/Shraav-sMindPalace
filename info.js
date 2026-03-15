@@ -184,7 +184,7 @@ let info = {
       huggingface: "https://huggingface.co/shraavb/act_pick_place_cube",
       dataset: "https://huggingface.co/datasets/shraavb/pick_place_cube",
       visit: "",
-      video: "lerobot_pick_place_demo.mp4",
+      video: "https://youtu.be/xG6C503PU6U",
       description:
         "<p><strong>What I built:</strong> A 6-DOF robotic arm that learns to pick up a cube and place it in a container from human demonstrations, no manual programming of trajectories.</p><ul><li>Collected <strong>50 demonstrations</strong> (36,750 frames at 30 FPS) via leader-follower teleoperation with RGB camera, published as an open dataset on HuggingFace</li><li>Trained an <strong>ACT (Action Chunking Transformer)</strong> imitation learning policy for 100K steps, achieving <strong>0.07 training loss</strong></li></ul><p><strong>Hard problems solved:</strong></p><ul><li><strong>macOS motor reliability:</strong> Feetech servos had 20-200ms USB serial latency on macOS (vs 34ms on Linux). Wrote platform-specific SDK patches with timeout overrides and serial buffer clearing to make motor communication reliable</li><li><strong>Arm stability under gravity:</strong> Tuned per-joint P-coefficients (120 for shoulder/elbow fighting gravity, 60 for wrist, 16 for others) and set torque caps to prevent jerky motion</li><li><strong>Noisy sensor readings:</strong> Built a bad-reading filter and replaced sync reads with individual motor reads + 2ms delays to eliminate corrupted position data</li></ul><p><strong>Next steps:</strong> Scaling to 100+ demonstrations with varied object placement, adding a second camera for depth perception, and tuning gripper force for more reliable grasps.</p>"
     },
