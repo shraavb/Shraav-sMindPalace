@@ -257,7 +257,7 @@ let info = {
       date: "Dec 2025 - Jan 2026",
       github: "https://github.com/shraavb/Orbit-your-personal-agent",
       visit: "",
-      video: "Orbit_Agent_Demo.mp4",
+      video: "https://youtu.be/NdlYIM96w98",
       description:
         "<ul><li>Built voice-first AI assistant using <strong>Claude Sonnet 4.5</strong> with a <strong>multi-step LangChain agent</strong> that breaks down requests, collects missing parameters through follow-up questions, and confirms actions before execution</li><li>Integrated <strong>Model Context Protocol (MCP)</strong> with custom FastMCP server for memory tools</li><li>Implemented <strong>self-hosted Whisper ASR</strong> and <strong>ElevenLabs TTS</strong> with lip-sync animation</li><li>Built multi-channel messaging integrations: SMS, Email, Slack, WhatsApp via custom BaseTool subclasses</li><li>Developed real-time voice-to-voice pipeline with <strong>FastAPI</strong> backend and <strong>React</strong> frontend</li><li>Added <strong>LangSmith</strong> observability with distributed tracing</li></ul>"
     },
