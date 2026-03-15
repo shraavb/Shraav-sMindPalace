@@ -7,7 +7,7 @@ let info = {
   email: "shraavb@wharton.upenn.edu",
 
   // Featured projects (by id)
-  featured_projects: ["ego4d-hierarchical-rl", "lerobot-so101", "jetbot-vla", "orbit", "procura", "speakeasy", "spanish-slang-stt"],
+  featured_projects: ["trekker", "lerobot-so101", "jetbot-vla", "speakeasy", "orbit", "procura", "spanish-slang-stt"],
 
   // Legacy fields
   logo_name: "shraav",
@@ -131,6 +131,22 @@ let info = {
   ],
   portfolio: [
     {
+      id: "trekker",
+      name: "Trekker <span class='badge badge-warning ml-2'>in-progress</span>",
+      preview: "Autonomous construction site inspection rover using GPS-fused EKF localization, visual SLAM, Nav2 geofenced navigation, and YOLOv8 + VLM hazard detection streamed to a live supervisory dashboard.",
+      pictures: [],
+      technologies: ["ROS 2", "Nav2", "EKF Localization", "Visual SLAM", "YOLOv8", "VLM", "GPS", "Python", "C++"],
+      category: "Robotics & ML",
+      projectCategory: "robotics",
+      featured: true,
+      date: "Jan 2026 - Present",
+      github: "https://github.com/shraavb/trekker",
+      visit: "",
+      description:
+        "<ul><li>Building an <strong>autonomous inspection rover</strong> for construction sites with GPS-fused <strong>EKF localization</strong> and <strong>visual SLAM</strong></li><li>Implementing <strong>Nav2 geofenced navigation</strong> for safe, bounded operation on active job sites</li><li>Integrating <strong>YOLOv8 + VLM hazard detection</strong> pipeline streamed to a live supervisory dashboard</li></ul>"
+    },
+    /* ego4d-hierarchical-rl - commented out for future reference
+    {
       id: "ego4d-hierarchical-rl",
       name: "Ego4D Hierarchical Offline RL <span class='badge badge-warning ml-2'>in-progress</span>",
       preview: "Two-stage hierarchical policy: Ego4D video pretraining (Decision Transformer) + LeRobot SO-101 fine-tuning (action chunking controller) for long-horizon robot manipulation.",
@@ -149,6 +165,7 @@ let info = {
       description:
         "<ul><li>Designed <strong>two-stage training pipeline</strong>: Stage 1 pretrains Decision Transformer on <strong>Ego4D egocentric video</strong> (717 videos, 13,342 step segments) for subgoal prediction; Stage 2 fine-tunes on real <strong>LeRobot SO-101</strong> teleoperation demos for motor control</li><li>Built <strong>Decision Transformer</strong> (GPT-based, 4 layers, 4 heads) as high-level planner predicting subgoal embeddings at 1-2Hz with returns-to-go conditioning and autoregressive subgoal history</li><li>Implemented <strong>action-chunking low-level controller</strong> with 10-step chunks at 30Hz, proprioceptive state input (6-DOF joint positions), and relative action convention matching RynnVLA's proven approach</li><li>Implemented <strong>Implicit Q-Learning (IQL)</strong> from scratch with expectile regression for V(s), TD learning for Q(s,a,g), and advantage-weighted policy extraction</li><li>Architected <strong>hybrid cloud/edge deployment</strong>: DINOv2 feature extraction + hierarchical inference on RunPod via WebSocket, action chunk execution on Jetson Nano at 30Hz with &lt;200ms replanning latency</li><li>Integrated <strong>LeRobot SDK</strong> for SO-101 robot bridge with relative-to-absolute action conversion, joint limit safety clipping, and proprioceptive state publishing over ROS 2</li><li>Built comprehensive <strong>test suite (61/62 passing)</strong>: 25 hierarchical policy tests, 11 dataset tests, 9 training integration tests, and 12 WebSocket server tests including async fixtures and mock inference</li><li>Extracted visual features with <strong>DINOv2 ViT-B/14</strong> (768-dim) and goal embeddings with <strong>SentenceTransformer all-MiniLM-L6-v2</strong> (384-dim) from Ego4D Goal-Step benchmark</li></ul>"
     },
+    */ // end ego4d-hierarchical-rl
     {
       id: "lerobot-so101",
       name: "LeRobot SO-101: Pick & Place with ACT <span class='badge badge-warning ml-2'>in-progress</span>",
