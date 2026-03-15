@@ -13,10 +13,14 @@
       <!-- Left: Image/Video -->
       <div class="featured-media">
         <img
-          v-if="!showVideo || !project.video"
+          v-if="(!showVideo || !project.video) && project.pictures.length > 0"
           :src="project.pictures[0].img"
           :alt="cleanName"
           class="featured-image"
+        />
+        <div
+          v-else-if="(!showVideo || !project.video) && project.pictures.length === 0"
+          class="featured-image featured-image-placeholder"
         />
         <video
           v-else-if="isLocalVideo(project.video)"
@@ -134,7 +138,7 @@
         </div>
 
         <!-- Additional links -->
-        <div v-if="project.pictures[0].pdf || project.presentation" class="additional-links">
+        <div v-if="(project.pictures.length > 0 && project.pictures[0].pdf) || project.presentation" class="additional-links">
           <a
             v-if="project.pictures[0] && project.pictures[0].pdf"
             :href="getPdfUrl(project.pictures[0].pdf)"
@@ -239,6 +243,13 @@ export default {
   flex-shrink: 0;
   width: 45%;
   position: relative;
+}
+
+.featured-image-placeholder {
+  background: #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .featured-image,
