@@ -237,7 +237,7 @@ let info = {
       github: "https://github.com/shraavb/-Senior-Design-SpeakEasy",
       huggingface: "https://huggingface.co/shraavb/spanish-slang-whisper",
       visit: "",
-      video: "https://youtu.be/5QPzYLdxZJQ",
+      video: "https://youtu.be/o9OP78fshU8",
       description:
         "<ul><li>Built speech-to-speech language learning platform with <strong>LoRA fine-tuned Llama 3</strong> on dialect-specific conversational data</li><li>Processed <strong>4,383 dialogue segments</strong> from 102 Spanish films with automated scenario classification and CEFR difficulty tagging</li><li>Designed <strong>6-metric fluency scoring engine</strong> using Whisper ASR for pronunciation, fluency, and communicative competence evaluation</li><li>Created curriculum with <strong>37 conversation scenarios</strong> across 3 modules and 8 AI conversation partners</li><li>Deployed full-stack app (<strong>React/FastAPI/PostgreSQL</strong>) to web and iOS/Android via Capacitor</li></ul>"
     },
