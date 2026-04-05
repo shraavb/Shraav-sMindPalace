@@ -2,8 +2,8 @@ let info = {
   // Hero Section - Credential-forward
   name: "Shraavasti (Shraav) Bhat",
   tagline: "M&T @ University of Pennsylvania | Computer Science + Management",
-  research_focus: "Building intelligent systems at the intersection of robotics, AI, and human-centered product design.",
-  current_work: "Currently exploring Vision-Language-Action models for robotic control and voice-first AI agents.",
+  research_focus: "Multidisciplinary PM (hardware + software) who has worked across every layer of the AI stack — from energy and chips to models and applications.",
+  current_work: "Energy → Chips → Infrastructure → Models → Applications.",
   email: "shraavb@wharton.upenn.edu",
 
   // Featured projects (by id)
@@ -19,7 +19,7 @@ let info = {
     }
   },
   description:
-    "I'm a Computer Science and Management student at the University of Pennsylvania. I have worked as a product manager at TE Connectivity, Manatal, and Develop for Good, collaborating with teams across Design, Engineering, Marketing, and Sales. I have also worked on projects in Embedded Systems, Computer Vision, and AI.",
+    "I'm a multidisciplinary PM (hardware + software) finishing a dual degree in Management & Computer Science at Penn. I've worked across every layer of Jensen's AI stack — modeled renewable energy projects at CLP Holdings; managed the OSFP, QSFP-DD & PCIe Gen 5 cable portfolio sold into Broadcom, Marvell & Semtech at TE Connectivity; mapped 800G/1.6T/3.2T AI infrastructure trajectories; fine-tuned SmolVLA for sim-to-real robot navigation; and took SleekJob from 0 to 1.2k users across 10+ countries at Manatal.",
   links: {
     linkedin: "https://www.linkedin.com/in/shraavasti-bhat/",
     github: "https://github.com/shraavb"
