@@ -32,6 +32,7 @@
                   <span v-if="e.place" class="location-text">
                     <i class="fas fa-map-marker-alt"></i> {{ e.place }}
                   </span>
+                  <span v-if="e.stack_layer" class="stack-layer-badge">{{ e.stack_layer }}</span>
                 </div>
                 <div class="px-2 title3">
                   {{ e.degree || e.position }}
@@ -141,6 +142,18 @@ export default {
 
 .badge:hover {
   background-color: #ccfbf1;
+}
+
+.stack-layer-badge {
+  font-size: 0.7rem;
+  font-weight: 500;
+  font-family: 'JetBrains Mono', monospace;
+  color: #0f766e;
+  background-color: #f0fdfa;
+  border: 1px solid #99f6e4;
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  letter-spacing: 0.03em;
 }
 
 .date {

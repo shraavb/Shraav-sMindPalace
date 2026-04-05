@@ -47,6 +47,7 @@ let info = {
       place: "Philadelphia, PA",
       date: "Jan 2026 - Present",
       position: "Backend Software Engineer",
+      stack_layer: "Applications",
       description:
         "Built a real-time AI voice agent and automated SMS/email reminder system for salon appointment management, with sub-300ms interruption handling and a pluggable LLM backend supporting Anthropic, OpenAI, Google, and Ollama.",
       skills: ["Python", "Flask", "Celery", "Docker", "Twilio", "PostgreSQL", "React", "Pipecat", "WebSockets", "Deepgram", "ElevenLabs"]
@@ -56,6 +57,7 @@ let info = {
       place: "Middletown, PA",
       date: "May 2025 - Aug 2025",
       position: "Product Management Intern",
+      stack_layer: "Chips & Interconnects",
       description:
         "Led IP risk analysis identifying $XXM in potential infringement and uncovered $XXM in lost profit across 12 top-performing SKUs for high-speed cable products.",
       skills: ["Excel"]
@@ -65,6 +67,7 @@ let info = {
       place: "Bangkok, Thailand",
       date: "Dec 2023 - June 2024",
       position: "Product & Project Management Intern",
+      stack_layer: "Applications",
       description:
         "Led 0-to-1 development of <a href='https://sleekjob.com/' target='_blank'>SleekJob</a> with a team of 10, reaching 1.2k users across 10+ countries while reporting directly to the CTO.",
       skills: ["Jira", "Git", "Python", "HTML", "CSS", "JS", "XML"]
@@ -74,6 +77,7 @@ let info = {
       place: "Hong Kong",
       date: "Jun 2023 - Aug 2023",
       position: "Business Development & Asset Management Intern",
+      stack_layer: "Energy",
       description:
         "Modeled renewable energy (solar & wind) projects for IC review and analyzed cost of capital across 15+ Asia Pacific markets using Bloomberg Terminal, covering 40+ energy & infrastructure firms.",
       skills: ["Bloomberg Terminal", "Excel", "Financial Modeling", "Equity Research"]
