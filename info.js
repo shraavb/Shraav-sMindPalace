@@ -2,8 +2,8 @@ let info = {
   // Hero Section - Credential-forward
   name: "Shraavasti (Shraav) Bhat",
   tagline: "M&T @ University of Pennsylvania | Computer Science + Management",
-  research_focus: "Multidisciplinary PM (hardware + software) who has worked across every layer of the AI stack — from energy and chips to models and applications.",
-  current_work: "Energy → Chips → Infrastructure → Models → Applications.",
+  research_focus: "Multidisciplinary PM with hands-on exposure to every layer of the AI stack.",
+  current_work: "Energy · Chips & Interconnects · Infrastructure · Models · Applications",
   email: "shraavb@wharton.upenn.edu",
 
   // Featured projects (by id)
