@@ -11,7 +11,7 @@ let info = {
 
   // Legacy fields
   logo_name: "shraav",
-  flat_picture: require("./assets/shraav_avatar_.png"),
+  flat_picture: require("./assets/headshot.png"),
   config: {
     use_cookies: true,
     navbar: {
