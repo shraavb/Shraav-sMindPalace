@@ -288,7 +288,7 @@ let info = {
     {
       id: "spanish-slang-stt",
       name: "Spanish Slang STT: Regional Dialect Recognition",
-      preview: "Fine-tuned Whisper model for recognizing regional Spanish slang and informal speech across Mexico, Argentina, Spain, and Chile.",
+      preview: "Fine-tuned Whisper model for recognizing regional Spanish slang and informal speech across Spain, Argentina, Chile, and Mexico.",
       pictures: [
         {
           img: require("./assets/spanish_slang_stt_architecture.png")
