@@ -42,16 +42,16 @@ let info = {
     }
   ],
   experience: [
-    {
-      name: "AdminifAI",
-      place: "Philadelphia, PA",
-      date: "Jan 2026 - Present",
-      position: "Backend Software Engineer",
-      stack_layer: "Applications",
-      description:
-        "Built a real-time AI voice agent and automated SMS/email reminder system for salon appointment management, with sub-300ms interruption handling and a pluggable LLM backend supporting Anthropic, OpenAI, Google, and Ollama.",
-      skills: ["Python", "Flask", "Celery", "Docker", "Twilio", "PostgreSQL", "React", "Pipecat", "WebSockets", "Deepgram", "ElevenLabs"]
-    },
+    // {
+    //   name: "AdminifAI",
+    //   place: "Philadelphia, PA",
+    //   date: "Jan 2026 - Present",
+    //   position: "Backend Software Engineer",
+    //   stack_layer: "Applications",
+    //   description:
+    //     "Built a real-time AI voice agent and automated SMS/email reminder system for salon appointment management, with sub-300ms interruption handling and a pluggable LLM backend supporting Anthropic, OpenAI, Google, and Ollama.",
+    //   skills: ["Python", "Flask", "Celery", "Docker", "Twilio", "PostgreSQL", "React", "Pipecat", "WebSockets", "Deepgram", "ElevenLabs"]
+    // },
     {
       name: "TE Connectivity",
       place: "Middletown, PA",
