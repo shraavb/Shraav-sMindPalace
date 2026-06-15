@@ -1,7 +1,7 @@
 let info = {
   // Hero Section - Credential-forward
   name: "Shraavasti (Shraav) Bhat",
-  tagline: "Product Manager · AI Infrastructure & Physical AI | Penn M&T Alum",
+  tagline: "Associate Product Line Manager · AI Infrastructure & Physical AI | Penn M&T Alum",
   research_focus: "PM at the physical layer of AI infrastructure — high-speed interconnects, hyperscaler supply chain, copper-to-optical transition.",
   current_work: "Chips & Interconnects · AI Infrastructure · Robotics · Applications",
   email: "shraab@seas.upenn.edu",
@@ -19,7 +19,7 @@ let info = {
     }
   },
   description:
-    "I'm a PM at Amphenol working on high-speed cable products for AI infrastructure — the physical layer of the stack most PMs never touch. Penn M&T alum (CS + Management). I've worked across every layer of Jensen's AI stack — managed the OSFP, QSFP-DD & PCIe Gen 5 cable portfolio sold into Broadcom, Marvell & Semtech at TE Connectivity; mapped 800G/1.6T/3.2T AI infrastructure trajectories; fine-tuned SmolVLA for sim-to-real robot navigation; and took SleekJob from 0 to 1.2k users across 10+ countries at Manatal.",
+    "I'm an Associate Product Line Manager at Amphenol working on high-speed cable products for AI infrastructure — the physical layer of the stack most PMs never touch. Penn M&T alum (CS + Management). I've worked across every layer of Jensen's AI stack — managed the OSFP, QSFP-DD & PCIe Gen 5 cable portfolio sold into Broadcom, Marvell & Semtech at TE Connectivity; mapped 800G/1.6T/3.2T AI infrastructure trajectories; fine-tuned SmolVLA for sim-to-real robot navigation; and took SleekJob from 0 to 1.2k users across 10+ countries at Manatal.",
   links: {
     linkedin: "https://www.linkedin.com/in/shraavasti-bhat/",
     github: "https://github.com/shraavb"
@@ -46,10 +46,10 @@ let info = {
       name: "Amphenol",
       place: "Wallingford, CT",
       date: "Jun 2026 - Present",
-      position: "Product Manager",
+      position: "Associate Product Line Manager",
       stack_layer: "Chips & Interconnects",
       description:
-        "PM for high-speed cable products serving AI infrastructure — twinax, DAC, AEC, and optical assemblies for 800G/1.6T hyperscaler deployments. Working directly with hyperscaler procurement and signal integrity teams.",
+        "Associate PLM for high-speed cable products serving AI infrastructure — twinax, DAC, AEC, and optical assemblies for 800G/1.6T hyperscaler deployments. Working directly with hyperscaler procurement and signal integrity teams.",
       skills: ["Product Management", "High-Speed Interconnects", "800G/1.6T Ethernet", "Hyperscaler Supply Chain", "Roadmapping"]
     },
     {
