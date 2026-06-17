@@ -1,10 +1,10 @@
 let info = {
   // Hero Section - Credential-forward
   name: "Shraavasti (Shraav) Bhat",
-  tagline: "M&T @ University of Pennsylvania | Computer Science + Management",
-  research_focus: "Multidisciplinary PM with hands-on exposure to every layer of the AI stack.",
-  current_work: "Energy · Chips & Interconnects · Infrastructure · Models · Applications",
-  email: "shraavb@wharton.upenn.edu",
+  tagline: "Associate Product Line Manager · AI Infrastructure & Physical AI | Penn M&T Alum",
+  research_focus: "PM at the physical layer of AI infrastructure - high-speed interconnects, hyperscaler supply chain, copper-to-optical transition.",
+  current_work: "Chips & Interconnects · AI Infrastructure · Robotics · Applications",
+  email: "shraab@seas.upenn.edu",
 
   // Featured projects (by id)
   featured_projects: ["trekker", "lerobot-so101", "jetbot-vla", "speakeasy", "orbit", "procura", "spanish-slang-stt"],
@@ -19,7 +19,7 @@ let info = {
     }
   },
   description:
-    "I'm a multidisciplinary PM (hardware + software) finishing a dual degree in Management & Computer Science at Penn. I've worked across every layer of Jensen's AI stack — modeled renewable energy projects at CLP Holdings; managed the OSFP, QSFP-DD & PCIe Gen 5 cable portfolio sold into Broadcom, Marvell & Semtech at TE Connectivity; mapped 800G/1.6T/3.2T AI infrastructure trajectories; fine-tuned SmolVLA for sim-to-real robot navigation; and took SleekJob from 0 to 1.2k users across 10+ countries at Manatal.",
+    "I'm an Associate Product Line Manager at Amphenol working on high-speed cable products for AI infrastructure - the physical layer of the stack most PMs never touch. Penn M&T alum (CS + Management). I've worked across every layer of Jensen's AI stack - managed the OSFP, QSFP-DD & PCIe Gen 5 cable portfolio sold into Broadcom, Marvell & Semtech at TE Connectivity; mapped 800G/1.6T/3.2T AI infrastructure trajectories; fine-tuned SmolVLA for sim-to-real robot navigation; and took SleekJob from 0 to 1.2k users across 10+ countries at Manatal.",
   links: {
     linkedin: "https://www.linkedin.com/in/shraavasti-bhat/",
     github: "https://github.com/shraavb"
@@ -42,6 +42,16 @@ let info = {
     }
   ],
   experience: [
+    {
+      name: "Amphenol",
+      place: "Santa Clara, CA",
+      date: "Jun 2026 - Present",
+      position: "Associate Product Line Manager",
+      stack_layer: "Chips & Interconnects",
+      description:
+        "Associate PLM for high-speed cable products serving AI infrastructure - twinax, DAC, AEC, and optical assemblies for 800G/1.6T hyperscaler deployments. Working directly with hyperscaler procurement and signal integrity teams.",
+      skills: ["Product Management", "High-Speed Interconnects", "800G/1.6T Ethernet", "Hyperscaler Supply Chain", "Roadmapping"]
+    },
     // {
     //   name: "AdminifAI",
     //   place: "Philadelphia, PA",
@@ -59,8 +69,8 @@ let info = {
       position: "Product Management Intern",
       stack_layer: "Chips & Interconnects",
       description:
-        "Led IP risk analysis identifying $XXM in potential infringement and uncovered $XXM in lost profit across 12 top-performing SKUs for high-speed cable products.",
-      skills: ["Excel"]
+        "Managed product strategy for OSFP, QSFP-DD & PCIe Gen 5 high-speed cable portfolio sold into Broadcom, Marvell & Semtech. Led IP risk analysis and lost-profit identification across 12 top-performing SKUs. Mapped 800G/1.6T/3.2T AI infrastructure market trajectories to inform roadmap decisions.",
+      skills: ["Product Roadmapping", "High-Speed Cables", "OSFP", "QSFP-DD", "PCIe Gen 5", "Competitive Analysis", "Excel"]
     },
     {
       name: "Manatal",
@@ -106,6 +116,11 @@ let info = {
       title: "product & strategy",
       info: ["Jira", "Asana", "Notion", "Figma", "SQL", "User Research", "Roadmapping", "A/B Testing"],
       icon: "fa fa-chart-line"
+    },
+    {
+      title: "interconnects & physical layer",
+      info: ["800G/1.6T Ethernet", "OSFP / QSFP-DD", "Twinax / DAC / AEC", "PCIe Gen 5", "Optical Transceivers", "SerDes", "Signal Integrity", "Hyperscaler Supply Chain"],
+      icon: "fas fa-network-wired"
     },
     {
       title: "ai & ml",
@@ -539,40 +554,7 @@ let info = {
         "<ul><li>Consultant and Project Lead at <strong>PCV</strong>, leading team of 4+ students</li><li>Developed strategy to boost student subscriptions to circular economy membership</li><li>Created <strong>carbon offset platform</strong> for Philadelphia-based corporations</li><li>Designed four local offset projects to reduce reliance on foreign offsets</li></ul>"
     }
   ],
-  recommendations: [
-    {
-      title:
-        "In his internship, Hrishikesh has demonstrated excellent learning ability, and with a dedicated, task oriented approach, he was able to complete his assignment ahead of time.",
-      author: "Ushanas Shastri",
-      position: "CTO",
-      company: "Viteos Capital Market Services",
-      location: "Mumbai"
-    },
-    {
-      title:
-        "I feel his budding leadership abilities will become even more effective in a diverse and challenging environment.",
-      author: "Anil Dukkipatty",
-      position: "CTO",
-      company: "Elemential Labs",
-      location: "Mumbai"
-    },
-    {
-      title:
-        "He has gained great knowledge and experience of SDE, and has learned ot develop the application keeping in mind the client's perpective and also making it creative.",
-      author: "Chintan Shah",
-      position: "Director",
-      company: "Hridayam Soft Solution",
-      location: "Mumbai"
-    },
-    {
-      title:
-        "During the course of his employment we have found him to be a self-started who was motivated, duty bound and a highly commited team player.",
-      author: "Mrinal Pai",
-      position: "Co-Founder & Director",
-      company: "Skylark Drones",
-      location: "Bangalore"
-    }
-  ]
+  recommendations: []
 };
 
 export default info;
