@@ -4,7 +4,7 @@ let info = {
   tagline: "Associate Product Line Manager · AI Infrastructure & Physical AI | Penn M&T Alum",
   research_focus: "PM at the physical layer of AI infrastructure - high-speed interconnects, hyperscaler supply chain, copper-to-optical transition.",
   current_work: "Chips & Interconnects · AI Infrastructure · Robotics · Applications",
-  email: "shraab@seas.upenn.edu",
+  email: "shraavastib@gmail.com",
 
   // Featured projects (by id)
   featured_projects: ["trekker", "lerobot-so101", "jetbot-vla", "speakeasy", "orbit", "procura", "spanish-slang-stt"],
